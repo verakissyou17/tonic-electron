@@ -1,0 +1,902 @@
+[
+  {
+    "id": 101,
+    "name": "Husa transparenta Iphone 16 Pro Max",
+    "category": "case",
+    "price": 1500,
+    "brand": "Apple",
+    "image": "images/products/cases/transparent-iphone-case.webp",
+    "description": "The Apple Transparent Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 102,
+    "name": "Sticla transparenta Edge Samsung A56",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Samsung",
+    "image": "images/products/glass/edge-transparent-glass.jpeg",
+    "description": "The Samsung Edge-to-Edge Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 103,
+    "name": "Anker USB-C Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Anker",
+    "image": "images/products/cables/anker-usbc-cable.webp",
+    "description": "The Anker USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 104,
+    "name": "Spigen USB Wall Adapter",
+    "category": "adapter",
+    "price": 4000,
+    "brand": "Spigen",
+    "image": "images/products/adapters/spigen-black-adaptor.webp",
+    "description": "The Spigen USB Wall Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 105,
+    "name": "Baseus Leather Case",
+    "category": "case",
+    "price": 3000,
+    "brand": "Baseus",
+    "image": "images/products/cases/baseus-leather-case.jpeg",
+    "description": "The Baseus Leather Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 106,
+    "name": "OnePlus Tempered Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "OnePlus",
+    "image": "/images/products/glass/oneplus-tempered-glass.png",
+    "description": "The OnePlus Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 107,
+    "name": "Xiaomi Fast Charging Cable",
+    "category": "cable",
+    "price": 3000,
+    "brand": "Xiaomi",
+    "image": "images/products/cables/fast-charging-cable.webp",
+    "description": "The Xiaomi Fast Charging Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 108,
+    "name": "Spigen Car Charger",
+    "category": "adapter",
+    "price": 2500,
+    "brand": "Spigen",
+    "image": "images/products/car-chargers/spigen-car-charger.webp",
+    "description": "The Spigen Car Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 109,
+    "name": "Samsung Rugged Case",
+    "category": "case",
+    "price": 2000,
+    "brand": "Samsung",
+    "image": "images/products/cases/samsung-rugged-case.webp",
+    "description": "The Samsung Rugged Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 110,
+    "name": "Iphone 16 Pro Privacy Glass",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "images/products/glass/iphone-privacy-glass.webp",
+    "description": "The Apple Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 111,
+    "name": "Baseus Lightning Cable",
+    "category": "cable",
+    "price": 20000,
+    "brand": "Baseus",
+    "image": "images/products/cables/baseus-lightning-cable.webp",
+    "description": "The Baseus Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 112,
+    "name": "OnePlus Multiport Adapter",
+    "category": "adapter",
+    "price": 1500,
+    "brand": "OnePlus",
+    "image": "images/products/adapters/multihub-oneplus.webp",
+    "description": "The OnePlus Multiport Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 113,
+    "name": "Xiaomi Leather Case",
+    "category": "case",
+    "price": 3500,
+    "brand": "Xiaomi",
+    "image": "images/products/cases/xiaomi-leather-case.webp",
+    "description": "The Xiaomi Leather Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 114,
+    "name": "Spigen Edge-to-Edge Glass",
+    "category": "glass",
+    "price": 2500,
+    "brand": "Spigen",
+    "image": "images/products/glass/full-cover-glass.webp",
+    "description": "The Spigen Edge-to-Edge Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 115,
+    "name": "Cablu de date Lightning la USB-C",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "images/products/cables/cablu-lighting-usbc-white.webp",
+    "description": "The Apple Micro USB Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 116,
+    "name": "Samsung Wireless Charger",
+    "category": "adapter",
+    "price": 27.99,
+    "brand": "Samsung",
+    "image": "images/products/adapters/samsung-wireless-charging-suport.webp",
+    "description": "The Samsung Wireless Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 117,
+    "name": "Baseus Transparent Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Baseus",
+    "image": "images/products/cases/baseus-transparent-case.jpeg",
+    "description": "The Baseus Transparent Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 118,
+    "name": "Anker Privacy Glass",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Anker",
+    "image": "images/products/glass/anker-privacy-glass.jpeg",
+    "description": "The Anker Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 119,
+    "name": "OnePlus Fast Charging Cable",
+    "category": "cable",
+    "price": 1500,
+    "brand": "OnePlus",
+    "image": "images/products/cables/one-plus-fast-charging-cable.webp",
+    "description": "The OnePlus Fast Charging Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 120,
+    "name": "Xiaomi USB Wall Adapter",
+    "category": "adapter",
+    "price": 5000,
+    "brand": "Xiaomi",
+    "image": "images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "description": "The Xiaomi USB Wall Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 121,
+    "name": "Spigen Rugged Case",
+    "category": "case",
+    "price": 2000,
+    "brand": "Spigen",
+    "image": "images/products/cases/spigen-rugged-case.jpeg",
+    "description": "The Spigen Rugged Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 122,
+    "name": "Apple Tempered Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Apple",
+    "image": "/images/products/glass/apple-tempered-glass.jpeg",
+    "description": "The Apple Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 123,
+    "name": "Baseus USB-C Cable",
+    "category": "cable",
+    "price": 1500,
+    "brand": "Baseus",
+    "image": "/images/products/cables/anker-usbc-cable.webp",
+    "description": "The Baseus USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 124,
+    "name": "Anker Car Charger",
+    "category": "adapter",
+    "price": 2500,
+    "brand": "Anker",
+    "image": "/images/products/car-chargers/baseus-car-charger.webp",
+    "description": "The Anker Car Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 125,
+    "name": "Samsung Silicone Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Samsung",
+    "image": "/images/products/cases/samsung-rugged-case.webp",
+    "description": "The Samsung Silicone Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 126,
+    "name": "Anker Screen Protector",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Anker",
+    "image": "/images/products/glass/anker-privacy-glass.jpeg",
+    "description": "The Anker Screen Protector ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 127,
+    "name": "Apple Lightning Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "/images/products/cables/baseus-lightning-cable.webp",
+    "description": "The Apple Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 128,
+    "name": "Samsung Multiport Adapter",
+    "category": "adapter",
+    "price": 3000,
+    "brand": "Samsung",
+    "image": "/images/products/adapters/multihub-oneplus.webp",
+    "description": "The Samsung Multiport Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 129,
+    "name": "OnePlus Silicone Case",
+    "category": "case",
+    "price": 1700,
+    "brand": "OnePlus",
+    "image": "/images/products/cases/transparent-iphone-case.webp",
+    "description": "The OnePlus Silicone Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 130,
+    "name": "Xiaomi Edge-to-Edge Glass",
+    "category": "glass",
+    "price": 2500,
+    "brand": "Xiaomi",
+    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "description": "The Xiaomi Edge-to-Edge Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 131,
+    "name": "Spigen Fast Charging Cable",
+    "category": "cable",
+    "price": 2500,
+    "brand": "Spigen",
+    "image": "/images/products/cables/fast-charging-cable.webp",
+    "description": "The Spigen Fast Charging Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 132,
+    "name": "Baseus USB Wall Adapter",
+    "category": "adapter",
+    "price": 3500,
+    "brand": "Baseus",
+    "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "description": "The Baseus USB Wall Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 133,
+    "name": "Apple Leather Case",
+    "category": "case",
+    "price": 3000,
+    "brand": "Apple",
+    "image": "/images/products/cases/baseus-leather-case.jpeg",
+    "description": "The Apple Leather Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 134,
+    "name": "Samsung Privacy Glass",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Samsung",
+    "image": "/images/products/glass/iphone-privacy-glass.webp",
+    "description": "The Samsung Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 135,
+    "name": "Anker Micro USB Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Anker",
+    "image": "/images/products/cables/cablu-lighting-usbc-white.webp",
+    "description": "The Anker Micro USB Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 136,
+    "name": "OnePlus Car Charger",
+    "category": "adapter",
+    "price": 4500,
+    "brand": "OnePlus",
+    "image": "/images/products/car-chargers/baseus-car-charger.webp",
+    "description": "The OnePlus Car Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 137,
+    "name": "Xiaomi Transparent Case",
+    "category": "case",
+    "price": 2000,
+    "brand": "Xiaomi",
+    "image": "/images/products/cases/samsung-transparent-case.jpeg",
+    "description": "The Xiaomi Transparent Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 138,
+    "name": "Spigen Tempered Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Spigen",
+    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "description": "The Spigen Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 139,
+    "name": "Baseus USB-C Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Baseus",
+    "image": "/images/products/cables/cablu-lighting-usbc-white.webp",
+    "description": "The Baseus USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 140,
+    "name": "Anker Wireless Charger",
+    "category": "adapter",
+    "price": 4500,
+    "brand": "Anker",
+    "image": "/images/products/adapters/samsung-wireless-charging-suport.webp",
+    "description": "The Anker Wireless Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 141,
+    "name": "Spigen Silicone Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Spigen",
+    "image": "/images/products/cases/samsung-transparent-case.jpeg",
+    "description": "The Spigen Silicone Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 142,
+    "name": "OnePlus Screen Protector",
+    "category": "glass",
+    "price": 1500,
+    "brand": "OnePlus",
+    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "description": "The OnePlus Screen Protector ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 143,
+    "name": "Samsung Lightning Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Samsung",
+    "image": "/images/products/cables/baseus-lightning-cable.webp",
+    "description": "The Samsung Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 144,
+    "name": "Baseus Multiport Adapter",
+    "category": "adapter",
+    "price": 3500,
+    "brand": "Baseus",
+    "image": "/images/products/adapters/multihub-oneplus.webp",
+    "description": "The Baseus Multiport Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 145,
+    "name": "Apple Rugged Case",
+    "category": "case",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "/images/products/cases/samsung-rugged-case.webp",
+    "description": "The Apple Rugged Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 146,
+    "name": "Xiaomi Privacy Glass",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Xiaomi",
+    "image": "/images/products/glass/anker-privacy-glass.jpeg",
+    "description": "The Xiaomi Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 147,
+    "name": "OnePlus Lightning Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "OnePlus",
+    "image": "/images/products/cables/baseus-lightning-cable.webp",
+    "description": "The OnePlus Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 148,
+    "name": "Spigen Car Charger",
+    "category": "adapter",
+    "price": 3000,
+    "brand": "Spigen",
+    "image": "/images/products/car-chargers/baseus-car-charger.webp",
+    "description": "The Spigen Car Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 149,
+    "name": "Anker Transparent Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Anker",
+    "image": "/images/products/cases/transparent-iphone-case.webp",
+    "description": "The Anker Transparent Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 150,
+    "name": "Baseus Tempered Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Baseus",
+    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "description": "The Baseus Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 151,
+    "name": "Samsung Leather Case",
+    "category": "case",
+    "price": 2500,
+    "brand": "Samsung",
+    "image": "/images/products/cases/baseus-leather-case.jpeg",
+    "description": "The Samsung Leather Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 152,
+    "name": "Xiaomi Edge Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Xiaomi",
+    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "description": "The Xiaomi Edge Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 153,
+    "name": "Apple Fast Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "/images/products/cables/one-plus-fast-charging-cable.webp",
+    "description": "The Apple Fast Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 154,
+    "name": "OnePlus Wall Adapter",
+    "category": "adapter",
+    "price": 4000,
+    "brand": "OnePlus",
+    "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "description": "The OnePlus Wall Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 155,
+    "name": "Spigen Slim Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Spigen",
+    "image": "/images/products/cases/samsung-transparent-case.jpeg",
+    "description": "The Spigen Slim Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 156,
+    "name": "Baseus Full Glass Protector",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Baseus",
+    "image": "/images/products/glass/full-cover-glass.webp",
+    "description": "The Baseus Full Glass Protector ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 157,
+    "name": "Anker PowerLine USB-C",
+    "category": "cable",
+    "price": 1500,
+    "brand": "Anker",
+    "image": "/images/products/cables/anker-usbc-cable.webp",
+    "description": "The Anker PowerLine USB-C delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 158,
+    "name": "Samsung Travel Adapter",
+    "category": "adapter",
+    "price": 2500,
+    "brand": "Samsung",
+    "image": "/images/products/adapters/samsung-travel-adapter.webp",
+    "description": "The Samsung Travel Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 159,
+    "name": "Xiaomi Silicone Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Xiaomi",
+    "image": "/images/products/cases/xiaomi-silicone-case.webp",
+    "description": "The Xiaomi Silicone Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 160,
+    "name": "Apple Screen Guard",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "/images/products/glass/apple-screen-guard.jpeg",
+    "description": "The Apple Screen Guard ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 161,
+    "name": "OnePlus Dash Cable",
+    "category": "cable",
+    "price": 2500,
+    "brand": "OnePlus",
+    "image": "/images/products/cables/dash-cable.webp",
+    "description": "The OnePlus Dash Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 162,
+    "name": "Spigen Dual USB Adapter",
+    "category": "adapter",
+    "price": 3500,
+    "brand": "Spigen",
+    "image": "/images/products/adapters/dual-usb-adapter.jpeg",
+    "description": "The Spigen Dual USB Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 163,
+    "name": "Baseus Kickstand Case",
+    "category": "case",
+    "price": 2000,
+    "brand": "Baseus",
+    "image": "/images/products/cases/spigen-rugged-case.jpeg",
+    "description": "The Baseus Kickstand Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 164,
+    "name": "Anker HD Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Anker",
+    "image": "/images/products/glass/apple-tempered-glass.jpeg",
+    "description": "The Anker HD Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 165,
+    "name": "Samsung Type-C Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Samsung",
+    "image": "/images/products/cables/cable-typec.webp",
+    "description": "The Samsung Type-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 166,
+    "name": "Xiaomi Quick Adapter",
+    "category": "adapter",
+    "price": 3000,
+    "brand": "Xiaomi",
+    "image": "/images/products/adapters/spigen-black-adaptor.webp",
+    "description": "The Xiaomi Quick Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 167,
+    "name": "Apple Hybrid Case",
+    "category": "case",
+    "price": 2500,
+    "brand": "Apple",
+    "image": "/images/products/cases/apple-hybrid-case.jpeg",
+    "description": "The Apple Hybrid Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 168,
+    "name": "OnePlus Matte Glass",
+    "category": "glass",
+    "price": 2500,
+    "brand": "OnePlus",
+    "image": "/images/products/glass/matte-glass.jpeg",
+    "description": "The OnePlus Matte Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 169,
+    "name": "Spigen USB-C Cable",
+    "category": "cable",
+    "price": 1500,
+    "brand": "Spigen",
+    "image": "/images/products/cables/cable-typec.webp",
+    "description": "The Spigen USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 170,
+    "name": "Baseus Smart Charger",
+    "category": "adapter",
+    "price": 22.20,
+    "brand": "Baseus",
+    "image": "/images/products/adapters/baseus-smart-charger.webp",
+    "description": "The Baseus Smart Charger provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 171,
+    "name": "Samsung Armor Case",
+    "category": "case",
+    "price": 3500,
+    "brand": "Samsung",
+    "image": "/images/products/cases/samsung-armour-case.webp",
+    "description": "The Samsung Armor Case offers sleek protection with durable material and a comfortable grip."
+  },
+  {
+    "id": 172,
+    "name": "Xiaomi Tempered Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Xiaomi",
+    "image": "/images/products/glass/full-cover-glass.webp",
+    "description": "The Xiaomi Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+  },
+  {
+    "id": 173,
+    "name": "Anker Braided Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Anker",
+    "image": "/images/products/cables/braided-cable.webp",
+    "description": "The Anker Braided Cable delivers fast, reliable charging with high-quality insulation and durability."
+  },
+  {
+    "id": 174,
+    "name": "Apple Dual Port Adapter",
+    "category": "adapter",
+    "price": 4000,
+    "brand": "Apple",
+    "image": "/images/products/adapters/dual-charger-adapter.webp",
+    "description": "The Apple Dual Port Adapter provides safe and efficient power delivery for your mobile devices."
+  },
+  {
+    "id": 175,
+    "name": "OnePlus Bumper Case",
+    "category": "case",
+    "price": 2000,
+    "brand": "OnePlus",
+    "image": "/images/products/cases/bumper-case.jpeg",
+    "description": "The OnePlus Bumper Case offers sleek protection with durable material and a comfortable grip."
+  }, 
+  {
+    "id": 176,
+    "name": "Spigen Privacy Screen",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Spigen",
+    "image": "/images/products/glass/iphone-privacy-glass.webp",
+    "description": "The Spigen Privacy Screen protects your screen from scratches while keeping your content private."
+  },
+  {
+    "id": 177,
+    "name": "Baseus Lightning Cable",
+    "category": "cable",
+    "price": 1500,
+    "brand": "Baseus",
+    "image": "/images/products/cables/baseus-lightning-cable.webp",
+    "description": "The Baseus Lightning Cable ensures safe and fast charging with premium insulation."
+  },
+  {
+    "id": 178,
+    "name": "Anker GaN Fast Charger",
+    "category": "adapter",
+    "price": 4500,
+    "brand": "Anker",
+    "image": "/images/products/adapters/gan-power-adapter.webp",
+    "description": "Anker GaN Fast Charger delivers ultra-fast charging with next-gen efficiency and safety."
+  },
+  {
+    "id": 179,
+    "name": "Xiaomi Fabric Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "Xiaomi",
+    "image": "/images/products/cases/fabric-case.jpeg",
+    "description": "The Xiaomi Fabric Case offers soft-touch protection with modern fabric texture and shock resistance."
+  },
+  {
+    "id": 180,
+    "name": "Samsung Clear Glass",
+    "category": "glass",
+    "price": 1500,
+    "brand": "Samsung",
+    "image": "/images/products/glass/oneplus-tempered-glass.png",
+    "description": "Samsung Clear Glass protects against scratches and maintains screen clarity."
+  },
+  {
+    "id": 181,
+    "name": "Apple MFi Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "/images/products/cables/mfi-cable.webp",
+    "description": "Apple MFi Certified Cable ensures compatibility and fast charging for all Apple devices."
+  },
+  {
+    "id": 182,
+    "name": "Spigen Compact Charger",
+    "category": "adapter",
+    "price": 3500,
+    "brand": "Spigen",
+    "image": "/images/products/adapters/compact-adapter.webp",
+    "description": "Spigen Compact Charger is lightweight and efficient, perfect for travel and home use."
+  },
+  {
+    "id": 183,
+    "name": "OnePlus Frosted Case",
+    "category": "case",
+    "price": 1500,
+    "brand": "OnePlus",
+    "image": "/images/products/cases/frosted-case.jpeg",
+    "description": "The OnePlus Frosted Case offers strong grip and frosted transparency for a sleek look."
+  },
+  {
+    "id": 184,
+    "name": "Baseus Anti-Spy Glass",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Baseus",
+    "image": "/images/products/glass/anti-spy-glass.webp",
+    "description": "Keep your screen safe and private with Baseus Anti-Spy Tempered Glass."
+  },
+  {
+    "id": 185,
+    "name": "Anker Nylon USB-C",
+    "category": "cable",
+    "price": 1500,
+    "brand": "Anker",
+    "image": "/images/products/cables/anker-usbc-cable.webp",
+    "description": "Anker’s durable nylon cable supports fast charging and long-lasting performance."
+  },
+  {
+    "id": 186,
+    "name": "Xiaomi PD Charger",
+    "category": "adapter",
+    "price": 4000,
+    "brand": "Xiaomi",
+    "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "description": "Xiaomi Power Delivery Charger offers efficient charging for Type-C devices."
+  },
+  {
+    "id": 187,
+    "name": "Samsung Silicone Grip Case",
+    "category": "case",
+    "price": 3000,
+    "brand": "Samsung",
+    "image": "/images/products/cases/samsung-silicone-grip-case.webp",
+    "description": "Protect your phone with Samsung’s grip-friendly silicone case."
+  },
+  {
+    "id": 188,
+    "name": "Apple Anti-Glare Glass",
+    "category": "glass",
+    "price": 2000,
+    "brand": "Apple",
+    "image": "/images/products/glass/apple-antiglare-glass.jpeg",
+    "description": "Apple Anti-Glare Glass reduces reflections while protecting from scratches."
+  },
+  {
+    "id": 189,
+    "name": "OnePlus Warp Cable",
+    "category": "cable",
+    "price": 2000,
+    "brand": "OnePlus",
+    "image": "/images/products/cables/oneplus-warp-cable.webp",
+    "description": "OnePlus Warp Charge Cable supports ultra-fast charging for compatible devices."
+  },
+  {
+    "id": 190,
+    "name": "Spigen USB PD Adapter",
+    "category": "adapter",
+    "price": 22.95,
+    "brand": "Spigen",
+    "image": "https://example.com/images/adapter-90.jpg",
+    "description": "Spigen’s PD Adapter charges your devices with power and efficiency."
+  },
+  {
+    "id": 191,
+    "name": "Baseus Leather Back Case",
+    "category": "case",
+    "price": 15.20,
+    "brand": "Baseus",
+    "image": "https://example.com/images/case-91.jpg",
+    "description": "Premium leather texture and drop protection from Baseus."
+  },
+  {
+    "id": 192,
+    "name": "Anker Matte Screen Guard",
+    "category": "glass",
+    "price": 13.55,
+    "brand": "Anker",
+    "image": "https://example.com/images/glass-92.jpg",
+    "description": "Matte finish screen protector that resists fingerprints and glare."
+  },
+  {
+    "id": 193,
+    "name": "Xiaomi Braided Type-C",
+    "category": "cable",
+    "price": 11.60,
+    "brand": "Xiaomi",
+    "image": "https://example.com/images/cable-93.jpg",
+    "description": "Xiaomi Braided Cable ensures reliable power with tangle-free usage."
+  },
+  {
+    "id": 194,
+    "name": "Apple Compact Wall Adapter",
+    "category": "adapter",
+    "price": 19.00,
+    "brand": "Apple",
+    "image": "https://example.com/images/adapter-94.jpg",
+    "description": "Apple's compact wall charger offers optimized power delivery for all devices."
+  },
+  {
+    "id": 195,
+    "name": "Spigen Grip Armor Case",
+    "category": "case",
+    "price": 17.89,
+    "brand": "Spigen",
+    "image": "https://example.com/images/case-95.jpg",
+    "description": "Spigen’s rugged armor case provides superior drop protection and grip."
+  },
+  {
+    "id": 196,
+    "name": "Baseus Ultra Clear Glass",
+    "category": "glass",
+    "price": 12.95,
+    "brand": "Baseus",
+    "image": "https://example.com/images/glass-96.jpg",
+    "description": "Crystal-clear visibility and strong protection for your display."
+  },
+  {
+    "id": 197,
+    "name": "OnePlus Silicone Cable",
+    "category": "cable",
+    "price": 13.70,
+    "brand": "OnePlus",
+    "image": "https://example.com/images/cable-97.jpg",
+    "description": "Soft, durable silicone cable with fast charging support."
+  },
+  {
+    "id": 198,
+    "name": "Samsung Wireless Adapter",
+    "category": "adapter",
+    "price": 24.10,
+    "brand": "Samsung",
+    "image": "https://example.com/images/adapter-98.jpg",
+    "description": "Wireless charging pad and adapter in one compact package."
+  },
+  {
+    "id": 199,
+    "name": "Anker Slim Shell Case",
+    "category": "case",
+    "price": 15.35,
+    "brand": "Anker",
+    "image": "https://example.com/images/case-99.jpg",
+    "description": "Slim, protective shell case with ergonomic grip design."
+  },
+  {
+    "id": 200,
+    "name": "Xiaomi HD Screen Guard",
+    "category": "glass",
+    "price": 13.30,
+    "brand": "Xiaomi",
+    "image": "https://example.com/images/glass-100.jpg",
+    "description": "Xiaomi HD Screen Guard provides ultra-clear viewing and superior scratch resistance."
+  }
+]
