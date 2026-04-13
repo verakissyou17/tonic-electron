@@ -804,99 +804,99 @@
     "id": 190,
     "name": "Spigen USB PD Adapter",
     "category": "adapter",
-    "price": 22.95,
+    "price": 3500,
     "brand": "Spigen",
-    "image": "https://example.com/images/adapter-90.jpg",
-    "description": "Spigen’s PD Adapter charges your devices with power and efficiency."
+    "image": "/images/products/adapters/spigen-usb-pd-adapter.webp",
+    "description": "Spigen's PD Adapter charges your devices with power and efficiency."
   },
   {
     "id": 191,
     "name": "Baseus Leather Back Case",
     "category": "case",
-    "price": 15.20,
+    "price": 3000,
     "brand": "Baseus",
-    "image": "https://example.com/images/case-91.jpg",
+    "image": "/images/products/cases/baseus-leather-back-case.webp",
     "description": "Premium leather texture and drop protection from Baseus."
   },
   {
     "id": 192,
     "name": "Anker Matte Screen Guard",
     "category": "glass",
-    "price": 13.55,
+    "price": 2000,
     "brand": "Anker",
-    "image": "https://example.com/images/glass-92.jpg",
+    "image": "/images/products/glass/anker-matte-screen-guard.webp",
     "description": "Matte finish screen protector that resists fingerprints and glare."
   },
   {
     "id": 193,
     "name": "Xiaomi Braided Type-C",
     "category": "cable",
-    "price": 11.60,
+    "price": 2000,
     "brand": "Xiaomi",
-    "image": "https://example.com/images/cable-93.jpg",
+    "image": "/images/products/cables/xiaomi-braided-type-c.webp",
     "description": "Xiaomi Braided Cable ensures reliable power with tangle-free usage."
   },
   {
     "id": 194,
     "name": "Apple Compact Wall Adapter",
     "category": "adapter",
-    "price": 19.00,
+    "price": 3000,
     "brand": "Apple",
-    "image": "https://example.com/images/adapter-94.jpg",
+    "image": "/images/products/adapters/apple-compact-wall-adapter.webp",
     "description": "Apple's compact wall charger offers optimized power delivery for all devices."
   },
   {
     "id": 195,
     "name": "Spigen Grip Armor Case",
     "category": "case",
-    "price": 17.89,
+    "price": 2500,
     "brand": "Spigen",
-    "image": "https://example.com/images/case-95.jpg",
+    "image": "/images/products/cases/spigen-grip-armor-case.webp",
     "description": "Spigen’s rugged armor case provides superior drop protection and grip."
   },
   {
     "id": 196,
     "name": "Baseus Ultra Clear Glass",
     "category": "glass",
-    "price": 12.95,
+    "price": 1500,
     "brand": "Baseus",
-    "image": "https://example.com/images/glass-96.jpg",
+    "image": "/images/products/glass/baseus-ultra-clear-glass.webp",
     "description": "Crystal-clear visibility and strong protection for your display."
   },
   {
     "id": 197,
     "name": "OnePlus Silicone Cable",
     "category": "cable",
-    "price": 13.70,
+    "price": 1500,
     "brand": "OnePlus",
-    "image": "https://example.com/images/cable-97.jpg",
+    "image": "/images/products/cables/oneplus-silicone-cable.webp",
     "description": "Soft, durable silicone cable with fast charging support."
   },
   {
     "id": 198,
     "name": "Samsung Wireless Adapter",
     "category": "adapter",
-    "price": 24.10,
+    "price": 4000,
     "brand": "Samsung",
-    "image": "https://example.com/images/adapter-98.jpg",
+    "image": "/images/products/adapters/samsung-wireless-adapter.webp",
     "description": "Wireless charging pad and adapter in one compact package."
   },
   {
     "id": 199,
     "name": "Anker Slim Shell Case",
     "category": "case",
-    "price": 15.35,
+    "price": 1500,
     "brand": "Anker",
-    "image": "https://example.com/images/case-99.jpg",
+    "image": "/images/products/cases/anker-slim-shell-case.jpeg",
     "description": "Slim, protective shell case with ergonomic grip design."
   },
   {
     "id": 200,
     "name": "Xiaomi HD Screen Guard",
     "category": "glass",
-    "price": 13.30,
+    "price": 1500,
     "brand": "Xiaomi",
-    "image": "https://example.com/images/glass-100.jpg",
+    "image": "/images/products/glass/xiaomi-hd-screen-guard.webp",
     "description": "Xiaomi HD Screen Guard provides ultra-clear viewing and superior scratch resistance."
   }
 ]
