@@ -1,6 +1,6 @@
 import { HomeMainStyled } from "../styles/HomeMain.styled";
 
-function HomeMain({ products }) {
+function HomeMain({ products, quantity, increaseQuantity, decreaseQuantity }) {
   return (
     <HomeMainStyled>
       {products.map((product) => {
@@ -17,9 +17,13 @@ function HomeMain({ products }) {
             <p className="product-description">{product.description}</p>
             <div className="product-add-to-cart-container">
               <div className="product-quantities">
-                <span className="decrement-quantity">-</span>
-                <span>0</span>
-                <span className="increment-quantity">+</span>
+                <span className="decrement-quantity" onClick={decreaseQuantity}>
+                  -
+                </span>
+                <span>{quantity}</span>
+                <span className="increment-quantity" onClick={increaseQuantity}>
+                  +
+                </span>
               </div>
               <button className="add-cart-btn">
                 <img

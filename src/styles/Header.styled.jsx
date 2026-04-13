@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
-  background-color: #060606;
-  padding: clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: clamp(1rem, 0.648rem + 1.502vw, 2rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-shadow: 0 0 10px rgba(7, 207, 238, 0.4);
 
   .btn-visible {
     border: none;
@@ -16,7 +17,7 @@ export const HeaderStyled = styled.header`
   }
 
   .hamburger {
-    color: rgb(7, 207, 238);
+    color: white;
   }
 
   .hidden {
@@ -26,20 +27,19 @@ export const HeaderStyled = styled.header`
   .nav-shown {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100vh;
-    width: 50%;
-    height: 100vh;
-    background-color: #292828;
+    width: 55%;
+    padding: 1rem;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding: 2rem;
+    gap: 1rem;
+    background: linear-gradient(135deg, #0b1320, #1c2a3a);
 
     .close-nav {
       background-color: transparent;
-      color: rgb(7, 207, 238);
+      color: white;
       margin-bottom: 1rem;
       align-self: flex-end;
     }
@@ -61,7 +61,7 @@ export const StyledLink = styled(Link)`
   gap: 1rem;
 
   .logo {
-    height: clamp(1.5rem, 0.268rem + 5.258vw, 5rem);
+    height: clamp(1rem, 0.296rem + 3.005vw, 3rem);
     animation: logo-spin infinite 10s linear;
   }
 
@@ -81,9 +81,7 @@ export const StyledLink = styled(Link)`
   h1 {
     text-transform: uppercase;
     color: rgb(7, 207, 238);
-    font-size: clamp(1.5rem, 0.268rem + 5.258vw, 5rem);
+    font-size: clamp(1rem, 0.296rem + 3.005vw, 3rem);
     line-height: 1;
   }
 `;
-
-

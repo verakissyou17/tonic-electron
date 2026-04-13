@@ -1,10 +1,12 @@
-import{Routes, Route} from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
-import ProductsPage from './pages/ProductsPage';
+import ProductsPage from "./pages/ProductsPage";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [quantity, setQuantity] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -20,17 +22,45 @@ function App() {
     fetchData();
   }, []);
 
+  const increaseQuantity = () => {
+    if(quantity > 1000) return;
+    setQuantity((prev) => (prev += 1));
+  };
 
-  return (<>
-  <Routes>
-    <Route path='/' element={<Home products={products} />} />
-      <Route
-        path="/category/:category"
-        element={<ProductsPage products={products} />}
-      />
-  </Routes>
+  const decreaseQuantity = () => {
+    if(quantity <= 0) return;
+    setQuantity((prev) => (prev -= 1));
+  };
 
-  </>);
+  return (
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              products={products}
+              quantity={quantity}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
+          }
+        />
+        <Route
+          path="/category/:category"
+          element={
+            <ProductsPage
+              products={products}
+              quantity={quantity}
+              increaseQuantity={increaseQuantity}
+              decreaseQuantity={decreaseQuantity}
+            />
+          }
+        />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;

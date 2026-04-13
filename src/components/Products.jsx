@@ -1,6 +1,11 @@
 import { HomeMainStyled } from "../styles/HomeMain.styled";
 
-function Products({ filteredProducts }) {
+function Products({
+  filteredProducts,
+  quantity,
+  increaseQuantity,
+  decreaseQuantity,
+}) {
   return (
     <HomeMainStyled>
       {filteredProducts.map((product) => {
@@ -17,9 +22,13 @@ function Products({ filteredProducts }) {
             <p className="product-description">{product.description}</p>
             <div className="product-add-to-cart-container">
               <div className="product-quantities">
-                <span className="decrement-quantity">-</span>
-                <span>0</span>
-                <span className="increment-quantity">+</span>
+                <span className="decrement-quantity" onClick={decreaseQuantity}>
+                  -
+                </span>
+                <span>{quantity}</span>
+                <span className="increment-quantity" onClick={increaseQuantity}>
+                  +
+                </span>
               </div>
               <button className="add-cart-btn">
                 <img

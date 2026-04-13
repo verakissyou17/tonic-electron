@@ -1,20 +1,33 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Header from "../components/Header";
 import Products from "../components/Products";
 
-function ProductsPage({products}) {
+
+function ProductsPage({
+  products,
+  quantity,
+  increaseQuantity,
+  decreaseQuantity,
+}) {
   const { category } = useParams();
 
-    const filteredProducts = products.filter(
-    product => product.category === category
+  const filteredProducts = products.filter(
+    (product) => product.category === category,
   );
 
-  if(!filteredProducts) return;
-
+ if (!filteredProducts.length) {
+  return <Navigate to="*" />
+ };
+  
   return (
     <>
       <Header />
-      <Products filteredProducts={filteredProducts} />
+      <Products
+        filteredProducts={filteredProducts}
+        quantity={quantity}
+        increaseQuantity={increaseQuantity}
+        decreaseQuantity={decreaseQuantity}
+      />
     </>
   );
 }
