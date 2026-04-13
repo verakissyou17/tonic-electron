@@ -1,11 +1,55 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import reactLogo from "../assets/react.svg";
-import { HeaderStyled } from "../styles/Header.styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { HeaderStyled, StyledLink } from "../styles/Header.styled";
 
 function Header() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const showNav = () => {
+    setIsVisible((prev) => !prev);
+  };
   return (
     <HeaderStyled>
-      <img src={reactLogo} className="logo react" alt="React logo" />
-      <h1>Tonic Electron</h1>
+      <StyledLink to="/">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+        <h1>Tonic Electron</h1>
+      </StyledLink>
+      <button
+        onClick={showNav}
+        className={isVisible ? "btn-visible" : "hidden"}
+      >
+        <FontAwesomeIcon icon={faBars} className="hamburger" />
+      </button>
+      <nav className={isVisible ? "hidden" : "nav-shown"}>
+        <button onClick={showNav} className="close-nav">
+          <FontAwesomeIcon icon={faXmark} />
+        </button>
+        <ul>
+          <li>
+            <Link to="/category/glass" className="header-link">
+              Glasses
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/adapter" className="header-link">
+              Adapters
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/cable" className="header-link">
+              Cables
+            </Link>
+          </li>
+          <li>
+            <Link to="/category/case" className="header-link">
+              Cases
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </HeaderStyled>
   );
 }

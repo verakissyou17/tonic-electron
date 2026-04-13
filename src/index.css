@@ -26,3 +26,8 @@ img, svg {
   object-fit: cover;
 }
 
+ul {
+  list-style: none;
+}
+
+
