@@ -1,6 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { HomeMainStyled } from "../styles/HomeMain.styled";
 
-function HomeMain({ products, quantity, increaseQuantity, decreaseQuantity }) {
+function HomeMain({
+  products,
+  quantity,
+  increaseQuantity,
+  decreaseQuantity,
+  cart,
+  addToCart,
+}) {
+  console.log(cart);
   return (
     <HomeMainStyled>
       {products.map((product) => {
@@ -17,20 +27,26 @@ function HomeMain({ products, quantity, increaseQuantity, decreaseQuantity }) {
             <p className="product-description">{product.description}</p>
             <div className="product-add-to-cart-container">
               <div className="product-quantities">
-                <span className="decrement-quantity" onClick={decreaseQuantity}>
+                <span
+                  className="decrement-quantity"
+                  onClick={() => decreaseQuantity(product.id)}
+                >
                   -
                 </span>
-                <span>{quantity}</span>
-                <span className="increment-quantity" onClick={increaseQuantity}>
+                <span>{quantity[product.id] || 0}</span>
+                <span
+                  className="increment-quantity"
+                  onClick={() => increaseQuantity(product.id)}
+                >
                   +
                 </span>
               </div>
-              <button className="add-cart-btn">
-                <img
-                  src="/images/shopping-cart.svg"
-                  alt="shopping-cart"
-                  className="cart-icon"
-                />
+
+              <button
+                className="add-cart-btn"
+                onClick={() => addToCart(product.id, quantity[product.id] || 0)}
+              >
+               <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
               </button>
             </div>
           </section>

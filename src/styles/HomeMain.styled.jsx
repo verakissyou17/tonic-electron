@@ -73,8 +73,7 @@ export const HomeMainStyled = styled.main`
 
   .increment-quantity:hover,
   .decrement-quantity:hover {
-    background-color: green;
-    color: #fff;
+    background-color: #07cfee;
     cursor: pointer;
   }
 
@@ -85,6 +84,11 @@ export const HomeMainStyled = styled.main`
     box-shadow: 3px 3px 2px #454545;
     display: grid;
     place-content: center;
+  }
+
+  .cart-icon {
+    font-size: 2rem;
+    color: white;
   }
 
   .add-cart-btn:hover,

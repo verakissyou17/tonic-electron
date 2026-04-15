@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 82%);
+ background: linear-gradient(180deg, #f6fbff, #eef6ff);
 }
 
 a {

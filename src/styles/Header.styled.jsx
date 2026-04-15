@@ -53,6 +53,29 @@ export const HeaderStyled = styled.header`
       }
     }
   }
+
+  .cart-container {
+    position: relative;
+
+    .cart-icon {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .cart-quantity {
+      position: absolute;
+      top: 0;
+      left: 25%;
+      width: 1.2rem;
+      height: 1.2rem;
+      transform: translateY(-95%);
+      display: grid;
+      place-content: center;
+      color: white;
+      background-color: green;
+      border-radius: 50%;
+    }
+  }
 `;
 
 export const StyledLink = styled(Link)`

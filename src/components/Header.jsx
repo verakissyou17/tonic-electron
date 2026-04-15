@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { HeaderStyled, StyledLink } from "../styles/Header.styled";
 
-function Header() {
+function Header({totalQuantity}) {
   const [isVisible, setIsVisible] = useState(true);
 
   const showNav = () => {
@@ -14,6 +14,16 @@ function Header() {
 
   return (
     <HeaderStyled>
+      <button
+        onClick={showNav}
+        className={isVisible ? "btn-visible" : "hidden"}
+      >
+        <FontAwesomeIcon icon={faBars} className="hamburger" />
+      </button>
+      <StyledLink to="/">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+        <h1>Tonic Electron</h1>
+      </StyledLink>
       <nav className={isVisible ? "hidden" : "nav-shown"}>
         <button onClick={showNav} className="close-nav">
           <FontAwesomeIcon icon={faXmark} />
@@ -53,22 +63,9 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <button
-        onClick={showNav}
-        className={isVisible ? "btn-visible" : "hidden"}
-      >
-        <FontAwesomeIcon icon={faBars} className="hamburger" />
-      </button>
-      <StyledLink to="/">
-        <img src={reactLogo} className="logo react" alt="React logo" />
-        <h1>Tonic Electron</h1>
-      </StyledLink>
-      <div className="image-container">
-        <img
-          src="/images/shopping-cart.svg"
-          alt="shopping-cart"
-          className="cart-icon"
-        />
+      <div className="cart-container">
+        <span className="cart-quantity">{totalQuantity}</span>
+       <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
       </div>
     </HeaderStyled>
   );
