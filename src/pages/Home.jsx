@@ -5,11 +5,13 @@ import HomeMain from "../components/HomeMain";
 function Home({
   products,
   quantity,
+  setQuantity,
   increaseQuantity,
   decreaseQuantity,
   cart,
   addToCart,
-  totalQuantity
+  totalQuantity,
+  deleteFromCart,
 }) {
   const { category } = useParams();
   const categories = [...new Set(products.map((p) => p.category))];
@@ -23,10 +25,16 @@ function Home({
 
   return (
     <>
-      <Header totalQuantity={totalQuantity} />
+      <Header
+        deleteFromCart={deleteFromCart}
+        products={products}
+        cart={cart}
+        totalQuantity={totalQuantity}
+      />
       <HomeMain
         products={filteredProducts}
         quantity={quantity}
+        setQuantity={setQuantity}
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
         cart={cart}

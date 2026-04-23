@@ -1,902 +1,902 @@
 [
   {
-    "id": 101,
+    "id": "101",
     "name": "Husa transparenta Iphone 16 Pro Max",
     "category": "case",
     "price": 1500,
     "brand": "Apple",
     "image": "/images/products/cases/transparent-iphone-case.webp",
-    "description": "The Apple Transparent Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa transparentă Apple oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 102,
+    "id": "102",
     "name": "Sticla transparenta Edge Samsung A56",
     "category": "glass",
     "price": 1500,
     "brand": "Samsung",
     "image": "/images/products/glass/edge-transparent-glass.jpeg",
-    "description": "The Samsung Edge-to-Edge Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla Samsung Edge-to-Edge asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 103,
+    "id": "103",
     "name": "Anker USB-C Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Anker",
     "image": "/images/products/cables/anker-usbc-cable.webp",
-    "description": "The Anker USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul USB-C Anker oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 104,
+    "id": "104",
     "name": "Spigen USB Wall Adapter",
     "category": "adapter",
     "price": 4000,
     "brand": "Spigen",
     "image": "/images/products/adapters/spigen-black-adaptor.webp",
-    "description": "The Spigen USB Wall Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul de perete USB Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs. mobile."
   },
   {
-    "id": 105,
+    "id": "105",
     "name": "Baseus Leather Case",
     "category": "case",
     "price": 3000,
     "brand": "Baseus",
     "image": "/images/products/cases/baseus-leather-case.jpeg",
-    "description": "The Baseus Leather Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din piele Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 106,
+    "id": "106",
     "name": "OnePlus Tempered Glass",
     "category": "glass",
     "price": 1500,
     "brand": "OnePlus",
     "image": "/images/products/glass/oneplus-tempered-glass.png",
-    "description": "The OnePlus Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla securizată OnePlus asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 107,
+    "id": "107",
     "name": "Xiaomi Fast Charging Cable",
     "category": "cable",
     "price": 3000,
     "brand": "Xiaomi",
     "image": "/images/products/cables/fast-charging-cable.webp",
-    "description": "The Xiaomi Fast Charging Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul de încărcare rapidă Xiaomi oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
-    "id": 108,
+    "id": "108",
     "name": "Spigen Car Charger",
     "category": "adapter",
     "price": 2500,
     "brand": "Spigen",
     "image": "/images/products/car-chargers/spigen-car-charger.webp",
-    "description": "The Spigen Car Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul auto Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs. mobile."
   },
   {
-    "id": 109,
+    "id": "109",
     "name": "Samsung Rugged Case",
     "category": "case",
     "price": 2000,
     "brand": "Samsung",
     "image": "/images/products/cases/samsung-rugged-case.webp",
-    "description": "The Samsung Rugged Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa rezistentă Samsung oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 110,
+    "id": "110",
     "name": "Iphone 16 Pro Privacy Glass",
     "category": "glass",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/glass/iphone-privacy-glass.webp",
-    "description": "The Apple Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla de confidențialitate Apple asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 111,
+    "id": "111",
     "name": "Baseus Lightning Cable",
     "category": "cable",
-    "price": 20000,
+    "price": 2000,
     "brand": "Baseus",
     "image": "/images/products/cables/baseus-lightning-cable.webp",
-    "description": "The Baseus Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Lightning Baseus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 112,
+    "id": "112",
     "name": "OnePlus Multiport Adapter",
     "category": "adapter",
     "price": 1500,
     "brand": "OnePlus",
     "image": "/images/products/adapters/multihub-oneplus.webp",
-    "description": "The OnePlus Multiport Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul multiport OnePlus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 113,
+    "id": "113",
     "name": "Xiaomi Leather Case",
     "category": "case",
     "price": 3500,
     "brand": "Xiaomi",
     "image": "/images/products/cases/xiaomi-leather-case.webp",
-    "description": "The Xiaomi Leather Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din piele Xiaomi oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 114,
+    "id": "114",
     "name": "Spigen Edge-to-Edge Glass",
     "category": "glass",
     "price": 2500,
     "brand": "Spigen",
     "image": "/images/products/glass/full-cover-glass.webp",
-    "description": "The Spigen Edge-to-Edge Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla Spigen Edge-to-Edge asigură protecție cristalină și rezistență la zgârieturi pe toată suprafața."
   },
   {
-    "id": 115,
+    "id": "115",
     "name": "Cablu de date Lightning la USB-C",
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/cables/cablu-lighting-usbc-white.webp",
-    "description": "The Apple Micro USB Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Apple Lightning la USB-C oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
-    "id": 116,
+    "id": "116",
     "name": "Samsung Wireless Charger",
     "category": "adapter",
     "price": 27.99,
     "brand": "Samsung",
     "image": "/images/products/adapters/samsung-wireless-charging-suport.webp",
-    "description": "The Samsung Wireless Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul wireless Samsung oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 117,
+    "id": "117",
     "name": "Baseus Transparent Case",
     "category": "case",
     "price": 1500,
     "brand": "Baseus",
     "image": "/images/products/cases/baseus-transparent-case.jpeg",
-    "description": "The Baseus Transparent Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa transparentă Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 118,
+    "id": "118",
     "name": "Anker Privacy Glass",
     "category": "glass",
     "price": 2000,
     "brand": "Anker",
     "image": "/images/products/glass/anker-privacy-glass.jpeg",
-    "description": "The Anker Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla de confidențialitate Anker asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 119,
+    "id": "119",
     "name": "OnePlus Fast Charging Cable",
     "category": "cable",
     "price": 1500,
     "brand": "OnePlus",
     "image": "/images/products/cables/one-plus-fast-charging-cable.webp",
-    "description": "The OnePlus Fast Charging Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul de încărcare rapidă OnePlus oferă transfer rapid și fiabil cu izolație de înaltă calitate."
   },
   {
-    "id": 120,
+    "id": "120",
     "name": "Xiaomi USB Wall Adapter",
     "category": "adapter",
     "price": 5000,
     "brand": "Xiaomi",
     "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
-    "description": "The Xiaomi USB Wall Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul de perete USB Xiaomi oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 121,
+    "id": "121",
     "name": "Spigen Rugged Case",
     "category": "case",
     "price": 2000,
     "brand": "Spigen",
     "image": "/images/products/cases/spigen-rugged-case.jpeg",
-    "description": "The Spigen Rugged Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa rezistentă Spigen oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 122,
+    "id": "122",
     "name": "Apple Tempered Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Apple",
     "image": "/images/products/glass/apple-tempered-glass.jpeg",
-    "description": "The Apple Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla securizată Apple asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 123,
+    "id": "123",
     "name": "Baseus USB-C Cable",
     "category": "cable",
     "price": 1500,
     "brand": "Baseus",
     "image": "/images/products/cables/anker-usbc-cable.webp",
-    "description": "The Baseus USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul USB-C Baseus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 124,
+    "id": "124",
     "name": "Anker Car Charger",
     "category": "adapter",
     "price": 2500,
     "brand": "Anker",
     "image": "/images/products/car-chargers/baseus-car-charger.webp",
-    "description": "The Anker Car Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul auto Anker oferă livrare de putere sigură și eficientă pentru dispozitivele dvs. mobile."
   },
   {
-    "id": 125,
+    "id": "125",
     "name": "Samsung Silicone Case",
     "category": "case",
     "price": 1500,
     "brand": "Samsung",
     "image": "/images/products/cases/samsung-rugged-case.webp",
-    "description": "The Samsung Silicone Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din silicon Samsung oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 126,
+    "id": "126",
     "name": "Anker Screen Protector",
     "category": "glass",
     "price": 2000,
     "brand": "Anker",
     "image": "/images/products/glass/anker-privacy-glass.jpeg",
-    "description": "The Anker Screen Protector ensures crystal-clear display protection and resistance against scratches."
+    "description": "Protectorul de ecran Anker asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 127,
+    "id": "127",
     "name": "Apple Lightning Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/cables/baseus-lightning-cable.webp",
-    "description": "The Apple Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Lightning Apple oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 128,
+    "id": "128",
     "name": "Samsung Multiport Adapter",
     "category": "adapter",
     "price": 3000,
     "brand": "Samsung",
     "image": "/images/products/adapters/multihub-oneplus.webp",
-    "description": "The Samsung Multiport Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul multiport Samsung oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 129,
+    "id": "129",
     "name": "OnePlus Silicone Case",
     "category": "case",
     "price": 1700,
     "brand": "OnePlus",
     "image": "/images/products/cases/transparent-iphone-case.webp",
-    "description": "The OnePlus Silicone Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din silicon OnePlus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 130,
+    "id": "130",
     "name": "Xiaomi Edge-to-Edge Glass",
     "category": "glass",
     "price": 2500,
     "brand": "Xiaomi",
     "image": "/images/products/glass/edge-transparent-glass.jpeg",
-    "description": "The Xiaomi Edge-to-Edge Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla Xiaomi Edge-to-Edge asigură protecție cristalină și rezistență la zgârieturi pe toată suprafața."
   },
   {
-    "id": 131,
+    "id": "131",
     "name": "Spigen Fast Charging Cable",
     "category": "cable",
     "price": 2500,
     "brand": "Spigen",
     "image": "/images/products/cables/fast-charging-cable.webp",
-    "description": "The Spigen Fast Charging Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul de încărcare rapidă Spigen oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
-    "id": 132,
+    "id": "132",
     "name": "Baseus USB Wall Adapter",
     "category": "adapter",
     "price": 3500,
     "brand": "Baseus",
     "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
-    "description": "The Baseus USB Wall Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul de perete USB Baseus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 133,
+    "id": "133",
     "name": "Apple Leather Case",
     "category": "case",
     "price": 3000,
     "brand": "Apple",
     "image": "/images/products/cases/baseus-leather-case.jpeg",
-    "description": "The Apple Leather Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din piele Apple oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 134,
+    "id": "134",
     "name": "Samsung Privacy Glass",
     "category": "glass",
     "price": 2000,
     "brand": "Samsung",
     "image": "/images/products/glass/iphone-privacy-glass.webp",
-    "description": "The Samsung Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla de confidențialitate Samsung asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 135,
+    "id": "135",
     "name": "Anker Micro USB Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Anker",
     "image": "/images/products/cables/cablu-lighting-usbc-white.webp",
-    "description": "The Anker Micro USB Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Micro USB Anker oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 136,
+    "id": "136",
     "name": "OnePlus Car Charger",
     "category": "adapter",
     "price": 4500,
     "brand": "OnePlus",
     "image": "/images/products/car-chargers/baseus-car-charger.webp",
-    "description": "The OnePlus Car Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul auto OnePlus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 137,
+    "id": "137",
     "name": "Xiaomi Transparent Case",
     "category": "case",
     "price": 2000,
     "brand": "Xiaomi",
     "image": "/images/products/cases/samsung-transparent-case.jpeg",
-    "description": "The Xiaomi Transparent Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa transparentă Xiaomi oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 138,
+    "id": "138",
     "name": "Spigen Tempered Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Spigen",
     "image": "/images/products/glass/edge-transparent-glass.jpeg",
-    "description": "The Spigen Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla securizată Spigen asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 139,
+    "id": "139",
     "name": "Baseus USB-C Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Baseus",
     "image": "/images/products/cables/cablu-lighting-usbc-white.webp",
-    "description": "The Baseus USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul USB-C Baseus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 140,
+    "id": "140",
     "name": "Anker Wireless Charger",
     "category": "adapter",
     "price": 4500,
     "brand": "Anker",
     "image": "/images/products/adapters/samsung-wireless-charging-suport.webp",
-    "description": "The Anker Wireless Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul wireless Anker oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 141,
+    "id": "141",
     "name": "Spigen Silicone Case",
     "category": "case",
     "price": 1500,
     "brand": "Spigen",
     "image": "/images/products/cases/samsung-transparent-case.jpeg",
-    "description": "The Spigen Silicone Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din silicon Spigen oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 142,
+    "id": "142",
     "name": "OnePlus Screen Protector",
     "category": "glass",
     "price": 1500,
     "brand": "OnePlus",
     "image": "/images/products/glass/edge-transparent-glass.jpeg",
-    "description": "The OnePlus Screen Protector ensures crystal-clear display protection and resistance against scratches."
+    "description": "Protectorul de ecran OnePlus asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 143,
+    "id": "143",
     "name": "Samsung Lightning Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Samsung",
     "image": "/images/products/cables/baseus-lightning-cable.webp",
-    "description": "The Samsung Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Lightning Samsung oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 144,
+    "id": "144",
     "name": "Baseus Multiport Adapter",
     "category": "adapter",
     "price": 3500,
     "brand": "Baseus",
     "image": "/images/products/adapters/multihub-oneplus.webp",
-    "description": "The Baseus Multiport Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul multiport Baseus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 145,
+    "id": "145",
     "name": "Apple Rugged Case",
     "category": "case",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/cases/samsung-rugged-case.webp",
-    "description": "The Apple Rugged Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa rezistentă Apple oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 146,
+    "id": "146",
     "name": "Xiaomi Privacy Glass",
     "category": "glass",
     "price": 2000,
     "brand": "Xiaomi",
     "image": "/images/products/glass/anker-privacy-glass.jpeg",
-    "description": "The Xiaomi Privacy Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla de confidențialitate Xiaomi asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 147,
+    "id": "147",
     "name": "OnePlus Lightning Cable",
     "category": "cable",
     "price": 2000,
     "brand": "OnePlus",
     "image": "/images/products/cables/baseus-lightning-cable.webp",
-    "description": "The OnePlus Lightning Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Lightning OnePlus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 148,
+    "id": "148",
     "name": "Spigen Car Charger",
     "category": "adapter",
     "price": 3000,
     "brand": "Spigen",
     "image": "/images/products/car-chargers/baseus-car-charger.webp",
-    "description": "The Spigen Car Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul auto Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 149,
+    "id": "149",
     "name": "Anker Transparent Case",
     "category": "case",
     "price": 1500,
     "brand": "Anker",
     "image": "/images/products/cases/transparent-iphone-case.webp",
-    "description": "The Anker Transparent Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa transparentă Anker oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 150,
+    "id": "150",
     "name": "Baseus Tempered Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Baseus",
     "image": "/images/products/glass/edge-transparent-glass.jpeg",
-    "description": "The Baseus Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla securizată Baseus asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 151,
+    "id": "151",
     "name": "Samsung Leather Case",
     "category": "case",
     "price": 2500,
     "brand": "Samsung",
     "image": "/images/products/cases/baseus-leather-case.jpeg",
-    "description": "The Samsung Leather Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din piele Samsung oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 152,
+    "id": "152",
     "name": "Xiaomi Edge Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
     "image": "/images/products/glass/edge-transparent-glass.jpeg",
-    "description": "The Xiaomi Edge Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla Edge Xiaomi asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 153,
+    "id": "153",
     "name": "Apple Fast Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/cables/one-plus-fast-charging-cable.webp",
-    "description": "The Apple Fast Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul de încărcare rapidă Apple oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
-    "id": 154,
+    "id": "154",
     "name": "OnePlus Wall Adapter",
     "category": "adapter",
     "price": 4000,
     "brand": "OnePlus",
     "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
-    "description": "The OnePlus Wall Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul de perete OnePlus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 155,
+    "id": "155",
     "name": "Spigen Slim Case",
     "category": "case",
     "price": 1500,
     "brand": "Spigen",
     "image": "/images/products/cases/samsung-transparent-case.jpeg",
-    "description": "The Spigen Slim Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa subțire Spigen oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 156,
+    "id": "156",
     "name": "Baseus Full Glass Protector",
     "category": "glass",
     "price": 2000,
     "brand": "Baseus",
     "image": "/images/products/glass/full-cover-glass.webp",
-    "description": "The Baseus Full Glass Protector ensures crystal-clear display protection and resistance against scratches."
+    "description": "Protectorul de sticlă complet Baseus asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 157,
+    "id": "157",
     "name": "Anker PowerLine USB-C",
     "category": "cable",
     "price": 1500,
     "brand": "Anker",
     "image": "/images/products/cables/anker-usbc-cable.webp",
-    "description": "The Anker PowerLine USB-C delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul PowerLine USB-C Anker oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate."
   },
   {
-    "id": 158,
+    "id": "158",
     "name": "Samsung Travel Adapter",
     "category": "adapter",
     "price": 2500,
     "brand": "Samsung",
     "image": "/images/products/adapters/samsung-travel-adapter.webp",
-    "description": "The Samsung Travel Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul de călătorie Samsung oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 159,
+    "id": "159",
     "name": "Xiaomi Silicone Case",
     "category": "case",
     "price": 1500,
     "brand": "Xiaomi",
     "image": "/images/products/cases/xiaomi-silicone-case.webp",
-    "description": "The Xiaomi Silicone Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa din silicon Xiaomi oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 160,
+    "id": "160",
     "name": "Apple Screen Guard",
     "category": "glass",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/glass/apple-screen-guard.jpeg",
-    "description": "The Apple Screen Guard ensures crystal-clear display protection and resistance against scratches."
+    "description": "Protectorul de ecran Apple asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
-    "id": 161,
+    "id": "161",
     "name": "OnePlus Dash Cable",
     "category": "cable",
     "price": 2500,
     "brand": "OnePlus",
     "image": "/images/products/cables/dash-cable.webp",
-    "description": "The OnePlus Dash Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Dash OnePlus oferă încărcare ultra-rapidă și fiabilă cu izolație de înaltă calitate."
   },
   {
-    "id": 162,
+    "id": "162",
     "name": "Spigen Dual USB Adapter",
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
     "image": "/images/products/adapters/dual-usb-adapter.jpeg",
-    "description": "The Spigen Dual USB Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul dual USB Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 163,
+    "id": "163",
     "name": "Baseus Kickstand Case",
     "category": "case",
     "price": 2000,
     "brand": "Baseus",
     "image": "/images/products/cases/spigen-rugged-case.jpeg",
-    "description": "The Baseus Kickstand Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa cu suport Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 164,
+    "id": "164",
     "name": "Anker HD Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Anker",
     "image": "/images/products/glass/apple-tempered-glass.jpeg",
-    "description": "The Anker HD Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla HD Anker asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 165,
+    "id": "165",
     "name": "Samsung Type-C Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Samsung",
     "image": "/images/products/cables/cable-typec.webp",
-    "description": "The Samsung Type-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul Type-C Samsung oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 166,
+    "id": "166",
     "name": "Xiaomi Quick Adapter",
     "category": "adapter",
     "price": 3000,
     "brand": "Xiaomi",
     "image": "/images/products/adapters/spigen-black-adaptor.webp",
-    "description": "The Xiaomi Quick Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul rapid Xiaomi oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 167,
+    "id": "167",
     "name": "Apple Hybrid Case",
     "category": "case",
     "price": 2500,
     "brand": "Apple",
     "image": "/images/products/cases/apple-hybrid-case.jpeg",
-    "description": "The Apple Hybrid Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa hibridă Apple oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 168,
+    "id": "168",
     "name": "OnePlus Matte Glass",
     "category": "glass",
     "price": 2500,
     "brand": "OnePlus",
     "image": "/images/products/glass/matte-glass.jpeg",
-    "description": "The OnePlus Matte Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla mată OnePlus asigură protecție cristalină și rezistență la zgârieturi cu finisaj mat."
   },
   {
-    "id": 169,
+    "id": "169",
     "name": "Spigen USB-C Cable",
     "category": "cable",
     "price": 1500,
     "brand": "Spigen",
     "image": "/images/products/cables/cable-typec.webp",
-    "description": "The Spigen USB-C Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul USB-C Spigen oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
-    "id": 170,
+    "id": "170",
     "name": "Baseus Smart Charger",
     "category": "adapter",
     "price": 22.20,
     "brand": "Baseus",
     "image": "/images/products/adapters/baseus-smart-charger.webp",
-    "description": "The Baseus Smart Charger provides safe and efficient power delivery for your mobile devices."
+    "description": "Încărcătorul inteligent Baseus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 171,
+    "id": "171",
     "name": "Samsung Armor Case",
     "category": "case",
     "price": 3500,
     "brand": "Samsung",
     "image": "/images/products/cases/samsung-armour-case.webp",
-    "description": "The Samsung Armor Case offers sleek protection with durable material and a comfortable grip."
+    "description": "Husa coajă Samsung oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
-    "id": 172,
+    "id": "172",
     "name": "Xiaomi Tempered Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
     "image": "/images/products/glass/full-cover-glass.webp",
-    "description": "The Xiaomi Tempered Glass ensures crystal-clear display protection and resistance against scratches."
+    "description": "Sticla securizată Xiaomi asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
-    "id": 173,
+    "id": "173",
     "name": "Anker Braided Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Anker",
     "image": "/images/products/cables/braided-cable.webp",
-    "description": "The Anker Braided Cable delivers fast, reliable charging with high-quality insulation and durability."
+    "description": "Cablul țesut Anker oferă încărcare rapidă și fiabilă cu material durabil și rezistență la pliere."
   },
   {
-    "id": 174,
+    "id": "174",
     "name": "Apple Dual Port Adapter",
     "category": "adapter",
     "price": 4000,
     "brand": "Apple",
     "image": "/images/products/adapters/dual-charger-adapter.webp",
-    "description": "The Apple Dual Port Adapter provides safe and efficient power delivery for your mobile devices."
+    "description": "Adaptorul cu două porturi Apple oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
-    "id": 175,
+    "id": "175",
     "name": "OnePlus Bumper Case",
     "category": "case",
     "price": 2000,
     "brand": "OnePlus",
     "image": "/images/products/cases/bumper-case.jpeg",
-    "description": "The OnePlus Bumper Case offers sleek protection with durable material and a comfortable grip."
-  }, 
+    "description": "Husa bampel OnePlus oferă protecție solidă cu material durabil și o apucătură confortabilă."
+  },
   {
-    "id": 176,
+    "id": "176",
     "name": "Spigen Privacy Screen",
     "category": "glass",
     "price": 2000,
     "brand": "Spigen",
     "image": "/images/products/glass/iphone-privacy-glass.webp",
-    "description": "The Spigen Privacy Screen protects your screen from scratches while keeping your content private."
+    "description": "Protectorul de confidențialitate Spigen protejează ecranul de zgârieturi și păstrează conținutul privat."
   },
   {
-    "id": 177,
+    "id": "177",
     "name": "Baseus Lightning Cable",
     "category": "cable",
     "price": 1500,
     "brand": "Baseus",
     "image": "/images/products/cables/baseus-lightning-cable.webp",
-    "description": "The Baseus Lightning Cable ensures safe and fast charging with premium insulation."
+    "description": "Cablul Lightning Baseus asigură încărcare sigură și rapidă cu izolație de calitate superioară."
   },
   {
-    "id": 178,
+    "id": "178",
     "name": "Anker GaN Fast Charger",
     "category": "adapter",
     "price": 4500,
     "brand": "Anker",
     "image": "/images/products/adapters/gan-power-adapter.webp",
-    "description": "Anker GaN Fast Charger delivers ultra-fast charging with next-gen efficiency and safety."
+    "description": "Încărcătorul rapid GaN Anker oferă încărcare ultra-rapidă cu eficiență și siguranță superioare."
   },
   {
-    "id": 179,
+    "id": "179",
     "name": "Xiaomi Fabric Case",
     "category": "case",
     "price": 1500,
     "brand": "Xiaomi",
     "image": "/images/products/cases/fabric-case.jpeg",
-    "description": "The Xiaomi Fabric Case offers soft-touch protection with modern fabric texture and shock resistance."
+    "description": "Husa din țesătură Xiaomi oferă protecție cu textură moale și rezistență la șocuri."
   },
   {
-    "id": 180,
+    "id": "180",
     "name": "Samsung Clear Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Samsung",
     "image": "/images/products/glass/oneplus-tempered-glass.png",
-    "description": "Samsung Clear Glass protects against scratches and maintains screen clarity."
+    "description": "Sticla transparentă Samsung protejează ecranul de zgârieturi și menține claritatea afișajului."
   },
   {
-    "id": 181,
+    "id": "181",
     "name": "Apple MFi Cable",
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/cables/mfi-cable.webp",
-    "description": "Apple MFi Certified Cable ensures compatibility and fast charging for all Apple devices."
+    "description": "Cablul certificat MFi Apple asigură compatibilitate și încărcare rapidă pentru toate dispozitivele Apple."
   },
   {
-    "id": 182,
+    "id": "182",
     "name": "Spigen Compact Charger",
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
     "image": "/images/products/adapters/compact-adapter.webp",
-    "description": "Spigen Compact Charger is lightweight and efficient, perfect for travel and home use."
+    "description": "Încărcătorul compact Spigen este ușor și eficient, perfect pentru călătorii și uz casnic."
   },
   {
-    "id": 183,
+    "id": "183",
     "name": "OnePlus Frosted Case",
     "category": "case",
     "price": 1500,
     "brand": "OnePlus",
     "image": "/images/products/cases/frosted-case.jpeg",
-    "description": "The OnePlus Frosted Case offers strong grip and frosted transparency for a sleek look."
+    "description": "Husa mată OnePlus oferă apucătură puternică și transparență mată pentru un aspect elegant."
   },
   {
-    "id": 184,
+    "id": "184",
     "name": "Baseus Anti-Spy Glass",
     "category": "glass",
     "price": 2000,
     "brand": "Baseus",
     "image": "/images/products/glass/anti-spy-glass.webp",
-    "description": "Keep your screen safe and private with Baseus Anti-Spy Tempered Glass."
+    "description": "Protecția anti-spionaj Baseus asigură siguranța și confidențialitatea ecranului dvs."
   },
   {
-    "id": 185,
+    "id": "185",
     "name": "Anker Nylon USB-C",
     "category": "cable",
     "price": 1500,
     "brand": "Anker",
     "image": "/images/products/cables/anker-usbc-cable.webp",
-    "description": "Anker’s durable nylon cable supports fast charging and long-lasting performance."
+    "description": "Cablul nylon USB-C Anker suportă încărcare rapidă și oferă performanță de lungă durată."
   },
   {
-    "id": 186,
+    "id": "186",
     "name": "Xiaomi PD Charger",
     "category": "adapter",
     "price": 4000,
     "brand": "Xiaomi",
     "image": "/images/products/adapters/xiaomi-usb-wall-adapter.webp",
-    "description": "Xiaomi Power Delivery Charger offers efficient charging for Type-C devices."
+    "description": "Încărcătorul Power Delivery Xiaomi oferă încărcare eficientă pentru dispozitivele Type-C."
   },
   {
-    "id": 187,
+    "id": "187",
     "name": "Samsung Silicone Grip Case",
     "category": "case",
     "price": 3000,
     "brand": "Samsung",
     "image": "/images/products/cases/samsung-silicone-grip-case.webp",
-    "description": "Protect your phone with Samsung’s grip-friendly silicone case."
+    "description": "Husa din silicon cu apucătură Samsung protejează telefonul dvs. cu design prietenos."
   },
   {
-    "id": 188,
+    "id": "188",
     "name": "Apple Anti-Glare Glass",
     "category": "glass",
     "price": 2000,
     "brand": "Apple",
     "image": "/images/products/glass/apple-antiglare-glass.jpeg",
-    "description": "Apple Anti-Glare Glass reduces reflections while protecting from scratches."
+    "description": "Sticla anti-strălucire Apple reduce reflexiile și protejează de zgârieturi."
   },
   {
-    "id": 189,
+    "id": "189",
     "name": "OnePlus Warp Cable",
     "category": "cable",
     "price": 2000,
     "brand": "OnePlus",
     "image": "/images/products/cables/oneplus-warp-cable.webp",
-    "description": "OnePlus Warp Charge Cable supports ultra-fast charging for compatible devices."
+    "description": "Cablul Warp Charge OnePlus suportă încărcare ultra-rapidă pentru dispozitivele compatibile."
   },
   {
-    "id": 190,
+    "id": "190",
     "name": "Spigen USB PD Adapter",
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
     "image": "/images/products/adapters/spigen-usb-pd-adapter.webp",
-    "description": "Spigen's PD Adapter charges your devices with power and efficiency."
+    "description": "Adaptorul PD USB Spigen încarcă dispozitivele cu putere și eficiență."
   },
   {
-    "id": 191,
+    "id": "191",
     "name": "Baseus Leather Back Case",
     "category": "case",
     "price": 3000,
     "brand": "Baseus",
     "image": "/images/products/cases/baseus-leather-back-case.webp",
-    "description": "Premium leather texture and drop protection from Baseus."
+    "description": "Husa din piele cu spate Baseus oferă textură premium și protecție împotriva căderii."
   },
   {
-    "id": 192,
+    "id": "192",
     "name": "Anker Matte Screen Guard",
     "category": "glass",
     "price": 2000,
     "brand": "Anker",
     "image": "/images/products/glass/anker-matte-screen-guard.webp",
-    "description": "Matte finish screen protector that resists fingerprints and glare."
+    "description": "Protectorul de ecran mat Anker rezistă amprentelor digitale și strălucirilor."
   },
   {
-    "id": 193,
+    "id": "193",
     "name": "Xiaomi Braided Type-C",
     "category": "cable",
     "price": 2000,
     "brand": "Xiaomi",
     "image": "/images/products/cables/xiaomi-braided-type-c.webp",
-    "description": "Xiaomi Braided Cable ensures reliable power with tangle-free usage."
+    "description": "Cablul țesut Type-C Xiaomi asigură alimentare fiabilă cu utilizare fără încurcări."
   },
   {
-    "id": 194,
+    "id": "194",
     "name": "Apple Compact Wall Adapter",
     "category": "adapter",
     "price": 3000,
     "brand": "Apple",
     "image": "/images/products/adapters/apple-compact-wall-adapter.webp",
-    "description": "Apple's compact wall charger offers optimized power delivery for all devices."
+    "description": "Adaptorul compact de perete Apple oferă livrare de putere optimizată pentru toate dispozitivele."
   },
   {
-    "id": 195,
+    "id": "195",
     "name": "Spigen Grip Armor Case",
     "category": "case",
     "price": 2500,
     "brand": "Spigen",
     "image": "/images/products/cases/spigen-grip-armor-case.webp",
-    "description": "Spigen’s rugged armor case provides superior drop protection and grip."
+    "description": "Husa coajă cu apucătură Spigen oferă protecție solidă și apucătură superioară."
   },
   {
-    "id": 196,
+    "id": "196",
     "name": "Baseus Ultra Clear Glass",
     "category": "glass",
     "price": 1500,
     "brand": "Baseus",
     "image": "/images/products/glass/baseus-ultra-clear-glass.webp",
-    "description": "Crystal-clear visibility and strong protection for your display."
+    "description": "Sticla ultra-transparentă Baseus oferă vizibilitate cristalină și protecție puternică."
   },
   {
-    "id": 197,
+    "id": "197",
     "name": "OnePlus Silicone Cable",
     "category": "cable",
     "price": 1500,
     "brand": "OnePlus",
     "image": "/images/products/cables/oneplus-silicone-cable.webp",
-    "description": "Soft, durable silicone cable with fast charging support."
+    "description": "Cablul din silicon moale OnePlus suportă încărcare rapidă și este durabil."
   },
   {
-    "id": 198,
+    "id": "198",
     "name": "Samsung Wireless Adapter",
     "category": "adapter",
     "price": 4000,
     "brand": "Samsung",
     "image": "/images/products/adapters/samsung-wireless-adapter.webp",
-    "description": "Wireless charging pad and adapter in one compact package."
+    "description": "Adaptor și pad de încărcare wireless Samsung în pachet compact."
   },
   {
-    "id": 199,
+    "id": "199",
     "name": "Anker Slim Shell Case",
     "category": "case",
     "price": 1500,
     "brand": "Anker",
     "image": "/images/products/cases/anker-slim-shell-case.jpeg",
-    "description": "Slim, protective shell case with ergonomic grip design."
+    "description": "Husa coajă subțire Anker oferă protecție cu design ergonomic și apucătură confortabilă."
   },
   {
-    "id": 200,
+    "id": "200",
     "name": "Xiaomi HD Screen Guard",
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
     "image": "/images/products/glass/xiaomi-hd-screen-guard.webp",
-    "description": "Xiaomi HD Screen Guard provides ultra-clear viewing and superior scratch resistance."
+    "description": "Protectorul de ecran HD Xiaomi oferă vizionare ultra-clară și rezistență superioară la zgârieturi."
   }
 ]

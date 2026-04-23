@@ -5,12 +5,11 @@ import { HomeMainStyled } from "../styles/HomeMain.styled";
 function HomeMain({
   products,
   quantity,
+  setQuantity,
   increaseQuantity,
   decreaseQuantity,
-  cart,
   addToCart,
 }) {
-  console.log(cart);
   return (
     <HomeMainStyled>
       {products.map((product) => {
@@ -27,26 +26,47 @@ function HomeMain({
             <p className="product-description">{product.description}</p>
             <div className="product-add-to-cart-container">
               <div className="product-quantities">
-                <span
+                <button
                   className="decrement-quantity"
-                  onClick={() => decreaseQuantity(product.id)}
+                  onClick={() => decreaseQuantity(Number(product.id))}
                 >
                   -
-                </span>
-                <span>{quantity[product.id] || 0}</span>
-                <span
+                </button>
+                <input
+                  type="text"
+                  name={product.name}
+                  id={product.id}
+                  value={quantity[product.id] ?? 1}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setQuantity((prev) => ({
+                      ...prev,
+                      [product.id]: val === "" ? "" : Number(val),
+                    }));
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      const qty = quantity[product.id] || 0;
+                      addToCart(product.id, qty);
+                    }
+                  }}
+                />
+                <button
                   className="increment-quantity"
                   onClick={() => increaseQuantity(product.id)}
                 >
                   +
-                </span>
+                </button>
               </div>
 
               <button
                 className="add-cart-btn"
-                onClick={() => addToCart(product.id, quantity[product.id] || 0)}
+                onClick={() => {
+                  const qty = quantity[product.id] || 0;
+                  addToCart(product.id, qty);
+                }}
               >
-               <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
+                <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
               </button>
             </div>
           </section>

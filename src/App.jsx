@@ -28,9 +28,22 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
-    const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const total = cart.reduce(
+      (sum, item) => sum + Number(item.quantity || 0),
+      0,
+    );
     setTotalQuantity(total);
   }, [cart]);
+
+  useEffect(() => {
+    if (products.length) {
+      const initialQty = {};
+      products.forEach((p) => {
+        initialQty[p.id] = 1;
+      });
+      setQuantity(initialQty);
+    }
+  }, [products]);
 
   const increaseQuantity = (id) => {
     setQuantity((prev) => ({
@@ -42,7 +55,7 @@ function App() {
   const decreaseQuantity = (id) => {
     setQuantity((prev) => {
       const current = prev[id] || 0;
-      if (current <= 0) return prev;
+      if (current <= 1) return prev;
       return {
         ...prev,
         [id]: current - 1,
@@ -67,6 +80,12 @@ function App() {
     });
   }
 
+  function deleteFromCart(id) {
+    setCart((prevCart) => {
+      return prevCart.filter((item) => item.productId !== id);
+    });
+  }
+
   return (
     <>
       <Routes>
@@ -74,9 +93,11 @@ function App() {
           path="/"
           element={
             <Home
+              deleteFromCart={deleteFromCart}
               totalQuantity={totalQuantity}
               products={products}
               quantity={quantity}
+              setQuantity={setQuantity}
               increaseQuantity={increaseQuantity}
               decreaseQuantity={decreaseQuantity}
               cart={cart}
@@ -89,9 +110,11 @@ function App() {
           path="/category/:category"
           element={
             <Home
+              deleteFromCart={deleteFromCart}
               totalQuantity={totalQuantity}
               products={products}
               quantity={quantity}
+              setQuantity={setQuantity}
               increaseQuantity={increaseQuantity}
               decreaseQuantity={decreaseQuantity}
               cart={cart}

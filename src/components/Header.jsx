@@ -2,15 +2,25 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faXmark,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 import { HeaderStyled, StyledLink } from "../styles/Header.styled";
+import Dropdown from "./Dropdown";
 
-function Header({totalQuantity}) {
+function Header({ products, totalQuantity, cart, deleteFromCart }) {
   const [isVisible, setIsVisible] = useState(true);
+  const [isDropDownShown, setIsDropdownShown] = useState(false);
 
   const showNav = () => {
     setIsVisible((prev) => !prev);
   };
+
+  function showDropdown() {
+    setIsDropdownShown((prev) => !prev);
+  }
 
   return (
     <HeaderStyled>
@@ -63,10 +73,17 @@ function Header({totalQuantity}) {
           </li>
         </ul>
       </nav>
-      <div className="cart-container">
+      <div className="cart-container" onClick={showDropdown}>
         <span className="cart-quantity">{totalQuantity}</span>
-       <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
+        <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
       </div>
+      <Dropdown
+        deleteFromCart={deleteFromCart}
+        products={products}
+        cart={cart}
+        isDropDownShown={isDropDownShown}
+        showDropdown={showDropdown}
+      />
     </HeaderStyled>
   );
 }

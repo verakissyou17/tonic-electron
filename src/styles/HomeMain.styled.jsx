@@ -53,16 +53,21 @@ export const HomeMainStyled = styled.main`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid #ccc;
     border-radius: 0.25rem;
   }
 
-  .product-quantities span {
+  .product-quantities button {
     display: grid;
     place-content: center;
     font-size: 1.2rem;
-    border-left: 1px solid #ccc;
     padding: 0.5em 1em;
+  }
+
+  .product-quantities input {
+    width: 2rem;
+    border: none;
+    outline: none;
+    text-align: center;
   }
 
   .increment-quantity,
