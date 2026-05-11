@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const DropdownStyled = styled.section`
   position: absolute;
-  top: 0;
+  top: clamp(1rem, 0.12rem + 3.756vw, 3.5rem);
   right: 0;
   transform: translateY(3rem);
-  background: rgb(248, 251, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(240, 253, 244, 0.9)
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid #e2e8f0;
   border-radius: 0.5rem;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
-  padding: 1rem;
+  padding: 0.5rem;
   z-index: 2;
-  max-height: 500px;
+  height: calc(100vh - clamp(1.5rem, 0.12rem + 3.756vw, 3.5rem) - 3.5rem);
   overflow-y: auto;
-
-  &:hover {
-    background: #eaf2ff;
-  }
 
   .head,
   .intro,
@@ -38,12 +40,13 @@ export const DropdownStyled = styled.section`
     width: 0.5rem;
   }
 
-  .dropdown-container::-webkit-scrollbar-thumb {
-    background: #05c1b5;
-    border-radius: 0.5rem;
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
   }
-
-  .cart-total span:nth-child(2),
+  .cart-total,
   .total-container,
   .head {
     font-weight: bold;
@@ -51,22 +54,17 @@ export const DropdownStyled = styled.section`
 
   .cart-total,
   .head {
-    background: #64f3f5;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  .intro,
-  .head,
-  .cart-total {
-    border-bottom: 1px solid #cccccc86;
+    border-radius: 0.5rem;
+    color: white;
   }
 
   .dropdown-container {
-    border-bottom: 1px solid #cccccc86;
-
     .img-container {
       width: 4rem;
       height: 100%;
+      border-radius: 0.5rem;
       overflow: hidden;
 
       img {

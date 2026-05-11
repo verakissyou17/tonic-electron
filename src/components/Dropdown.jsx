@@ -34,11 +34,18 @@ function Dropdown({
             const matchingProduct = products.find(
               (product) => product.id === cartItem.productId,
             );
+            const isLast = index === cart.length - 1;
 
             if (!matchingProduct) return null;
 
             return (
-              <div key={index} className="dropdown-container">
+              <div
+                key={index}
+                className="dropdown-container"
+                style={{
+                  borderBottom: isLast ? "none" : "1px solid #cccccc86",
+                }}
+              >
                 <div className="img-container">
                   <img
                     className="dropdown-img"
@@ -77,7 +84,7 @@ function Dropdown({
           </div>
         </>
       ) : (
-        <p style={{textAlign: "center", padding: "1rem"}}>Cosul este gol</p>
+        <p style={{ textAlign: "center", padding: "1rem" }}>Cosul este gol</p>
       )}
     </DropdownStyled>
   );

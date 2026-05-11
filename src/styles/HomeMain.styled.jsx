@@ -84,7 +84,7 @@ export const HomeMainStyled = styled.main`
 
   .add-cart-btn {
     padding: 0.25em 0.75em;
-    background-color: green;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
     border-radius: 0.25rem;
     box-shadow: 3px 3px 2px #454545;
     display: grid;

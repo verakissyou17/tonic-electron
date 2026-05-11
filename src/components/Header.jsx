@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import reactLogo from "../assets/react.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +13,10 @@ import Dropdown from "./Dropdown";
 function Header({ products, totalQuantity, cart, deleteFromCart }) {
   const [isVisible, setIsVisible] = useState(true);
   const [isDropDownShown, setIsDropdownShown] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isDropDownShown ? "hidden" : "auto";
+  }, [isDropDownShown]);
 
   const showNav = () => {
     setIsVisible((prev) => !prev);
@@ -77,6 +81,9 @@ function Header({ products, totalQuantity, cart, deleteFromCart }) {
         <span className="cart-quantity">{totalQuantity}</span>
         <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
       </div>
+      {isDropDownShown && (
+        <div className="overlay" onClick={() => setIsDropdownShown(false)} />
+      )}
       <Dropdown
         deleteFromCart={deleteFromCart}
         products={products}

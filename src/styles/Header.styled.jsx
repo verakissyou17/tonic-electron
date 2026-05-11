@@ -9,6 +9,13 @@ export const HeaderStyled = styled.header`
   justify-content: space-between;
   text-shadow: 0 0 10px rgba(7, 207, 238, 0.4);
 
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
   .btn-visible {
     border: none;
     outline: none;
@@ -72,7 +79,7 @@ export const HeaderStyled = styled.header`
       display: grid;
       place-content: center;
       color: white;
-      background-color: green;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
       border-radius: 50%;
     }
   }
