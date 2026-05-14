@@ -1,96 +1,14 @@
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import reactLogo from "../assets/react.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faXmark,
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons";
-import { HeaderStyled, StyledLink } from "../styles/Header.styled";
-import Dropdown from "./Dropdown";
+import { HeaderStyled } from "../styles/Header.styled";
+import Navbar from "./Navbar";
+import Logo from "./Logo";
+import CartMenu from "./CartMenu";
 
-function Header({ products, totalQuantity, cart, deleteFromCart }) {
-  const [isVisible, setIsVisible] = useState(true);
-  const [isDropDownShown, setIsDropdownShown] = useState(false);
-
-  useEffect(() => {
-    document.body.style.overflow = isDropDownShown ? "hidden" : "auto";
-  }, [isDropDownShown]);
-
-  const showNav = () => {
-    setIsVisible((prev) => !prev);
-  };
-
-  function showDropdown() {
-    setIsDropdownShown((prev) => !prev);
-  }
-
+function Header() {
   return (
     <HeaderStyled>
-      <button
-        onClick={showNav}
-        className={isVisible ? "btn-visible" : "hidden"}
-      >
-        <FontAwesomeIcon icon={faBars} className="hamburger" />
-      </button>
-      <StyledLink to="/">
-        <img src={reactLogo} className="logo react" alt="React logo" />
-        <h1>Tonic Electron</h1>
-      </StyledLink>
-      <nav className={isVisible ? "hidden" : "nav-shown"}>
-        <button onClick={showNav} className="close-nav">
-          <FontAwesomeIcon icon={faXmark} />
-        </button>
-        <ul>
-          <li>
-            <Link
-              to="/category/glass"
-              className="header-link"
-              onClick={showNav}
-            >
-              Glasses
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/category/adapter"
-              className="header-link"
-              onClick={showNav}
-            >
-              Adapters
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/category/cable"
-              className="header-link"
-              onClick={showNav}
-            >
-              Cables
-            </Link>
-          </li>
-          <li>
-            <Link to="/category/case" className="header-link" onClick={showNav}>
-              Cases
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="cart-container" onClick={showDropdown}>
-        <span className="cart-quantity">{totalQuantity}</span>
-        <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
-      </div>
-      {isDropDownShown && (
-        <div className="overlay" onClick={() => setIsDropdownShown(false)} />
-      )}
-      <Dropdown
-        deleteFromCart={deleteFromCart}
-        products={products}
-        cart={cart}
-        isDropDownShown={isDropDownShown}
-        showDropdown={showDropdown}
-      />
+      <Navbar />
+      <Logo />
+      <CartMenu />
     </HeaderStyled>
   );
 }

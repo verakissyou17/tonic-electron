@@ -1,21 +1,13 @@
 import { useParams, Navigate } from "react-router-dom";
-import Header from "../components/Header";
 import HomeMain from "../components/HomeMain";
+import { useProducts } from "../context/useProducts";
 
-function Home({
-  products,
-  quantity,
-  setQuantity,
-  increaseQuantity,
-  decreaseQuantity,
-  cart,
-  addToCart,
-  totalQuantity,
-  deleteFromCart,
-}) {
+function Home() {
+  const { products, categories } = useProducts();
   const { category } = useParams();
-  const categories = [...new Set(products.map((p) => p.category))];
-  const filteredProducts = category
+ 
+
+  const displayedProducts = category
     ? products.filter((p) => p.category === category)
     : products;
 
@@ -23,25 +15,7 @@ function Home({
     return <Navigate to="*" />;
   }
 
-  return (
-    <>
-      <Header
-        deleteFromCart={deleteFromCart}
-        products={products}
-        cart={cart}
-        totalQuantity={totalQuantity}
-      />
-      <HomeMain
-        products={filteredProducts}
-        quantity={quantity}
-        setQuantity={setQuantity}
-        increaseQuantity={increaseQuantity}
-        decreaseQuantity={decreaseQuantity}
-        cart={cart}
-        addToCart={addToCart}
-      />
-    </>
-  );
+  return <HomeMain displayedProducts={displayedProducts}  />;
 }
 
 export default Home;

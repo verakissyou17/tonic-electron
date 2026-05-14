@@ -1,127 +1,15 @@
 import { Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
 import Home from "./pages/Home";
+import Header from "./components/Header";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [quantity, setQuantity] = useState({});
-  const [totalQuantity, setTotalQuantity] = useState(0);
-  const [cart, setCart] = useState(() => {
-    const savedCart = localStorage.getItem("cart");
-    return savedCart ? JSON.parse(savedCart) : [];
-  });
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const res = await fetch("/products.json");
-        if (!res.ok) throw new Error("Could not fetch products.");
-        const data = await res.json();
-        setProducts(data);
-      } catch (err) {
-        console.error(err);
-      }
-    }
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-    const total = cart.reduce(
-      (sum, item) => sum + Number(item.quantity || 0),
-      0,
-    );
-    setTotalQuantity(total);
-  }, [cart]);
-
-  useEffect(() => {
-    if (products.length) {
-      const initialQty = {};
-      products.forEach((p) => {
-        initialQty[p.id] = 1;
-      });
-      setQuantity(initialQty);
-    }
-  }, [products]);
-
-  const increaseQuantity = (id) => {
-    setQuantity((prev) => ({
-      ...prev,
-      [id]: (prev[id] || 0) + 1,
-    }));
-  };
-
-  const decreaseQuantity = (id) => {
-    setQuantity((prev) => {
-      const current = prev[id] || 0;
-      if (current <= 1) return prev;
-      return {
-        ...prev,
-        [id]: current - 1,
-      };
-    });
-  };
-
-  function addToCart(productId, quantity) {
-    if (quantity <= 0) return;
-
-    setCart((prevCart) => {
-      const existing = prevCart.find((item) => item.productId === productId);
-      if (existing) {
-        return prevCart.map((item) =>
-          item.productId === productId
-            ? { ...item, quantity: item.quantity + quantity }
-            : item,
-        );
-      } else {
-        return [...prevCart, { productId, quantity }];
-      }
-    });
-  }
-
-  function deleteFromCart(id) {
-    setCart((prevCart) => {
-      return prevCart.filter((item) => item.productId !== id);
-    });
-  }
-
   return (
     <>
+      <Header />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              deleteFromCart={deleteFromCart}
-              totalQuantity={totalQuantity}
-              products={products}
-              quantity={quantity}
-              setQuantity={setQuantity}
-              increaseQuantity={increaseQuantity}
-              decreaseQuantity={decreaseQuantity}
-              cart={cart}
-              addToCart={addToCart}
-              F
-            />
-          }
-        />
-        <Route
-          path="/category/:category"
-          element={
-            <Home
-              deleteFromCart={deleteFromCart}
-              totalQuantity={totalQuantity}
-              products={products}
-              quantity={quantity}
-              setQuantity={setQuantity}
-              increaseQuantity={increaseQuantity}
-              decreaseQuantity={decreaseQuantity}
-              cart={cart}
-              addToCart={addToCart}
-            />
-          }
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:category" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>

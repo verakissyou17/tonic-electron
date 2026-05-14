@@ -1,20 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { DropdownStyled } from "../styles/Dropdown.styled";
+import { useProducts } from "../context/useProducts.js";
+import { useCart } from "../context/useCart.js";
 
-function Dropdown({
-  products,
-  cart,
-  deleteFromCart,
-  isDropDownShown,
-  showDropdown,
-}) {
+function Dropdown({ isDropDownShown, showDropdown }) {
+  const { products } = useProducts();
+  const { cart, deleteFromCart } = useCart();
+
   const totalCart = cart.reduce((sum, cartItem) => {
-    const product = products.find((p) => p.id === cartItem.productId);
+    const matchingProduct = products.find(
+      (product) => product.id === cartItem.productId,
+    );
 
-    if (!product) return sum;
+    if (!matchingProduct) return sum;
 
-    return sum + (product.price / 100) * cartItem.quantity;
+    const result = sum + (matchingProduct.price / 100) * cartItem.quantity;
+
+    return result;
   }, 0);
 
   return (
@@ -25,7 +28,7 @@ function Dropdown({
       </div>
 
       {cart.length > 0 ? (
-        <>
+        <div>
           <div className="head">
             <p>Denumire produs</p>
             <p>Total</p>
@@ -80,9 +83,9 @@ function Dropdown({
           })}
           <div className="cart-total">
             <span>Total:</span>
-            <span>{totalCart.toFixed(2)} lei</span>
+            <span>{totalCart.toFixed(2)}</span>
           </div>
-        </>
+        </div>
       ) : (
         <p style={{ textAlign: "center", padding: "1rem" }}>Cosul este gol</p>
       )}
