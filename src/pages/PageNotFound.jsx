@@ -3,8 +3,6 @@ import {Wrapper, Content, ErrorCode, Title, Text, StyledLink } from "../styles/N
 
 function PageNotFound() {
   return (
-    <>
-      <Header />
       <Wrapper>
         <Content>
           <ErrorCode>404</ErrorCode>
@@ -16,7 +14,7 @@ function PageNotFound() {
           <StyledLink to="/">Go back home</StyledLink>
         </Content>
       </Wrapper>
-    </>
+
   );
 }
 

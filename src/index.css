@@ -7,7 +7,11 @@
 }
 
 body {
- background: linear-gradient(180deg, #f6fbff, #eef6ff);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(240, 253, 244, 0.9)
+  );
 }
 
 a {
@@ -20,7 +24,8 @@ button {
   cursor: pointer;
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
   display: block;
   object-fit: cover;
@@ -30,4 +35,9 @@ ul {
   list-style: none;
 }
 
-
+input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}

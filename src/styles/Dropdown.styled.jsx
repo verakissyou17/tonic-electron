@@ -13,7 +13,6 @@ export const DropdownStyled = styled.section`
   backdrop-filter: blur(6px);
   border: 1px solid #e2e8f0;
   border-radius: 0.5rem;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
   padding: 0.5rem;
   z-index: 2;
   height: calc(100vh - clamp(1.5rem, 0.12rem + 3.756vw, 3.5rem) - 3.5rem);
@@ -54,8 +53,7 @@ export const DropdownStyled = styled.section`
 
   .cart-total,
   .head {
-    background: linear-gradient(135deg, #16a34a, #22c55e);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+     background: linear-gradient(135deg, #0f172a, #1e293b);
     border-radius: 0.5rem;
     color: white;
   }

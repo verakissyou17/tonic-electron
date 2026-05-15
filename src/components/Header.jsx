@@ -1,7 +1,8 @@
-import { HeaderStyled } from "../styles/Header.styled";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 import CartMenu from "./CartMenu";
+import { HeaderStyled } from "../styles/Header.styled";
+
 
 function Header() {
   return (

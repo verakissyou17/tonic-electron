@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
-  background: linear-gradient(135deg, #0f172a, #1e293b);
   padding: clamp(1rem, 0.648rem + 1.502vw, 2rem);
   display: flex;
   align-items: center;
@@ -24,7 +23,7 @@ export const HeaderStyled = styled.header`
   }
 
   .hamburger {
-    color: white;
+    color: black;
   }
 
   .hidden {
@@ -63,24 +62,34 @@ export const HeaderStyled = styled.header`
 
   .cart-container {
     position: relative;
+    transform: translateY(1rem);
 
     .cart-icon {
       font-size: 1.5rem;
-      color: white;
+      color: black;
     }
 
     .cart-quantity {
       position: absolute;
       top: 0;
-      left: 25%;
-      width: 1.2rem;
-      height: 1.2rem;
+      left: 10%;
+      width: 1.5rem;
+      height: 1.5rem;
       transform: translateY(-95%);
       display: grid;
       place-content: center;
-      color: white;
-      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #fff;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       border-radius: 50%;
+      border: 2px solid rgb(7, 207, 238);
+    }
+
+    .cart-quantity:hover {
+      scale: 1.2;
+      background: rgb(7, 207, 238);
+      color: black;
+      font-weight: 500;
+      border: 1px solid;
     }
   }
 `;
@@ -110,7 +119,7 @@ export const StyledLink = styled(Link)`
 
   h1 {
     text-transform: uppercase;
-    color: rgb(7, 207, 238);
+    color: #0f172a;
     font-size: clamp(1rem, 0.296rem + 3.005vw, 3rem);
     line-height: 1;
   }

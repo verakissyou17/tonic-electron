@@ -14,7 +14,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Samsung",
-    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "image": "/images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla Samsung Edge-to-Edge asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -41,7 +41,7 @@
     "category": "case",
     "price": 3000,
     "brand": "Baseus",
-    "image": "/images/products/cases/baseus-leather-case.jpeg",
+    "image": "/images/products/cases/baseus-leather-case.webp",
     "description": "Husa din piele Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -293,7 +293,7 @@
     "category": "case",
     "price": 3000,
     "brand": "Apple",
-    "image": "/images/products/cases/baseus-leather-case.jpeg",
+    "image": "/images/products/cases/baseus-leather-back-case.webp",
     "description": "Husa din piele Apple oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -338,7 +338,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Spigen",
-    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "image": "/images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla securizată Spigen asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -374,7 +374,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "image": "/images/products/glass/edge-transparent-glass.webp",
     "description": "Protectorul de ecran OnePlus asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -455,7 +455,7 @@
     "category": "case",
     "price": 2500,
     "brand": "Samsung",
-    "image": "/images/products/cases/baseus-leather-case.jpeg",
+    "image": "/images/products/cases/baseus-leather-case.webp",
     "description": "Husa din piele Samsung oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -464,7 +464,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
-    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "image": "/images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla Edge Xiaomi asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
