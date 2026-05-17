@@ -7,11 +7,9 @@
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(240, 253, 244, 0.9)
-  );
+   background: linear-gradient(135deg, #e6faff 0%, #f4f7f6 50%, #ffffff 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
   font-family: "Fira Sans", sans-serif;
 }
 
