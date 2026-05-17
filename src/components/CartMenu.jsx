@@ -3,10 +3,8 @@ import CartIcon from "./CartIcon";
 import Overlay from "./Overlay";
 import Dropdown from "./Dropdown";
 
-
 function CartMenu() {
   const [isDropDownShown, setIsDropdownShown] = useState(false);
- 
 
   useEffect(() => {
     document.body.style.overflow = isDropDownShown ? "hidden" : "auto";
@@ -17,15 +15,12 @@ function CartMenu() {
   }
   return (
     <>
-      <CartIcon  showDropdown={showDropdown} />
+      <CartIcon showDropdown={showDropdown} />
       <Overlay
         isDropDownShown={isDropDownShown}
         setIsDropdownShown={setIsDropdownShown}
       />
-      <Dropdown
-        isDropDownShown={isDropDownShown}
-        showDropdown={showDropdown}
-      />
+      <Dropdown isDropDownShown={isDropDownShown} showDropdown={showDropdown} />
     </>
   );
 }

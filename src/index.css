@@ -12,6 +12,7 @@ body {
     rgba(255, 255, 255, 0.95),
     rgba(240, 253, 244, 0.9)
   );
+  font-family: "Fira Sans", sans-serif;
 }
 
 a {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const DropdownStyled = styled.section`
+  display: ${(props) => (props.$isDropDownShown ? "block" : "none")};
   position: absolute;
   top: clamp(1rem, 0.12rem + 3.756vw, 3.5rem);
   right: 0;
@@ -18,10 +19,7 @@ export const DropdownStyled = styled.section`
   height: calc(100vh - clamp(1.5rem, 0.12rem + 3.756vw, 3.5rem) - 3.5rem);
   overflow-y: auto;
 
-  .head,
-  .intro,
-  .dropdown-container,
-  .cart-total {
+  .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,57 +27,80 @@ export const DropdownStyled = styled.section`
     gap: 1rem;
   }
 
-  .dropdown-container {
-    max-height: 100vh;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-  }
-
-  .dropdown-container::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-
-  .overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-  }
-  .cart-total,
-  .total-container,
   .head {
     font-weight: bold;
   }
 
-  .cart-total,
   .head {
-     background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 0.5rem;
+    color: white;
+  }
+`;
+
+export const DropdownRowStyled = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  border-bottom: ${(props) => (props.$isLast ? "none" : "1px solid #cccccc86")};
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .img-container {
+    width: 4rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+`;
+
+export const DropdownFooterStyled = styled.div`
+  margin-top: 1rem;
+
+  .cart-total {
+    font-weight: bold;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     border-radius: 0.5rem;
     color: white;
   }
 
-  .dropdown-container {
-    .img-container {
-      width: 4rem;
-      height: 100%;
+  .total-container {
+    flex-basis: 4rem;
+    font-weight: bold;
+  }
+
+  .cart-link-container {
+    margin-top: 1rem;
+
+    .cart-link {
+      font-weight: bold;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       border-radius: 0.5rem;
-      overflow: hidden;
-
-      img {
-        width: 100%;
-      }
+      color: white;
+      padding: 0.5rem 1rem;
     }
 
-    .product-details {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 0.5rem;
-    }
-
-    .total-container {
-      flex-basis: 4rem;
+    p {
+      text-decoration: underline;
     }
   }
 `;
