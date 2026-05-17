@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import PageNotFound from "./pages/PageNotFound";
 import Cart from "./pages/Cart";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <ScrollToTop />
     </>
   );
 }
