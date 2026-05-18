@@ -118,7 +118,7 @@ export const StyledSearchBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1.5rem 0.5rem;
   background: linear-gradient(135deg, #0f172a, #1e293b);
 
   input {

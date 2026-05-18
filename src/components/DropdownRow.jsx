@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { DropdownRowStyled } from "../styles/Dropdown.styled";
+import { formatMoney } from "../utils/formatMoney";
 
 function DropdownRow({ item, isLast, deleteFromCart }) {
   return (
@@ -28,7 +29,7 @@ function DropdownRow({ item, isLast, deleteFromCart }) {
         </div>
       </div>
       <div className="total-container">
-        {Math.round((item.product.price / 100) * item.quantity).toFixed(2)} lei
+        {formatMoney((item.product.price) * item.quantity)} lei
       </div>
     </DropdownRowStyled>
   );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "../context/useCart.js";
+import { formatMoney } from "../utils/formatMoney.js";
 
 function ProductCard({ product  }) {
   const [quantity, setQuantity] = useState(1);
@@ -22,7 +23,7 @@ function ProductCard({ product  }) {
         <img src={product.image} alt={product.name} />
       </div>
       <span className="brand">{product.brand}</span>
-      <p className="price">{Math.round(product.price / 100).toFixed(2)} lei</p>
+      <p className="price">{formatMoney(product.price)} lei</p>
       <p className="product-description">{product.description}</p>
       <div className="product-add-to-cart-container">
         <div className="product-quantities">

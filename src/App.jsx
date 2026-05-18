@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
+import Order from "./pages/Order";
 import PageNotFound from "./pages/PageNotFound";
 import Cart from "./pages/Cart";
 import ScrollToTop from "./components/ScrollToTop";
@@ -14,6 +15,7 @@ function App() {
         <Route path="/category/:category" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/order" element={<Order />} />
       </Routes>
       <ScrollToTop />
     </>
