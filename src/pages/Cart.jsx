@@ -1,24 +1,11 @@
 import { Link } from "react-router-dom";
-import { useProducts } from "../context/useProducts.js";
 import { useCart } from "../context/useCart.js";
 import { CartStyled } from "../styles/Cart.styled.jsx";
 import CartRow from "../components/CartRow.jsx";
 import CartFooter from "../components/CartFooter.jsx";
 
 function Cart() {
-  const { products } = useProducts();
-  const { cart, deleteFromCart, setCart } = useCart();
-
-  const matchingItems = cart
-    .map((cartItem) => {
-      const product = products.find((p) => p.id === cartItem.productId);
-      return { ...cartItem, product };
-    })
-    .filter((item) => item.product);
-
-  const totalCart = matchingItems.reduce((prev, curr) => {
-    return prev + (curr.product.price / 100) * curr.quantity;
-  }, 0);
+  const { cart, deleteFromCart, setCart, matchingItems, totalCart } = useCart();
 
   if (cart.length === 0) {
     return (

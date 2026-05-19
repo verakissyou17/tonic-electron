@@ -266,7 +266,7 @@
     "category": "glass",
     "price": 2500,
     "brand": "Xiaomi",
-    "image": "/images/products/glass/edge-transparent-glass.jpeg",
+    "image": "/images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla Xiaomi Edge-to-Edge asigură protecție cristalină și rezistență la zgârieturi pe toată suprafața."
   },
   {
@@ -554,7 +554,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
-    "image": "/images/products/adapters/dual-usb-adapter.jpeg",
+    "image": "/images/products/adapters/dual-usb-adapter.webp",
     "description": "Adaptorul dual USB Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {

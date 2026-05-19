@@ -36,7 +36,7 @@ ul {
   list-style: none;
 }
 
-input {
+input, label, fieldset, textarea {
   border: none;
   outline: none;
   cursor: pointer;
