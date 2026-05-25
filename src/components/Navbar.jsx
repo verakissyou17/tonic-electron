@@ -2,60 +2,84 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { StyledNavbar } from "../styles/Navbar.styled";
+import Overlay from "./Overlay";
 
 function Navbar() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const showNav = () => {
+  const toggleNav = () => {
     setIsVisible((prev) => !prev);
   };
+
   return (
     <>
-      <button
-        onClick={showNav}
-        className={isVisible ? "btn-visible" : "hidden"}
-      >
-        <FontAwesomeIcon icon={faBars} className="hamburger" />
-      </button>
-      <nav className={isVisible ? "hidden" : "nav-shown"}>
-        <button onClick={showNav} className="close-nav">
-          <FontAwesomeIcon icon={faXmark} />
+      {isVisible && <Overlay onClick={toggleNav} />}
+      <StyledNavbar $isVisible={isVisible}>
+        <button
+          aria-label="Deschide meniul de navigare"
+          className="hamburger"
+          onClick={toggleNav}
+        >
+          <FontAwesomeIcon
+            aria-hidden="true"
+            icon={faBars}
+            className="fa-bars"
+          />
         </button>
-        <ul>
-          <li>
-            <Link
-              to="/category/glass"
-              className="header-link"
-              onClick={showNav}
-            >
-              Glasses
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/category/adapter"
-              className="header-link"
-              onClick={showNav}
-            >
-              Adapters
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/category/cable"
-              className="header-link"
-              onClick={showNav}
-            >
-              Cables
-            </Link>
-          </li>
-          <li>
-            <Link to="/category/case" className="header-link" onClick={showNav}>
-              Cases
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        <nav className="nav-bar">
+          <button
+            aria-label="Închide meniul"
+            onClick={toggleNav}
+            className="close-nav"
+          >
+            <FontAwesomeIcon aria-hidden="true" icon={faXmark} />
+          </button>
+          <ul>
+            <li>
+              <Link
+                to="/category/glass"
+                className="header-link"
+                onClick={toggleNav}
+              >
+                Glasses
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/category/adapter"
+                className="header-link"
+                onClick={toggleNav}
+              >
+                Adapters
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/category/cable"
+                className="header-link"
+                onClick={toggleNav}
+              >
+                Cables
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/category/case"
+                className="header-link"
+                onClick={toggleNav}
+              >
+                Cases
+              </Link>
+            </li>
+            <li>
+              <Link to="/orders" className="header-link" onClick={toggleNav}>
+                Comenzi
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </StyledNavbar>
     </>
   );
 }

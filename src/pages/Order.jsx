@@ -2,6 +2,7 @@ import { useCart } from "../context/useCart.js";
 import { useState } from "react";
 import { FormStyled } from "../styles/Form.styled";
 import { DELIVERY_OPTIONS, PAYMENT_OPTIONS } from "../utils/orderOptions.js";
+import { useOrders } from "../context/useOrders.js";
 
 function Order() {
   const { cart, setCart, totalCart } = useCart();
@@ -15,6 +16,8 @@ function Order() {
 
   const [error, setError] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const {orders, addOrder } = useOrders();
 
   function handleOnChange(e) {
     const { name, value } = e.target;
@@ -51,8 +54,12 @@ function Order() {
 
     if (!validateForm()) return;
 
+      const nextOrderNumber = orders.length > 0 
+    ? parseInt(orders[0].id.replace("#", "")) + 1 
+    : 1001;
+
     const order = {
-      id: crypto.randomUUID(),
+      id: `${nextOrderNumber}`,
       items: cart,
       total: totalCart,
       delivery: formData.delivery,
@@ -65,17 +72,17 @@ function Order() {
       createdAt: new Date().toISOString(),
     };
 
-    console.log(order);
+    addOrder(order);
     setCart([]);
     setIsSubmitted(true);
   }
 
-  if (cart.length === 0) {
-    return <p>Cosul este gol.</p>;
-  }
+  // if (cart.length === 0) {
+  //   return <p>Cosul este gol.</p>;
+  // }
 
   if (isSubmitted) {
-    return <h1>Comanda a fost inregistrata! Multumim!</h1>;
+    return <h1 className="submitted">Comanda a fost inregistrata! Multumim!</h1>;
   }
 
   return (
@@ -103,19 +110,19 @@ function Order() {
       <h3>Modalitati de plata: </h3>
       <fieldset>
         <div className="delivery-container">
-         {PAYMENT_OPTIONS.map((option) => (
-             <label key={option.id} htmlFor={option.id}>
-              <input 
-                id={option.id} 
-                type="radio" 
-                name="payment" 
-                value={option.value} 
-                checked={formData.payment === option.value} 
-                onChange={handleOnChange} 
+          {PAYMENT_OPTIONS.map((option) => (
+            <label key={option.id} htmlFor={option.id}>
+              <input
+                id={option.id}
+                type="radio"
+                name="payment"
+                value={option.value}
+                checked={formData.payment === option.value}
+                onChange={handleOnChange}
               />
               {option.label}
             </label>
-         ))}
+          ))}
           {error.payment && <p className="error">{error.payment}</p>}
         </div>
       </fieldset>

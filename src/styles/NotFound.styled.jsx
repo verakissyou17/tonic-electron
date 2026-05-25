@@ -54,4 +54,10 @@ export const StyledLink = styled(Link)`
   &:hover {
     background: rgb(1, 99, 114);
   }
+
+  :focus-visible {
+    outline: 2px solid rgb(7, 207, 238);
+    offset: 4px;
+    border-radius: 4px;
+  }
 `;

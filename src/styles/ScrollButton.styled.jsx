@@ -14,7 +14,7 @@ import styled from "styled-components";
   justify-content: center;
   font-size: 1rem;
   color: #1a242f; 
-  z-index: 1000;
+  z-index: 3;
   background: linear-gradient(135deg, #ffffff 0%, #ccf3f8 100%);
   box-shadow:
     2px 2px 2px rgba(0, 0, 0, 0.3),

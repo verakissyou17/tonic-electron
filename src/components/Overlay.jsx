@@ -1,13 +1,15 @@
-import React from "react";
+import { useEffect } from "react";
 
-function Overlay({ isDropDownShown, setIsDropdownShown }) {
-  return (
-    <>
-      {isDropDownShown && (
-        <div className="overlay" onClick={() => setIsDropdownShown(false)} />
-      )}
-    </>
-  );
+function Overlay({ onClick }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  return <div className="overlay" onClick={onClick} />;
 }
 
 export default Overlay;

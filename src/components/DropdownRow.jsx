@@ -21,15 +21,16 @@ function DropdownRow({ item, isLast, deleteFromCart }) {
             lei{" "}
           </span>
           <button
+            aria-label="Sterge produsul din cos"
             className="delete-btn"
             onClick={() => deleteFromCart(item.product.id)}
           >
-            <FontAwesomeIcon icon={faTrash} />
+            <FontAwesomeIcon aria-hidden="true" icon={faTrash} />
           </button>
         </div>
       </div>
       <div className="total-container">
-        {formatMoney((item.product.price) * item.quantity)} lei
+        {formatMoney(item.product.price * item.quantity)} lei
       </div>
     </DropdownRowStyled>
   );

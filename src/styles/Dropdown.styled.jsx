@@ -5,6 +5,7 @@ export const DropdownStyled = styled.section`
   position: absolute;
   top: clamp(1rem, 0.12rem + 3.756vw, 3.5rem);
   right: 0;
+  left: 0;
   transform: translateY(3rem);
   background: linear-gradient(
     180deg,
@@ -18,6 +19,10 @@ export const DropdownStyled = styled.section`
   z-index: 2;
   height: calc(100vh - clamp(1.5rem, 0.12rem + 3.756vw, 3.5rem) - 3.5rem);
   overflow-y: auto;
+
+  @media screen and (min-width: 43.75em) {
+    left: 50%;
+  }
 
   .row {
     display: flex;
@@ -97,6 +102,12 @@ export const DropdownFooterStyled = styled.div`
       border-radius: 0.5rem;
       color: white;
       padding: 0.5rem 1rem;
+
+      &:focus-visible {
+        outline: 2px solid #0f172a;
+        outline-offset: 4px;
+        border-radius: 4px;
+      }
     }
 
     p {

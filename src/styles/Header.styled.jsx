@@ -13,52 +13,7 @@ export const HeaderStyled = styled.header`
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
-
-
-  .btn-visible {
-    border: none;
-    outline: none;
-    font-size: 24px;
-    background-color: transparent;
-  }
-
-  .hamburger {
-    color: black;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .nav-shown {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 55%;
-    padding: 1rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background: linear-gradient(135deg, #0b1320, #1c2a3a);
-
-    .close-nav {
-      background-color: transparent;
-      color: white;
-      margin-bottom: 1rem;
-      align-self: flex-end;
-    }
-
-    ul li {
-      margin-bottom: 1.5rem;
-
-      a {
-        color: rgb(7, 207, 238);
-        font-size: clamp(1rem, 0.648rem + 1.502vw, 2rem);
-      }
-    }
+    cursor: pointer;
   }
 
   .cart-container {

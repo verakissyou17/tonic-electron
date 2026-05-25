@@ -9,18 +9,6 @@ export const CartRowStyled = styled.div`
   margin: 0 auto; */
   border-bottom: ${(props) => (props.$isLast ? "none" : "1px solid #cccccc86")};
 
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
   .row {
     display: flex;
     align-items: center;
@@ -33,6 +21,7 @@ export const CartRowStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
 
     .product-image  {
       width: 5rem;

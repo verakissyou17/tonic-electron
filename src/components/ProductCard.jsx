@@ -4,9 +4,9 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "../context/useCart.js";
 import { formatMoney } from "../utils/formatMoney.js";
 
-function ProductCard({ product  }) {
+function ProductCard({ product }) {
   const [quantity, setQuantity] = useState(1);
-  const {addToCart} = useCart();
+  const { addToCart } = useCart();
 
   const increaseQuantity = () => {
     setQuantity((prev) => prev + 1);
@@ -30,6 +30,9 @@ function ProductCard({ product  }) {
           <button className="decrement-quantity" onClick={decreaseQuantity}>
             -
           </button>
+          <label htmlFor={product.id} className="sr-only">
+            Cantitate:
+          </label>
           <input
             type="text"
             name={product.name}
@@ -51,12 +54,17 @@ function ProductCard({ product  }) {
         </div>
 
         <button
+          aria-label="Adauga in cos"
           className="add-cart-btn"
           onClick={() => {
             addToCart(product.id, Number(quantity));
           }}
         >
-          <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
+          <FontAwesomeIcon
+            aria-hidden="true"
+            icon={faShoppingCart}
+            className="cart-icon"
+          />
         </button>
       </div>
     </section>
