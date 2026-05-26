@@ -1,43 +1,85 @@
-import { useState} from "react";
+import { useState } from "react";
 import { useParams, Navigate, useSearchParams } from "react-router-dom";
-import HomeMain from "../components/HomeMain";
+import Filters from "../components/home/Filters";
+import HomeMain from "../components/home/HomeMain";
+import Sidebar from "../components/home/Sidebar";
+import { HomeLayout } from "../styles/home/HomeLayout";
 import { useProducts } from "../context/useProducts";
-import SearchBar from "../components/SearchBar";
 
 function Home() {
   const { products, categories } = useProducts();
-
   const { category } = useParams();
   const [searchParams] = useSearchParams();
-   const searchTerm = searchParams.get("search") || "";
+  const searchTerm = searchParams.get("search") || "";
 
   const [inputValue, setInputValue] = useState("");
+  const [selectedValue, setSelectedValue] = useState("default");
+  const [selectedBrands, setSelectedBrands] = useState([]);
 
   if (category && !categories.includes(category)) {
     return <Navigate to="*" />;
   }
 
-  const displayedProducts = products.filter((p) => {
-      if (searchTerm.trim()) {
+  const availableBrands = [
+    ...new Set(products.map((p) => p.brand).filter(Boolean)),
+  ];
+
+  const filteredProducts = products.filter((p) => {
+    if (searchTerm.trim()) {
       return p.name.toLowerCase().includes(searchTerm.toLowerCase());
     }
 
-    return !category || p.category === category;
+    if (category && p.category !== category) {
+      return false;
+    }
+
+    if (selectedBrands.length > 0 && !selectedBrands.includes(p.brand)) {
+      return false;
+    }
+    return true;
   });
 
+  const getSortedProducts = (productsToSort) => {
+    const productsCopy = [...productsToSort];
+
+    if (selectedValue === "price-asc") {
+      return productsCopy.sort((a, b) => a.price - b.price);
+    }
+    if (selectedValue === "price-desc") {
+      return productsCopy.sort((a, b) => b.price - a.price);
+    }
+    if (selectedValue === "name-asc") {
+      return productsCopy.sort((a, b) => a.name.localeCompare(b.name));
+    }
+    return productsCopy;
+  };
+
+  const displayedProducts = getSortedProducts(filteredProducts);
   const hasResults = displayedProducts.length > 0;
 
   return (
     <>
-      <SearchBar
+      <Filters
         inputValue={inputValue}
         setInputValue={setInputValue}
+        selectedValue={selectedValue}
+        setSelectedValue={setSelectedValue}
       />
-      {hasResults ? (
-        <HomeMain products={displayedProducts} />
-      ) : (
-        <h1 style={{textAlign: "center"}}>Not found</h1>
-      )}
+
+      <HomeLayout>
+        <Sidebar
+          brands={availableBrands}
+          selectedBrands={selectedBrands}
+          setSelectedBrands={setSelectedBrands}
+        />
+
+          {hasResults ? (
+            <HomeMain products={displayedProducts} />
+          ) : (
+            <h1 style={{ textAlign: "center" }}>Not found</h1>
+          )}
+
+      </HomeLayout>
     </>
   );
 }

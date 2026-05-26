@@ -1,9 +1,9 @@
 import { useCart } from "../context/useCart.js";
 import { useState } from "react";
-import { FormStyled } from "../styles/Form.styled";
+import { OrderStyled } from "../styles/order/Order.styled.jsx";
 import { DELIVERY_OPTIONS, PAYMENT_OPTIONS } from "../utils/orderOptions.js";
 import { useOrders } from "../context/useOrders.js";
-import OrderSuccess from "../components/OrderSuccess.jsx";
+import OrderSuccess from "../components/orders/OrderSuccess.jsx";
 
 function Order() {
   const { cart, setCart, totalCart } = useCart();
@@ -13,12 +13,13 @@ function Order() {
     name: "",
     phone: "",
     address: "",
+    email: "",
   });
 
   const [error, setError] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const {orders, addOrder } = useOrders();
+  const { orders, addOrder } = useOrders();
 
   function handleOnChange(e) {
     const { name, value } = e.target;
@@ -44,6 +45,7 @@ function Order() {
       currentErrors.phone = "Telefonul este obligatoriu.";
     if (!formData.address.trim())
       currentErrors.address = "Adresa este obligatorie.";
+    if (!formData.email.trim()) currentErrors.email = "Email invalid.";
 
     setError(currentErrors);
 
@@ -55,9 +57,8 @@ function Order() {
 
     if (!validateForm()) return;
 
-      const nextOrderNumber = orders.length > 0 
-    ? parseInt(orders[0].id.replace("#", "")) + 1 
-    : 1001;
+    const nextOrderNumber =
+      orders.length > 0 ? parseInt(orders[0].id.replace("#", "")) + 1 : 1001;
 
     const order = {
       id: `${nextOrderNumber}`,
@@ -69,6 +70,7 @@ function Order() {
         name: formData.name,
         phone: formData.phone,
         address: formData.address,
+        email: formData.email,
       },
       createdAt: new Date().toISOString(),
     };
@@ -82,12 +84,12 @@ function Order() {
     return <OrderSuccess />;
   }
 
-    if (cart.length === 0) {
+  if (cart.length === 0) {
     return <p>Cosul este gol.</p>;
   }
 
   return (
-    <FormStyled onSubmit={handleSubmit}>
+    <OrderStyled onSubmit={handleSubmit}>
       <h3>Modalitati de livrare: </h3>
       <fieldset>
         <div className="delivery-container">
@@ -164,13 +166,24 @@ function Order() {
             />
             {error.address && <p className="error">{error.address}</p>}
           </label>
+          <label htmlFor="email">
+            Email:
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleOnChange}
+            />
+            {error.email && <p className="error">{error.email}</p>}
+          </label>
         </div>
       </fieldset>
 
       <button className="add-order-btn" type="submit">
         Finalizare comanda
       </button>
-    </FormStyled>
+    </OrderStyled>
   );
 }
 

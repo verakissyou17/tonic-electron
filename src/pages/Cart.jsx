@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../context/useCart.js";
-import { CartStyled } from "../styles/Cart.styled.jsx";
-import CartRow from "../components/CartRow.jsx";
-import CartFooter from "../components/CartFooter.jsx";
+import { CartStyled } from "../styles/cart/Cart.styled.jsx";
+import CartRow from "../components/cart/CartRow.jsx";
+import CartFooter from "../components/cart/CartFooter.jsx";
 
 function Cart() {
   const { cart, deleteFromCart, setCart, matchingItems, totalCart } = useCart();

@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./components/Header";
+import Header from "./components/header/Header.jsx";
 import Order from "./pages/Order";
 import Cart from "./pages/Cart";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/global/ScrollToTop.jsx";
 import PageNotFound from "./pages/PageNotFound";
-import ClientOrder from "./pages/ClientOrder";
+import Orders from "./pages/Orders";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
-        <Route path="/orders" element={<ClientOrder />} />
+        <Route path="/orders" element={<Orders />} />
       </Routes>
       <ScrollToTop />
     </>

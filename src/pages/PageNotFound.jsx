@@ -1,5 +1,4 @@
-import Header from "../components/Header";
-import {Wrapper, Content, ErrorCode, Title, Text, StyledLink } from "../styles/NotFound.styled";
+import {Wrapper, Content, ErrorCode, Title, Text, StyledLink } from "../styles/globals/NotFound.styled";
 
 function PageNotFound() {
   return (
