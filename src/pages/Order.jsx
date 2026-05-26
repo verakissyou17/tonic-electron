@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FormStyled } from "../styles/Form.styled";
 import { DELIVERY_OPTIONS, PAYMENT_OPTIONS } from "../utils/orderOptions.js";
 import { useOrders } from "../context/useOrders.js";
+import OrderSuccess from "../components/OrderSuccess.jsx";
 
 function Order() {
   const { cart, setCart, totalCart } = useCart();
@@ -77,12 +78,12 @@ function Order() {
     setIsSubmitted(true);
   }
 
-  // if (cart.length === 0) {
-  //   return <p>Cosul este gol.</p>;
-  // }
-
   if (isSubmitted) {
-    return <h1 className="submitted">Comanda a fost inregistrata! Multumim!</h1>;
+    return <OrderSuccess />;
+  }
+
+    if (cart.length === 0) {
+    return <p>Cosul este gol.</p>;
   }
 
   return (

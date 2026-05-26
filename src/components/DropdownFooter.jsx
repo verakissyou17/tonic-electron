@@ -6,7 +6,7 @@ function DropdownFooter({showDropdown, totalCart, totalQuantity }) {
     <DropdownFooterStyled>
       <div className="cart-total row">
         <p>Total:</p>
-        <span>{totalCart.toFixed(2)}</span>
+        <span>{totalCart.toFixed(2)} lei</span>
       </div>
       <div className="cart-link-container row">
         <Link className="cart-link" to={"/cart"} onClick={showDropdown}>

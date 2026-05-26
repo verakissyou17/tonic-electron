@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-function CartRow({ item, deleteFromCart, isLast, setCart}) {
+function CartRow({ item, deleteFromCart, isLast, setCart }) {
   const [newQuantity, setNewQuantity] = useState(item.quantity);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function CartRow({ item, deleteFromCart, isLast, setCart}) {
 
         <div className="price-container">
           <p>Pret</p>
-          <span>{formatMoney(item.product.price)}</span>
+          <span>{formatMoney(item.product.price)} lei</span>
         </div>
       </div>
 
@@ -72,16 +72,15 @@ function CartRow({ item, deleteFromCart, isLast, setCart}) {
               if (e.key === "Enter") {
                 const value = Number(newQuantity);
 
-                if(!Number.isFinite(value) || value < 1) return;
+                if (!Number.isFinite(value) || value < 1) return;
 
-                setCart((prev) => 
+                setCart((prev) =>
                   prev.map((cartItem) =>
                     cartItem.productId === item.productId
                       ? { ...cartItem, quantity: value }
                       : cartItem,
-                  )
+                  ),
                 );
-
               }
             }}
           />

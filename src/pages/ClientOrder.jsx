@@ -1,15 +1,28 @@
 import { useOrders } from "../context/useOrders";
+import OrderItem from "../components/OrderItem";
+import { ClientOrderStyled } from "../styles/ClientOrder.styled.jsx";
 
 function ClientOrder() {
   const { orders } = useOrders();
+
+  if (!orders || orders.length === 0) {
+    return <h1 style={{ textAlign: "center" }}>Nu ai nicio comanda.</h1>;
+  }
+
   return (
-    <>
-{ orders.lenght > 0 ? (<div>
-        {orders.map((order) => {
-          return <h1>{order.id}</h1>;
-        })}
-      </div>) : (<h1>Nu ai nicio comanda.</h1>)}
-    </>
+    <ClientOrderStyled>
+      <h2 className="title">Comenzi procesate</h2>
+      <div className="order-header">
+        <span>Nr.com.</span>
+        <span>Data</span>
+        <span>Client</span>
+        <span>Total</span>
+      </div>
+
+      {orders.map((order) => {
+        return <OrderItem key={order.id} order={order} />;
+      })}
+    </ClientOrderStyled>
   );
 }
 
