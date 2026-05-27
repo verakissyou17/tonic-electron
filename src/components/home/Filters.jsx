@@ -1,4 +1,4 @@
-import SearchBar from ".//SearchBar";
+import SearchBar from "./SearchBar";
 import SelectForm from "./SelectForm";
 import { FiltersStyled } from "../../styles/home/Filters.styled";
 

@@ -6,7 +6,7 @@ export const HomeLayout = styled.div`
   gap: 1.5rem;
   padding: 1rem;
 
-  .sidebar {
+  .sidebar-panel {
       flex-grow: 0;
   }
 
