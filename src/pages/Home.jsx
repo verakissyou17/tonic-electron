@@ -3,6 +3,7 @@ import { useParams, Navigate, useSearchParams } from "react-router-dom";
 import Filters from "../components/home/Filters";
 import HomeMain from "../components/home/HomeMain";
 import Sidebar from "../components/home/Sidebar";
+import CategoryCheckboxes from "../components/home/CategorySelectForm";
 import { HomeLayout } from "../styles/home/HomeLayout";
 import { useProducts } from "../context/useProducts";
 
@@ -15,6 +16,7 @@ function Home() {
   const [inputValue, setInputValue] = useState("");
   const [selectedValue, setSelectedValue] = useState("default");
   const [selectedBrands, setSelectedBrands] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState([]);
 
   if (category && !categories.includes(category)) {
     return <Navigate to="*" />;
@@ -30,6 +32,13 @@ function Home() {
     }
 
     if (category && p.category !== category) {
+      return false;
+    }
+
+    if (
+      selectedCategories.length > 0 &&
+      !selectedCategories.includes(p.category)
+    ) {
       return false;
     }
 
@@ -67,18 +76,27 @@ function Home() {
       />
 
       <HomeLayout>
-        <Sidebar
-          brands={availableBrands}
-          selectedBrands={selectedBrands}
-          setSelectedBrands={setSelectedBrands}
-        />
+        <div className="sidebar-panel">
+          <Sidebar
+            brands={availableBrands}
+            selectedBrands={selectedBrands}
+            setSelectedBrands={setSelectedBrands}
+            categories={categories}
+            selectedCategories={selectedCategories}
+            setSelectedCategories={setSelectedCategories}
+          />
+          <CategoryCheckboxes
+            categories={categories}
+            selectedCategories={selectedCategories}
+            setSelectedCategories={setSelectedCategories}
+          />
+        </div>
 
-          {hasResults ? (
-            <HomeMain products={displayedProducts} />
-          ) : (
-            <h1 style={{ textAlign: "center" }}>Not found</h1>
-          )}
-
+        {hasResults ? (
+          <HomeMain products={displayedProducts} />
+        ) : (
+          <h1 style={{ textAlign: "center" }}>Not found</h1>
+        )}
       </HomeLayout>
     </>
   );

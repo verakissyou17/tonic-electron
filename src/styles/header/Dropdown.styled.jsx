@@ -21,7 +21,21 @@ export const DropdownStyled = styled.section`
   overflow-y: auto;
 
   @media screen and (min-width: 48em) {
-    left: 60%;
+    left: 70%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(4, 220, 253);
+    border-radius: 0.5rem;
+    border: 1px solid black;
   }
 
   .row {
@@ -53,10 +67,6 @@ export const DropdownRowStyled = styled.div`
   overflow-y: auto;
   scroll-behavior: smooth;
   border-bottom: ${(props) => (props.$isLast ? "none" : "1px solid #cccccc86")};
-
-  &::-webkit-scrollbar {
-    width: 0.5rem;
-  }
 
   .img-container {
     width: 4rem;

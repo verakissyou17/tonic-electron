@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SidebarStyled = styled.aside`
-  flex-grow: 0;
+  margin-bottom: 1rem;
   padding: 1.5rem;
   height: fit-content;
   background-color: white;

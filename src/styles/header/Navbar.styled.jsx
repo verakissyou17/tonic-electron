@@ -38,6 +38,10 @@ export const StyledNavbar = styled.div`
     transition: transform 0.5s ease-in-out;
     pointer-events: ${(props) => (props.$isVisible ? "auto" : "none")};
 
+    @media (min-width: 48rem) {
+      width: 20%;
+    }
+
     .close-nav {
       background-color: transparent;
       color: white;

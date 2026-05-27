@@ -6,6 +6,10 @@ export const HomeLayout = styled.div`
   gap: 1.5rem;
   padding: 1rem;
 
+  .sidebar {
+      flex-grow: 0;
+  }
+
   @media screen and (min-width: 48em) {
     flex-direction: row;
   }
