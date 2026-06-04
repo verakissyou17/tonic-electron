@@ -25,7 +25,7 @@ export const OrdersStyled = styled.section`
     padding: 0.75rem 1rem;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
     span {
       flex: 1;

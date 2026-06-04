@@ -5,15 +5,21 @@ export const OrderItemStyled = styled.div`
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  border-bottom: 1px solid #ececefe2;
+  border-bottom: 1px solid #e1e1e3e0;
+  margin-bottom: 1rem;
   transition: background-color 0.2s ease, transform 0.2s ease;
 
   &:nth-child(even) {
-    background-color: #fafafa;
+    background-color: #fcefef;
+  }
+
+    &:nth-child(odd) {
+    background-color: #ecfbfc;
   }
 
   &:hover {
-    background-color: #f1f5f9; 
+    opacity: 0.85;
+    transform: translateX(5px);
     cursor: pointer;
   }
 
@@ -42,7 +48,7 @@ export const OrderItemStyled = styled.div`
     &:last-child {
       text-align: right;
       font-weight: 600;
-      color: rgb(7, 207, 238); 
+      color: rgb(5, 180, 207); 
     }
   }
 `;
