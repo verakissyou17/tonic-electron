@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FooterStyled } from "../../styles/footer/Footer.styled";
 
 function Footer() {
@@ -12,9 +11,9 @@ function Footer() {
 
         <section className="footer-section">
           <h4>Link-uri utile</h4>
-          <Link to="/">Acasă</Link>
-          <Link to="/orders">Comenzi</Link>
-          <Link to="/cart">Coș</Link>
+          <a href="/">Acasă</a>
+          <a href="/orders">Comenzi</a>
+          <a href="/cart">Coș</a>
         </section>
 
         <section className="footer-section">
