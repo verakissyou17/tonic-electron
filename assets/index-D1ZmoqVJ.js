@@ -649,8 +649,8 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
     top: 0;
     left: 0;
     height: 100vh;
-    width: 30%;
-    padding: 1rem;
+    width: 60%;
+    padding: 2rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -669,6 +669,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
       color: white;
       margin-bottom: 1rem;
       align-self: flex-end;
+      font-size: 1rem;
     }
 
     ul li {
@@ -735,11 +736,11 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
   }
 `,N5=Ce(wt)`
   display: flex;
-  align-items: flex-end;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
 
   .logo {
-    height: clamp(1rem, 0.296rem + 3.005vw, 3rem);
+    height: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     animation: logo-spin infinite 10s linear;
   }
 
@@ -759,7 +760,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
   h1 {
     text-transform: uppercase;
     color: #0f172a;
-    font-size: clamp(1rem, 0.296rem + 3.005vw, 3rem);
+    font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     line-height: 1;
   }
 `;function R5(){return y.jsxs(N5,{to:"/",children:[y.jsx("img",{src:"images/react.svg",className:"logo react",alt:"logo"}),y.jsx("h1",{children:"Tonic Electron"})]})}function Ji(){return N.useContext($p)}function j5({showDropdown:l}){const{cart:r}=Ji(),u=(r??[]).reduce((o,s)=>o+(Number(s.quantity)||0),0);return y.jsxs("div",{className:"cart-container",onClick:l,children:[y.jsx("span",{className:"cart-quantity",children:u}),y.jsx(kt,{icon:Iv,className:"cart-icon"})]})}const _5=Ce.section`
@@ -952,6 +953,8 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
   .product-name {
     text-align: center;
     margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
   }
 
   .brand {
@@ -1156,6 +1159,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
   color: white;
   border-radius: 0.5rem;
   margin-top: 1rem;
+  font-weight: bold;
 `,nE=Ce.div`
   display: flex;
   gap: 1.5rem;
