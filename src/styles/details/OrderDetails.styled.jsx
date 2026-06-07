@@ -47,19 +47,12 @@ export const OrderDetailsStyled = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
-    margin-top: 1rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
     font-size: 1.2rem;
-
-    p {
-      font-weight: bold;
-    }
-
-    span {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      border-radius: 0.5rem;
-      padding: 0.5rem 1rem;
-    }
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
   }
 `;

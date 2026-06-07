@@ -45,7 +45,7 @@ function OrderDetails() {
       ))}
       <div className="total">
         <p>Total: </p>
-        <span>{total}</span>
+        <span>{total.toFixed(2)} lei</span>
       </div>
     </OrderDetailsStyled>
   );
