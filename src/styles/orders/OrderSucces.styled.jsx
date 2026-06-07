@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledOrderSuccess = styled.section`
+  flex: 1;
   max-width: 64rem;
   margin: 2rem auto;
   padding: 2rem;
@@ -28,7 +29,7 @@ export const StyledOrderSuccess = styled.section`
     font-weight: bold;
   }
 
-  a:hover{
+  a:hover {
     opacity: 1;
   }
 `;
