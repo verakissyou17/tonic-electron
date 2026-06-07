@@ -23,7 +23,7 @@ export const HeaderStyled = styled.header`
 
     .cart-icon {
       font-size: 1.5rem;
-      color: ${(props) => props.theme.colors.blackText};
+      color: black;
     }
 
     .cart-quantity {
