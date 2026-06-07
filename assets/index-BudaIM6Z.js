@@ -1322,6 +1322,7 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
     margin-block: 0.5rem;
   }
 `,cE=[{id:"personal",value:"Ridicare personala",label:"Ridicare personala"},{id:"standard",value:"Curier",label:"Curier"},{id:"rapid",value:"Livrare rapida",label:"Livare rapida"}],sE=[{id:"ramburs",value:"Ramburs la livrare",label:"Ramburs la livrare"},{id:"transfer",value:"Transfer bancar",label:"Transfer bancar"},{id:"card",value:"Card bancar online",label:"Card bancar online"}];function wf(){return N.useContext(Qp)}const fE=Ce.section`
+  flex: 1;
   max-width: 64rem;
   margin: 2rem auto;
   padding: 2rem;
@@ -1349,23 +1350,26 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
     font-weight: bold;
   }
 
-  a:hover{
+  a:hover {
     opacity: 1;
   }
 `;function dE(){return y.jsxs(fE,{children:[y.jsx("h2",{className:"submitted",children:"Multumim pentru comanda! Comanda a fost inregistrata cu succes!"}),y.jsx(kt,{icon:y4,style:{color:"#28a745",fontSize:"3rem"}}),y.jsx(wt,{to:"/orders",children:"Vezi comenzile trimise"})]})}function mE(){const{cart:l,setCart:r,totalCart:u}=Ji(),[o,s]=N.useState({delivery:"Ridicare personala",payment:"Ramburs la livrare",name:"",phone:"",address:"",email:""}),[f,m]=N.useState({}),[g,p]=N.useState(!1),{orders:h,addOrder:b}=wf();function x(_){const{name:H,value:q}=_.target;s(M=>({...M,[H]:q})),m(M=>({...M,[H]:""}))}function O(){let _={};return o.delivery||(_.delivery="Alege o metoda de livrare"),o.payment||(_.payment="Alege o metoda de plata"),o.name.trim()||(_.name="Numele este obligatoriu."),o.phone.trim()||(_.phone="Telefonul este obligatoriu."),o.address.trim()||(_.address="Adresa este obligatorie."),o.email.trim()||(_.email="Email invalid."),m(_),Object.keys(_).length===0}function z(_){if(_.preventDefault(),!O())return;const q={id:`${h.length>0?parseInt(h[0].id.replace("#",""))+1:1001}`,items:l,total:u,delivery:o.delivery,payment:o.payment,customer:{name:o.name,phone:o.phone,address:o.address,email:o.email},createdAt:new Date().toISOString()};b(q),r([]),p(!0)}return g?y.jsx(dE,{}):l.length===0?y.jsx("p",{children:"Cosul este gol."}):y.jsxs(oE,{onSubmit:z,children:[y.jsx("h3",{children:"Modalitati de livrare: "}),y.jsx("fieldset",{children:y.jsxs("div",{className:"delivery-container",children:[cE.map(_=>y.jsxs("label",{htmlFor:_.id,children:[y.jsx("input",{type:"radio",name:"delivery",id:_.id,value:_.value,checked:o.delivery===_.value,onChange:x}),_.label]},_.id)),f.delivery&&y.jsx("p",{className:"error",children:f.delivery})]})}),y.jsx("h3",{children:"Modalitati de plata: "}),y.jsx("fieldset",{children:y.jsxs("div",{className:"delivery-container",children:[sE.map(_=>y.jsxs("label",{htmlFor:_.id,children:[y.jsx("input",{id:_.id,type:"radio",name:"payment",value:_.value,checked:o.payment===_.value,onChange:x}),_.label]},_.id)),f.payment&&y.jsx("p",{className:"error",children:f.payment})]})}),y.jsx("h3",{children:"Detalii client:"}),y.jsx("fieldset",{children:y.jsxs("div",{children:[y.jsxs("label",{htmlFor:"name",children:["Nume:",y.jsx("input",{id:"name",type:"text",name:"name",value:o.name,onChange:x}),f.name&&y.jsx("p",{className:"error",children:f.name})]}),y.jsxs("label",{htmlFor:"phone",children:["Telefon:",y.jsx("input",{id:"phone",type:"tel",name:"phone",value:o.phone,onChange:x}),f.phone&&y.jsx("p",{className:"error",children:f.phone})]}),y.jsxs("label",{htmlFor:"address",children:["Adresa:",y.jsx("input",{id:"address",type:"text",name:"address",value:o.address,onChange:x}),f.address&&y.jsx("p",{className:"error",children:f.address})]}),y.jsxs("label",{htmlFor:"email",children:["Email:",y.jsx("input",{id:"email",type:"email",name:"email",value:o.email,onChange:x}),f.email&&y.jsx("p",{className:"error",children:f.email})]})]})}),y.jsx("button",{className:"add-order-btn",type:"submit",children:"Finalizare comanda"})]})}const hE=Ce.div`
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid #e1e1e3e0;
   margin-bottom: 1rem;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 
   &:nth-child(even) {
     background-color: #fcefef;
   }
 
-    &:nth-child(odd) {
+  &:nth-child(odd) {
     background-color: #ecfbfc;
   }
 
@@ -1378,15 +1382,15 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
   span {
     flex: 1;
     font-size: 0.9rem;
-    color: #334155; 
+    color: #334155;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
 
     &:first-child {
       flex: 0.5;
       font-weight: 600;
-      color: #0f172a; 
+      color: #0f172a;
     }
 
     &:nth-child(2) {
@@ -1400,12 +1404,12 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
     &:nth-child(4) {
       text-align: center;
       font-weight: 600;
-      color: rgb(15, 212, 243); 
+      color: rgb(15, 212, 243);
     }
   }
 
   .details-link {
-   color: #0f172a; 
+    color: #0f172a;
     text-decoration: underline;
     font-style: italic;
     font-size: 0.9rem;
