@@ -9,7 +9,7 @@ export function ProductsProvider({ children }) {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("products.json");
+      const res = await fetch(`${import.meta.env.BASE_URL}products.json`);
       const data = await res.json();
       setProducts(data);
     }
