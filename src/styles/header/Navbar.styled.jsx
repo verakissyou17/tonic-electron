@@ -17,7 +17,7 @@ export const StyledNavbar = styled.div`
       visibility 0.3s;
 
     .fa-bars {
-      color: black;
+      color: ${(props) => props.theme.colors.blackText};
     }
   }
 
@@ -54,11 +54,11 @@ export const StyledNavbar = styled.div`
       margin-bottom: 1.5rem;
 
       a {
-        color: rgb(7, 207, 238);
+        color: ${(props) => props.theme.colors.cyan.primary};
         font-size: clamp(1rem, 0.648rem + 1.502vw, 2rem);
 
         &:focus-visible {
-          outline: 2px solid rgb(7, 207, 238);
+          outline: 2px solid ${(props) => props.theme.colors.cyan.primary};
           outline-offset: 4px;
           border-radius: 4px;
         }

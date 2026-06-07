@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  background: ${(props) => props.theme.gradients.navy};
   color: white;
   text-align: center;
 `;
@@ -38,13 +38,13 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.p`
-  color: #bbb;
+  color: ${(props) => props.theme.colors.neutral.gray.medium};
   margin-bottom: 2rem;
 `;
 
 export const StyledLink = styled(Link)`
-  background: rgb(7, 207, 238);
-  color: white;
+  background: ${(props) => props.theme.colors.cyan.primary};
+  color: ${(props) => props.theme.colors.navy.dark};
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
@@ -52,11 +52,11 @@ export const StyledLink = styled(Link)`
   transition: 0.3s;
 
   &:hover {
-    background: rgb(1, 99, 114);
+    background: ${(props) => props.theme.colors.cyan.light};
   }
 
   :focus-visible {
-    outline: 2px solid rgb(7, 207, 238);
+    outline: 2px solid ${(props) => props.theme.colors.cyan.primary};
     offset: 4px;
     border-radius: 4px;
   }

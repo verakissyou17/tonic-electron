@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const FooterBottomStyled = styled.div`
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #aaa;
-  border-top: 1px solid #333;
+  background: ${(props) => props.theme.gradients.navy};
+  color: ${(props) => props.theme.colors.neutral.gray.medium};
+  border-top: 1px solid ${(props) => props.theme.colors.blackText};
   text-align: center;
   font-size: 0.85rem;
   padding: 1rem;

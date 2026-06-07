@@ -5,7 +5,7 @@ export const CartRowStyled = styled.div`
   gap: 1.5rem;
   flex-direction: column;
   padding-block: 1rem;
-  border-bottom: ${(props) => (props.$isLast ? "none" : "1px solid #3e3e3e94")};
+  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid ${props.theme.colors.neutral.gray.dark}`)};
 
   @media (min-width: 48rem) {
     flex-direction: row;
@@ -59,7 +59,7 @@ export const CartRowStyled = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 0.5rem;
-    border: 1px solid #364052a7;
+    border: 1px solid ${(props) => props.theme.colors.cyan.primary};
     border-radius: 0.5rem;
     min-width: 6.5rem;
     height: 2.5rem;
@@ -89,6 +89,6 @@ export const CartRowStyled = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 `;

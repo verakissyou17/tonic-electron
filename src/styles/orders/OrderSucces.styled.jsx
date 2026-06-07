@@ -27,6 +27,7 @@ export const StyledOrderSuccess = styled.section`
     opacity: 0.9;
     color: white;
     font-weight: bold;
+    transition: opacity 0.3s ease;
   }
 
   a:hover {

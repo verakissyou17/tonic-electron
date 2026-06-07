@@ -7,7 +7,7 @@ export const FiltersStyled = styled.div`
 
   gap: 1rem;
   padding: 1rem;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: ${(props) => props.theme.gradients.navy};
 
   .input-container {
     input {
@@ -30,7 +30,7 @@ export const FiltersStyled = styled.div`
     border-radius: 1rem;
   }
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 48rem) {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;

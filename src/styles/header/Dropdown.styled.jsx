@@ -9,18 +9,18 @@ export const DropdownStyled = styled.section`
   transform: translateY(3rem);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(240, 253, 244, 0.9)
+    ${(props) => props.theme.colors.shadow.whiteTransparent},
+    ${(props) => props.theme.colors.shadow.greenTransparent}
   );
   backdrop-filter: blur(6px);
-  border: 1px solid #e2e8f0;
+  border: 1px solid ${(props) => props.theme.colors.neutral.gray.light};
   border-radius: 0.5rem;
   padding: 0.5rem;
   z-index: 2;
   height: calc(100vh - clamp(1.5rem, 0.12rem + 3.756vw, 3.5rem) - 3.5rem);
   overflow-y: auto;
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 48rem) {
     left: 70%;
   }
 
@@ -29,13 +29,13 @@ export const DropdownStyled = styled.section`
   }
 
   &::-webkit-scrollbar-track {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgb(4, 220, 253);
+    background: ${(props) => props.theme.colors.cyan.bright};
     border-radius: 0.5rem;
-    border: 1px solid black;
+    border: 1px solid ${(props) => props.theme.colors.blackText};
   }
 
   .row {
@@ -48,10 +48,7 @@ export const DropdownStyled = styled.section`
 
   .head {
     font-weight: bold;
-  }
-
-  .head {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
     border-radius: 0.5rem;
     color: white;
   }
@@ -66,7 +63,7 @@ export const DropdownRowStyled = styled.div`
   max-height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth;
-  border-bottom: ${(props) => (props.$isLast ? "none" : "1px solid #cccccc86")};
+  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid ${props.theme.colors.neutral.gray.light}`)};
 
   .img-container {
     width: 4rem;
@@ -93,7 +90,7 @@ export const DropdownFooterStyled = styled.div`
 
   .cart-total {
     font-weight: bold;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
     border-radius: 0.5rem;
     color: white;
   }
@@ -108,13 +105,13 @@ export const DropdownFooterStyled = styled.div`
 
     .cart-link {
       font-weight: bold;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: ${(props) => props.theme.gradients.navy};
       border-radius: 0.5rem;
       color: white;
       padding: 0.5rem 1rem;
 
       &:focus-visible {
-        outline: 2px solid #0f172a;
+        outline: 2px solid ${(props) => props.theme.colors.navy.dark};
         outline-offset: 4px;
         border-radius: 4px;
       }

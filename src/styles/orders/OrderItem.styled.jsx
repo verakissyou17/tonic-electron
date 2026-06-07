@@ -13,11 +13,11 @@ export const OrderItemStyled = styled.div`
     transform 0.2s ease;
 
   &:nth-child(even) {
-    background-color: #fcefef;
+    background-color: ${(props) => props.theme.colors.special.pink};
   }
 
   &:nth-child(odd) {
-    background-color: #ecfbfc;
+    background-color: ${(props) => props.theme.colors.special.cyanLight};
   }
 
   &:hover {
@@ -29,7 +29,7 @@ export const OrderItemStyled = styled.div`
   span {
     flex: 1;
     font-size: 0.9rem;
-    color: #334155;
+    color: ${(props) => props.theme.colors.neutral.gray.slate600};
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -37,11 +37,11 @@ export const OrderItemStyled = styled.div`
     &:first-child {
       flex: 0.5;
       font-weight: 600;
-      color: #0f172a;
+      color: ${(props) => props.theme.colors.navy.dark};
     }
 
     &:nth-child(2) {
-      color: #64748b;
+      color: ${(props) => props.theme.colors.neutral.gray.slate500};
     }
 
     &:nth-child(3) {
@@ -51,12 +51,12 @@ export const OrderItemStyled = styled.div`
     &:nth-child(4) {
       text-align: center;
       font-weight: 600;
-      color: rgb(15, 212, 243);
+      color: ${(props) => props.theme.colors.cyan.accent};
     }
   }
 
   .details-link {
-    color: #0f172a;
+    color: ${(props) => props.theme.colors.navy.dark};
     text-decoration: underline;
     font-style: italic;
     font-size: 0.9rem;

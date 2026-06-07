@@ -22,6 +22,7 @@ export const HomeMainStyled = styled.div`
 
   .image-container img:hover {
     scale: 1.2;
+    transition: scale 0.3s ease;
   }
 
   .product-name {
@@ -81,6 +82,7 @@ export const HomeMainStyled = styled.div`
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease, cursor 0.3s ease;
   }
 
   .increment-quantity:hover,
@@ -93,10 +95,11 @@ export const HomeMainStyled = styled.div`
 
   .add-cart-btn {
     padding: 0.25em 0.75em;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
     border-radius: 0.25rem;
     display: grid;
     place-content: center;
+    transition: scale 0.3s ease, box-shadow 0.3s ease;
   }
 
   .cart-icon {

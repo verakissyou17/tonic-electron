@@ -16,7 +16,7 @@ export const CartStyled = styled.main`
 
   h2,
   .order-link {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
     color: white;
     border-radius: 0.5rem;
     padding: 0.5rem 0.75rem;
@@ -29,7 +29,7 @@ export const CartFooterStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: ${(props) => props.theme.gradients.navy};
   color: white;
   border-radius: 0.5rem;
   margin-top: 1rem;

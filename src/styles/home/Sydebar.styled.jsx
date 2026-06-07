@@ -13,7 +13,7 @@ export const SidebarStyled = styled.aside`
   h3 {
     margin-block: 1rem;
     font-size: 1rem;
-    color: #1e293b;
+    color: ${(props) => props.theme.colors.navy.medium};
   }
 
   .checkbox-group {
@@ -21,7 +21,7 @@ export const SidebarStyled = styled.aside`
     flex-wrap: wrap;
     gap: 0.75rem;
 
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 48rem) {
       flex-direction: column;
     }
   }
@@ -32,6 +32,7 @@ export const SidebarStyled = styled.aside`
     gap: 0.25rem;
     font-size: 1rem;
     color: #2f425c;
+    transition: color 0.3s ease;
 
     input {
       width: 1rem;

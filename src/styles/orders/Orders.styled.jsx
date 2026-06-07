@@ -6,7 +6,7 @@ export const OrdersStyled = styled.section`
   max-width: 60rem;
   margin: 2rem auto;
   padding: 1.5rem;
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colors.neutral.white};
   border-radius: 0.75rem;
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.05),
@@ -15,7 +15,7 @@ export const OrdersStyled = styled.section`
   .title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0f172a;
+    color: ${(props) => props.theme.colors.navy.dark};
     margin-bottom: 1.5rem;
   }
 
@@ -24,7 +24,7 @@ export const OrdersStyled = styled.section`
     align-items: center;
     gap: 1rem;
     padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 

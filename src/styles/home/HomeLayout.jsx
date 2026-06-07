@@ -10,7 +10,7 @@ export const HomeLayout = styled.div`
       flex-grow: 0;
   }
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 48rem) {
     flex-direction: row;
   }
 `;

@@ -7,7 +7,7 @@ export const OrderStyled = styled.form`
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
-  background: white;
+  background: ${(props) => props.theme.colors.neutral.white};
   max-width: 40rem;
   margin: 1rem auto;
   box-shadow:
@@ -27,7 +27,7 @@ export const OrderStyled = styled.form`
 
       input[type="radio"] {
         margin-right: 0.5rem;
-        accent-color: rgba(7, 207, 238);
+        accent-color: ${(props) => props.theme.colors.cyan.primary};
       }
 
       input[type="text"],
@@ -51,22 +51,18 @@ export const OrderStyled = styled.form`
     margin: 0.5rem auto;
     border-radius: 0.5rem;
     font-family: inherit;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: ${(props) => props.theme.gradients.navy};
     color: white;
     font-weight: 600;
     font-size: 1rem;
   }
 
   .add-order-btn:hover {
-    background: linear-gradient(
-      135deg,
-      rgba(15, 23, 42, 0.8),
-      rgba(30, 41, 59, 0.8)
-    );
+    opacity: 0.8;
   }
 
   .error {
-    color: red;
+    color: ${(props) => props.theme.colors.special.error};
     font-size: 0.75rem;
     margin-block: 0.5rem;
   }

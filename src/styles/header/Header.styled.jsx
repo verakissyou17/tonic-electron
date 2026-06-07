@@ -6,6 +6,7 @@ export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   text-shadow: 0 0 10px rgba(7, 207, 238, 0.4);
 
   .overlay {
@@ -22,7 +23,7 @@ export const HeaderStyled = styled.header`
 
     .cart-icon {
       font-size: 1.5rem;
-      color: black;
+      color: ${(props) => props.theme.colors.blackText};
     }
 
     .cart-quantity {
@@ -35,15 +36,16 @@ export const HeaderStyled = styled.header`
       display: grid;
       place-content: center;
       color: #fff;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: ${(props) => props.theme.gradients.navy};
       border-radius: 50%;
-      border: 2px solid rgb(7, 207, 238);
+      border: 2px solid ${(props) => props.theme.colors.cyan.primary};
+      transition: scale 0.3s ease, background 0.3s ease, color 0.3s ease, border 0.3s ease;
     }
 
     .cart-quantity:hover {
       scale: 1.2;
-      background: rgb(7, 207, 238);
-      color: black;
+      background: ${(props) => props.theme.colors.cyan.primary};
+      color: ${(props) => props.theme.colors.navy.dark};
       font-weight: 500;
       border: 1px solid;
     }
@@ -75,7 +77,7 @@ export const StyledLink = styled(Link)`
 
   h1 {
     text-transform: uppercase;
-    color: #0f172a;
+    color: ${(props) => props.theme.colors.navy.dark};
     font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     line-height: 1;
   }

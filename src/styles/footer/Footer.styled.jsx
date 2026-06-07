@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: ${(props) => props.theme.gradients.navy};
   color: #fff;
   padding: 1.5rem 1rem;
   margin-top: 2rem;
@@ -23,7 +23,7 @@ export const FooterStyled = styled.footer`
   }
 
   .footer-section a {
-    color: #bbb;
+    color: ${(props) => props.theme.colors.neutral.gray.medium};
     transition: 0.2s;
   }
 
