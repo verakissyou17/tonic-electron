@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CartStyled = styled.main`
+  flex: 1;
   padding: clamp(1rem, 0.648rem + 1.502vw, 2rem);
   width: 100%;
   max-width: 64rem;
@@ -31,4 +32,5 @@ export const CartFooterStyled = styled.div`
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   border-radius: 0.5rem;
+  margin-top: 1rem;
 `;

@@ -1,9 +1,11 @@
-import {  useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { ProductsContext } from "./ProductsContext";
 
 export function ProductsProvider({ children }) {
   const [products, setProducts] = useState([]);
-   const categories = [...new Set(products.map((p) => p.category))];
+  const categories = useMemo(() => {
+    return [...new Set(products.map((p) => p.category))];
+  }, [products]);
 
   useEffect(() => {
     async function fetchData() {
@@ -15,10 +17,17 @@ export function ProductsProvider({ children }) {
     fetchData();
   }, []);
 
+  const value = useMemo(
+    () => ({
+      products,
+      categories,
+    }),
+    [products, categories],
+  );
+
   return (
-    <ProductsContext.Provider value={{ products, categories }}>
+    <ProductsContext.Provider value={value}>
       {children}
     </ProductsContext.Provider>
   );
 }
-

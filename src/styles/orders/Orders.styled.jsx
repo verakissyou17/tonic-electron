@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const OrdersStyled = styled.section`
+  flex: 1;
   width: 100%;
   max-width: 60rem;
   margin: 2rem auto;

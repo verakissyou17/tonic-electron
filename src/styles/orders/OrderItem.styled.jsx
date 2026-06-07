@@ -45,10 +45,17 @@ export const OrderItemStyled = styled.div`
       font-weight: 500;
     }
 
-    &:last-child {
-      text-align: right;
+    &:nth-child(4) {
+      text-align: center;
       font-weight: 600;
-      color: rgb(5, 180, 207); 
+      color: rgb(15, 212, 243); 
     }
+  }
+
+  .details-link {
+   color: #0f172a; 
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 0.9rem;
   }
 `;

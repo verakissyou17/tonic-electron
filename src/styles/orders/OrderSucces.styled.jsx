@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledOrderSuccess = styled.section`
-  max-width: 350px;
+  max-width: 64rem;
   margin: 2rem auto;
   padding: 2rem;
   background: white;

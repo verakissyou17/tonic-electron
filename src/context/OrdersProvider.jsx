@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { OrdersContext } from "./OrdersContext";
 
 export function OrdersProvider({ children }) {
@@ -6,7 +6,6 @@ export function OrdersProvider({ children }) {
     const savedOrders = localStorage.getItem("orders");
     return savedOrders ? JSON.parse(savedOrders) : [];
   });
-
 
   useEffect(() => {
     localStorage.setItem("orders", JSON.stringify(orders));
@@ -16,14 +15,15 @@ export function OrdersProvider({ children }) {
     setOrders((prevOrders) => [newOrder, ...prevOrders]);
   }
 
+  const value = useMemo(
+    () => ({
+      orders,
+      addOrder,
+    }),
+    [orders],
+  );
+
   return (
-    <OrdersContext.Provider
-      value={{
-        orders,
-        addOrder,
-      }}
-    >
-      {children}
-    </OrdersContext.Provider>
+    <OrdersContext.Provider value={value}>{children}</OrdersContext.Provider>
   );
 }

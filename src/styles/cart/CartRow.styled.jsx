@@ -59,9 +59,8 @@ export const CartRowStyled = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 0.5rem;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border: 1px solid #364052a7;
     border-radius: 0.5rem;
-    color: white;
     min-width: 6.5rem;
     height: 2.5rem;
 
@@ -90,6 +89,6 @@ export const CartRowStyled = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.2rem; /* Face coșul de gunoi mai ușor de nimerit pe mobil */
+    font-size: 1.2rem; 
   }
 `;

@@ -1,11 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Header from "./components/header/Header.jsx";
-import Order from "./pages/Order";
+import Home from "./pages/Home";
+import FooterBottom from "./components/footer/FooterBottom.jsx";
 import Cart from "./pages/Cart";
+import Order from "./pages/Order";
+import Orders from "./pages/Orders";
+import OrderDetails from "./pages/OrderDetails.jsx";
 import ScrollToTop from "./components/global/ScrollToTop.jsx";
 import PageNotFound from "./pages/PageNotFound";
-import Orders from "./pages/Orders";
+
 
 function App() {
   return (
@@ -18,8 +21,10 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/details/:id" element={<OrderDetails />} />
       </Routes>
       <ScrollToTop />
+      <FooterBottom />
     </>
   );
 }

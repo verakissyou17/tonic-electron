@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const OrderStyled = styled.form`
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

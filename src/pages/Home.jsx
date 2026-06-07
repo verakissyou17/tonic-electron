@@ -4,6 +4,7 @@ import Filters from "../components/home/Filters";
 import HomeMain from "../components/home/HomeMain";
 import Sidebar from "../components/home/Sidebar";
 import CategoryCheckboxes from "../components/home/CategorySelectForm";
+import Footer from "../components/footer/Footer";
 import { HomeLayout } from "../styles/home/HomeLayout";
 import { useProducts } from "../context/useProducts";
 
@@ -98,6 +99,7 @@ function Home() {
           <h1 style={{ textAlign: "center" }}>Not found</h1>
         )}
       </HomeLayout>
+      <Footer />
     </>
   );
 }
