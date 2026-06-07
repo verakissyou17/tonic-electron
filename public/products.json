@@ -5,7 +5,7 @@
     "category": "case",
     "price": 2500,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cases/transparent-iphone-case.webp",
+    "image": "images/products/cases/transparent-iphone-case.webp",
     "description": "Husa transparentă Apple oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -14,7 +14,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/glass/edge-transparent-glass.webp",
+    "image": "images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla Samsung Edge-to-Edge asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -23,7 +23,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cables/anker-usbc-cable.webp",
+    "image": "images/products/cables/anker-usbc-cable.webp",
     "description": "Cablul USB-C Anker oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -32,7 +32,7 @@
     "category": "adapter",
     "price": 4000,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/adapters/spigen-black-adaptor.webp",
+    "image": "images/products/adapters/spigen-black-adaptor.webp",
     "description": "Adaptorul de perete USB Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs. mobile."
   },
   {
@@ -41,7 +41,7 @@
     "category": "case",
     "price": 3000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cases/baseus-leather-case.webp",
+    "image": "images/products/cases/baseus-leather-case.webp",
     "description": "Husa din piele Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -50,7 +50,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/glass/oneplus-tempered-glass.png",
+    "image": "images/products/glass/oneplus-tempered-glass.png",
     "description": "Sticla securizată OnePlus asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -59,7 +59,7 @@
     "category": "cable",
     "price": 3000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/cables/fast-charging-cable.webp",
+    "image": "images/products/cables/fast-charging-cable.webp",
     "description": "Cablul de încărcare rapidă Xiaomi oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
@@ -68,7 +68,7 @@
     "category": "adapter",
     "price": 2500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/car-chargers/spigen-car-charger.webp",
+    "image": "images/products/car-chargers/spigen-car-charger.webp",
     "description": "Încărcătorul auto Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs. mobile."
   },
   {
@@ -77,7 +77,7 @@
     "category": "case",
     "price": 2000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cases/samsung-rugged-case.webp",
+    "image": "images/products/cases/samsung-rugged-case.webp",
     "description": "Husa rezistentă Samsung oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -86,7 +86,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/glass/iphone-privacy-glass.webp",
+    "image": "images/products/glass/iphone-privacy-glass.webp",
     "description": "Sticla de confidențialitate Apple asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -95,7 +95,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cables/baseus-lightning-cable.webp",
+    "image": "images/products/cables/baseus-lightning-cable.webp",
     "description": "Cablul Lightning Baseus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -104,7 +104,7 @@
     "category": "adapter",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/adapters/multihub-oneplus.webp",
+    "image": "images/products/adapters/multihub-oneplus.webp",
     "description": "Adaptorul multiport OnePlus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -112,8 +112,8 @@
     "name": "Xiaomi Leather Case",
     "category": "case",
     "price": 3500,
-    "brand": "Xiaomi",  
-    "image": "/tonic-electron/images/products/cases/xiaomi-leather-case.webp",
+    "brand": "Xiaomi",
+    "image": "images/products/cases/xiaomi-leather-case.webp",
     "description": "Husa din piele Xiaomi oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -122,7 +122,7 @@
     "category": "glass",
     "price": 2500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/glass/full-cover-glass.webp",
+    "image": "images/products/glass/full-cover-glass.webp",
     "description": "Sticla Spigen Edge-to-Edge asigură protecție cristalină și rezistență la zgârieturi pe toată suprafața."
   },
   {
@@ -131,7 +131,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cables/cablu-lighting-usbc-white.webp",
+    "image": "images/products/cables/cablu-lighting-usbc-white.webp",
     "description": "Cablul Apple Lightning la USB-C oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
@@ -140,7 +140,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/adapters/samsung-wireless-charging-suport.webp",
+    "image": "images/products/adapters/samsung-wireless-charging-suport.webp",
     "description": "Încărcătorul wireless Samsung oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -149,7 +149,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cases/baseus-transparent-case.jpeg",
+    "image": "images/products/cases/baseus-transparent-case.jpeg",
     "description": "Husa transparentă Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -158,7 +158,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/glass/anker-privacy-glass.jpeg",
+    "image": "images/products/glass/anker-privacy-glass.jpeg",
     "description": "Sticla de confidențialitate Anker asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -167,7 +167,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cables/one-plus-fast-charging-cable.webp",
+    "image": "images/products/cables/one-plus-fast-charging-cable.webp",
     "description": "Cablul de încărcare rapidă OnePlus oferă transfer rapid și fiabil cu izolație de înaltă calitate."
   },
   {
@@ -176,7 +176,7 @@
     "category": "adapter",
     "price": 5000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "image": "images/products/adapters/xiaomi-usb-wall-adapter.webp",
     "description": "Adaptorul de perete USB Xiaomi oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -185,7 +185,7 @@
     "category": "case",
     "price": 2000,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/cases/spigen-rugged-case.jpeg",
+    "image": "images/products/cases/spigen-rugged-case.jpeg",
     "description": "Husa rezistentă Spigen oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -194,7 +194,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/glass/apple-tempered-glass.jpeg",
+    "image": "images/products/glass/apple-tempered-glass.jpeg",
     "description": "Sticla securizată Apple asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -203,7 +203,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cables/anker-usbc-cable.webp",
+    "image": "images/products/cables/anker-usbc-cable.webp",
     "description": "Cablul USB-C Baseus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -212,7 +212,7 @@
     "category": "adapter",
     "price": 2500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/car-chargers/baseus-car-charger.webp",
+    "image": "images/products/car-chargers/baseus-car-charger.webp",
     "description": "Încărcătorul auto Anker oferă livrare de putere sigură și eficientă pentru dispozitivele dvs. mobile."
   },
   {
@@ -221,7 +221,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cases/samsung-rugged-case.webp",
+    "image": "images/products/cases/samsung-rugged-case.webp",
     "description": "Husa din silicon Samsung oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -230,7 +230,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/glass/anker-privacy-glass.jpeg",
+    "image": "images/products/glass/anker-privacy-glass.jpeg",
     "description": "Protectorul de ecran Anker asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -239,7 +239,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cables/baseus-lightning-cable.webp",
+    "image": "images/products/cables/baseus-lightning-cable.webp",
     "description": "Cablul Lightning Apple oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -248,7 +248,7 @@
     "category": "adapter",
     "price": 3000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/adapters/multihub-oneplus.webp",
+    "image": "images/products/adapters/multihub-oneplus.webp",
     "description": "Adaptorul multiport Samsung oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -257,7 +257,7 @@
     "category": "case",
     "price": 1700,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cases/transparent-iphone-case.webp",
+    "image": "images/products/cases/transparent-iphone-case.webp",
     "description": "Husa din silicon OnePlus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -266,7 +266,7 @@
     "category": "glass",
     "price": 2500,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/glass/edge-transparent-glass.webp",
+    "image": "images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla Xiaomi Edge-to-Edge asigură protecție cristalină și rezistență la zgârieturi pe toată suprafața."
   },
   {
@@ -275,7 +275,7 @@
     "category": "cable",
     "price": 2500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/cables/fast-charging-cable.webp",
+    "image": "images/products/cables/fast-charging-cable.webp",
     "description": "Cablul de încărcare rapidă Spigen oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
@@ -284,7 +284,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "image": "images/products/adapters/xiaomi-usb-wall-adapter.webp",
     "description": "Adaptorul de perete USB Baseus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -293,7 +293,7 @@
     "category": "case",
     "price": 3000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cases/baseus-leather-back-case.webp",
+    "image": "images/products/cases/baseus-leather-back-case.webp",
     "description": "Husa din piele Apple oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -302,7 +302,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/glass/iphone-privacy-glass.webp",
+    "image": "images/products/glass/iphone-privacy-glass.webp",
     "description": "Sticla de confidențialitate Samsung asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -311,7 +311,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cables/cablu-lighting-usbc-white.webp",
+    "image": "images/products/cables/cablu-lighting-usbc-white.webp",
     "description": "Cablul Micro USB Anker oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -320,7 +320,7 @@
     "category": "adapter",
     "price": 4500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/car-chargers/baseus-car-charger.webp",
+    "image": "images/products/car-chargers/baseus-car-charger.webp",
     "description": "Încărcătorul auto OnePlus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -329,7 +329,7 @@
     "category": "case",
     "price": 2000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/cases/samsung-transparent-case.jpeg",
+    "image": "images/products/cases/samsung-transparent-case.jpeg",
     "description": "Husa transparentă Xiaomi oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -338,7 +338,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/glass/edge-transparent-glass.webp",
+    "image": "images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla securizată Spigen asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -347,7 +347,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cables/cablu-lighting-usbc-white.webp",
+    "image": "images/products/cables/cablu-lighting-usbc-white.webp",
     "description": "Cablul USB-C Baseus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -356,7 +356,7 @@
     "category": "adapter",
     "price": 4500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/adapters/samsung-wireless-charging-suport.webp",
+    "image": "images/products/adapters/samsung-wireless-charging-suport.webp",
     "description": "Încărcătorul wireless Anker oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -365,7 +365,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/cases/samsung-transparent-case.jpeg",
+    "image": "images/products/cases/samsung-transparent-case.jpeg",
     "description": "Husa din silicon Spigen oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -374,7 +374,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/glass/edge-transparent-glass.webp",
+    "image": "images/products/glass/edge-transparent-glass.webp",
     "description": "Protectorul de ecran OnePlus asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -383,7 +383,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cables/baseus-lightning-cable.webp",
+    "image": "images/products/cables/baseus-lightning-cable.webp",
     "description": "Cablul Lightning Samsung oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -392,7 +392,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/adapters/multihub-oneplus.webp",
+    "image": "images/products/adapters/multihub-oneplus.webp",
     "description": "Adaptorul multiport Baseus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -401,7 +401,7 @@
     "category": "case",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cases/samsung-rugged-case.webp",
+    "image": "images/products/cases/samsung-rugged-case.webp",
     "description": "Husa rezistentă Apple oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -410,7 +410,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/glass/anker-privacy-glass.jpeg",
+    "image": "images/products/glass/anker-privacy-glass.jpeg",
     "description": "Sticla de confidențialitate Xiaomi asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -419,7 +419,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cables/baseus-lightning-cable.webp",
+    "image": "images/products/cables/baseus-lightning-cable.webp",
     "description": "Cablul Lightning OnePlus oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -428,7 +428,7 @@
     "category": "adapter",
     "price": 3000,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/car-chargers/baseus-car-charger.webp",
+    "image": "images/products/car-chargers/baseus-car-charger.webp",
     "description": "Încărcătorul auto Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -437,7 +437,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cases/transparent-iphone-case.webp",
+    "image": "images/products/cases/transparent-iphone-case.webp",
     "description": "Husa transparentă Anker oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -446,7 +446,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/glass/baseus-ultra-clear-glass.webp",
+    "image": "images/products/glass/baseus-ultra-clear-glass.webp",
     "description": "Sticla securizată Baseus asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -455,7 +455,7 @@
     "category": "case",
     "price": 2500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cases/baseus-leather-case.webp",
+    "image": "images/products/cases/baseus-leather-case.webp",
     "description": "Husa din piele Samsung oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -464,7 +464,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/glass/edge-transparent-glass.webp",
+    "image": "images/products/glass/edge-transparent-glass.webp",
     "description": "Sticla Edge Xiaomi asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -473,7 +473,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cables/one-plus-fast-charging-cable.webp",
+    "image": "images/products/cables/one-plus-fast-charging-cable.webp",
     "description": "Cablul de încărcare rapidă Apple oferă transfer rapid și fiabil cu izolație de calitate superioară."
   },
   {
@@ -482,7 +482,7 @@
     "category": "adapter",
     "price": 4000,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "image": "images/products/adapters/xiaomi-usb-wall-adapter.webp",
     "description": "Adaptorul de perete OnePlus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -491,7 +491,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/cases/samsung-transparent-case.jpeg",
+    "image": "images/products/cases/samsung-transparent-case.jpeg",
     "description": "Husa subțire Spigen oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -500,7 +500,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/glass/full-cover-glass.webp",
+    "image": "images/products/glass/full-cover-glass.webp",
     "description": "Protectorul de sticlă complet Baseus asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -509,7 +509,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cables/anker-usbc-cable.webp",
+    "image": "images/products/cables/anker-usbc-cable.webp",
     "description": "Cablul PowerLine USB-C Anker oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate."
   },
   {
@@ -518,7 +518,7 @@
     "category": "adapter",
     "price": 2500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/adapters/samsung-travel-adapter.webp",
+    "image": "images/products/adapters/samsung-travel-adapter.webp",
     "description": "Adaptorul de călătorie Samsung oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -527,7 +527,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/cases/xiaomi-silicone-case.webp",
+    "image": "images/products/cases/xiaomi-silicone-case.webp",
     "description": "Husa din silicon Xiaomi oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -536,7 +536,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/glass/apple-screen-guard.jpeg",
+    "image": "images/products/glass/apple-screen-guard.jpeg",
     "description": "Protectorul de ecran Apple asigură protecție cristalină și rezistență la zgârieturi."
   },
   {
@@ -545,7 +545,7 @@
     "category": "cable",
     "price": 2500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cables/dash-cable.webp",
+    "image": "images/products/cables/dash-cable.webp",
     "description": "Cablul Dash OnePlus oferă încărcare ultra-rapidă și fiabilă cu izolație de înaltă calitate."
   },
   {
@@ -554,7 +554,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/adapters/dual-usb-adapter.webp",
+    "image": "images/products/adapters/dual-usb-adapter.webp",
     "description": "Adaptorul dual USB Spigen oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -563,7 +563,7 @@
     "category": "case",
     "price": 2000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cases/spigen-rugged-case.jpeg",
+    "image": "images/products/cases/spigen-rugged-case.jpeg",
     "description": "Husa cu suport Baseus oferă protecție elegantă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -572,7 +572,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/glass/apple-tempered-glass.jpeg",
+    "image": "images/products/glass/apple-tempered-glass.jpeg",
     "description": "Sticla HD Anker asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -581,7 +581,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cables/cable-typec.webp",
+    "image": "images/products/cables/cable-typec.webp",
     "description": "Cablul Type-C Samsung oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -590,7 +590,7 @@
     "category": "adapter",
     "price": 3000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/adapters/spigen-black-adaptor.webp",
+    "image": "images/products/adapters/spigen-black-adaptor.webp",
     "description": "Adaptorul rapid Xiaomi oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -599,7 +599,7 @@
     "category": "case",
     "price": 2500,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cases/apple-hybrid-case.jpeg",
+    "image": "images/products/cases/apple-hybrid-case.jpeg",
     "description": "Husa hibridă Apple oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -608,7 +608,7 @@
     "category": "glass",
     "price": 2500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/glass/matte-glass.jpeg",
+    "image": "images/products/glass/matte-glass.jpeg",
     "description": "Sticla mată OnePlus asigură protecție cristalină și rezistență la zgârieturi cu finisaj mat."
   },
   {
@@ -617,7 +617,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/cables/cable-typec.webp",
+    "image": "images/products/cables/cable-typec.webp",
     "description": "Cablul USB-C Spigen oferă încărcare rapidă și fiabilă cu izolație de înaltă calitate și durabilitate."
   },
   {
@@ -626,7 +626,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/adapters/baseus-smart-charger.webp",
+    "image": "images/products/adapters/baseus-smart-charger.webp",
     "description": "Încărcătorul inteligent Baseus oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -635,7 +635,7 @@
     "category": "case",
     "price": 3500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cases/samsung-armour-case.webp",
+    "image": "images/products/cases/samsung-armour-case.webp",
     "description": "Husa coajă Samsung oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -644,7 +644,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/glass/full-cover-glass.webp",
+    "image": "images/products/glass/full-cover-glass.webp",
     "description": "Sticla securizată Xiaomi asigură protecție cristalină a afișajului și rezistență la zgârieturi."
   },
   {
@@ -653,7 +653,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cables/braided-cable.webp",
+    "image": "images/products/cables/braided-cable.webp",
     "description": "Cablul țesut Anker oferă încărcare rapidă și fiabilă cu material durabil și rezistență la pliere."
   },
   {
@@ -662,7 +662,7 @@
     "category": "adapter",
     "price": 4000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/adapters/dual-charger-adapter.webp",
+    "image": "images/products/adapters/dual-charger-adapter.webp",
     "description": "Adaptorul cu două porturi Apple oferă livrare de putere sigură și eficientă pentru dispozitivele dvs."
   },
   {
@@ -671,7 +671,7 @@
     "category": "case",
     "price": 2000,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cases/bumper-case.jpeg",
+    "image": "images/products/cases/bumper-case.jpeg",
     "description": "Husa bampel OnePlus oferă protecție solidă cu material durabil și o apucătură confortabilă."
   },
   {
@@ -680,7 +680,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/glass/iphone-privacy-glass.webp",
+    "image": "images/products/glass/iphone-privacy-glass.webp",
     "description": "Protectorul de confidențialitate Spigen protejează ecranul de zgârieturi și păstrează conținutul privat."
   },
   {
@@ -689,7 +689,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cables/baseus-lightning-cable.webp",
+    "image": "images/products/cables/baseus-lightning-cable.webp",
     "description": "Cablul Lightning Baseus asigură încărcare sigură și rapidă cu izolație de calitate superioară."
   },
   {
@@ -698,7 +698,7 @@
     "category": "adapter",
     "price": 4500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/adapters/gan-power-adapter.webp",
+    "image": "images/products/adapters/gan-power-adapter.webp",
     "description": "Încărcătorul rapid GaN Anker oferă încărcare ultra-rapidă cu eficiență și siguranță superioare."
   },
   {
@@ -707,7 +707,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/cases/fabric-case.jpeg",
+    "image": "images/products/cases/fabric-case.jpeg",
     "description": "Husa din țesătură Xiaomi oferă protecție cu textură moale și rezistență la șocuri."
   },
   {
@@ -716,7 +716,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/glass/oneplus-tempered-glass.png",
+    "image": "images/products/glass/oneplus-tempered-glass.png",
     "description": "Sticla transparentă Samsung protejează ecranul de zgârieturi și menține claritatea afișajului."
   },
   {
@@ -725,7 +725,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/cables/mfi-cable.webp",
+    "image": "images/products/cables/mfi-cable.webp",
     "description": "Cablul certificat MFi Apple asigură compatibilitate și încărcare rapidă pentru toate dispozitivele Apple."
   },
   {
@@ -734,7 +734,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/adapters/compact-adapter.webp",
+    "image": "images/products/adapters/compact-adapter.webp",
     "description": "Încărcătorul compact Spigen este ușor și eficient, perfect pentru călătorii și uz casnic."
   },
   {
@@ -743,7 +743,7 @@
     "category": "case",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cases/frosted-case.jpeg",
+    "image": "images/products/cases/frosted-case.jpeg",
     "description": "Husa mată OnePlus oferă apucătură puternică și transparență mată pentru un aspect elegant."
   },
   {
@@ -752,7 +752,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/glass/anti-spy-glass.webp",
+    "image": "images/products/glass/anti-spy-glass.webp",
     "description": "Protecția anti-spionaj Baseus asigură siguranța și confidențialitatea ecranului dvs."
   },
   {
@@ -761,7 +761,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cables/anker-usbc-cable.webp",
+    "image": "images/products/cables/anker-usbc-cable.webp",
     "description": "Cablul nylon USB-C Anker suportă încărcare rapidă și oferă performanță de lungă durată."
   },
   {
@@ -770,7 +770,7 @@
     "category": "adapter",
     "price": 4000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/adapters/xiaomi-usb-wall-adapter.webp",
+    "image": "images/products/adapters/xiaomi-usb-wall-adapter.webp",
     "description": "Încărcătorul Power Delivery Xiaomi oferă încărcare eficientă pentru dispozitivele Type-C."
   },
   {
@@ -779,7 +779,7 @@
     "category": "case",
     "price": 3000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/cases/samsung-silicone-grip-case.webp",
+    "image": "images/products/cases/samsung-silicone-grip-case.webp",
     "description": "Husa din silicon cu apucătură Samsung protejează telefonul dvs. cu design prietenos."
   },
   {
@@ -788,7 +788,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/glass/apple-antiglare-glass.jpeg",
+    "image": "images/products/glass/apple-antiglare-glass.jpeg",
     "description": "Sticla anti-strălucire Apple reduce reflexiile și protejează de zgârieturi."
   },
   {
@@ -797,7 +797,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cables/oneplus-warp-cable.webp",
+    "image": "images/products/cables/oneplus-warp-cable.webp",
     "description": "Cablul Warp Charge OnePlus suportă încărcare ultra-rapidă pentru dispozitivele compatibile."
   },
   {
@@ -806,7 +806,7 @@
     "category": "adapter",
     "price": 3500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/adapters/spigen-usb-pd-adapter.webp",
+    "image": "images/products/adapters/spigen-usb-pd-adapter.webp",
     "description": "Adaptorul PD USB Spigen încarcă dispozitivele cu putere și eficiență."
   },
   {
@@ -815,7 +815,7 @@
     "category": "case",
     "price": 3000,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/cases/baseus-leather-back-case.webp",
+    "image": "images/products/cases/baseus-leather-back-case.webp",
     "description": "Husa din piele cu spate Baseus oferă textură premium și protecție împotriva căderii."
   },
   {
@@ -824,7 +824,7 @@
     "category": "glass",
     "price": 2000,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/glass/anker-matte-screen-guard.webp",
+    "image": "images/products/glass/anker-matte-screen-guard.webp",
     "description": "Protectorul de ecran mat Anker rezistă amprentelor digitale și strălucirilor."
   },
   {
@@ -833,7 +833,7 @@
     "category": "cable",
     "price": 2000,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/cables/xiaomi-braided-type-c.webp",
+    "image": "images/products/cables/xiaomi-braided-type-c.webp",
     "description": "Cablul țesut Type-C Xiaomi asigură alimentare fiabilă cu utilizare fără încurcări."
   },
   {
@@ -842,7 +842,7 @@
     "category": "adapter",
     "price": 3000,
     "brand": "Apple",
-    "image": "/tonic-electron/images/products/adapters/apple-compact-wall-adapter.webp",
+    "image": "images/products/adapters/apple-compact-wall-adapter.webp",
     "description": "Adaptorul compact de perete Apple oferă livrare de putere optimizată pentru toate dispozitivele."
   },
   {
@@ -851,7 +851,7 @@
     "category": "case",
     "price": 2500,
     "brand": "Spigen",
-    "image": "/tonic-electron/images/products/cases/spigen-grip-armor-case.webp",
+    "image": "images/products/cases/spigen-grip-armor-case.webp",
     "description": "Husa coajă cu apucătură Spigen oferă protecție solidă și apucătură superioară."
   },
   {
@@ -860,7 +860,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Baseus",
-    "image": "/tonic-electron/images/products/glass/baseus-ultra-clear-glass.webp",
+    "image": "images/products/glass/baseus-ultra-clear-glass.webp",
     "description": "Sticla ultra-transparentă Baseus oferă vizibilitate cristalină și protecție puternică."
   },
   {
@@ -869,7 +869,7 @@
     "category": "cable",
     "price": 1500,
     "brand": "OnePlus",
-    "image": "/tonic-electron/images/products/cables/oneplus-silicone-cable.webp",
+    "image": "images/products/cables/oneplus-silicone-cable.webp",
     "description": "Cablul din silicon moale OnePlus suportă încărcare rapidă și este durabil."
   },
   {
@@ -878,7 +878,7 @@
     "category": "adapter",
     "price": 4000,
     "brand": "Samsung",
-    "image": "/tonic-electron/images/products/adapters/samsung-wireless-adapter.webp",
+    "image": "images/products/adapters/samsung-wireless-adapter.webp",
     "description": "Adaptor și pad de încărcare wireless Samsung în pachet compact."
   },
   {
@@ -887,7 +887,7 @@
     "category": "case",
     "price": 1500,
     "brand": "Anker",
-    "image": "/tonic-electron/images/products/cases/anker-slim-shell-case.jpeg",
+    "image": "images/products/cases/anker-slim-shell-case.jpeg",
     "description": "Husa coajă subțire Anker oferă protecție cu design ergonomic și apucătură confortabilă."
   },
   {
@@ -896,7 +896,7 @@
     "category": "glass",
     "price": 1500,
     "brand": "Xiaomi",
-    "image": "/tonic-electron/images/products/glass/xiaomi-hd-screen-guard.webp",
+    "image": "images/products/glass/xiaomi-hd-screen-guard.webp",
     "description": "Protectorul de ecran HD Xiaomi oferă vizionare ultra-clară și rezistență superioară la zgârieturi."
   }
 ]
