@@ -52,11 +52,11 @@ export const HeaderStyled = styled.header`
 
 export const StyledLink = styled(Link)`
   display: flex;
-  align-items: flex-end;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
 
   .logo {
-    height: clamp(1rem, 0.296rem + 3.005vw, 3rem);
+    height: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     animation: logo-spin infinite 10s linear;
   }
 
@@ -76,7 +76,7 @@ export const StyledLink = styled(Link)`
   h1 {
     text-transform: uppercase;
     color: #0f172a;
-    font-size: clamp(1rem, 0.296rem + 3.005vw, 3rem);
+    font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     line-height: 1;
   }
 `;

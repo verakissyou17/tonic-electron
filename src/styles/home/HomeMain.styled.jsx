@@ -27,6 +27,8 @@ export const HomeMainStyled = styled.div`
   .product-name {
     text-align: center;
     margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
   }
 
   .brand {

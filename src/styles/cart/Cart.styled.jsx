@@ -33,4 +33,5 @@ export const CartFooterStyled = styled.div`
   color: white;
   border-radius: 0.5rem;
   margin-top: 1rem;
+  font-weight: bold;
 `;

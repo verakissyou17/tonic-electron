@@ -26,8 +26,8 @@ export const StyledNavbar = styled.div`
     top: 0;
     left: 0;
     height: 100vh;
-    width: 30%;
-    padding: 1rem;
+    width: 60%;
+    padding: 2rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -47,6 +47,7 @@ export const StyledNavbar = styled.div`
       color: white;
       margin-bottom: 1rem;
       align-self: flex-end;
+      font-size: 1rem;
     }
 
     ul li {
