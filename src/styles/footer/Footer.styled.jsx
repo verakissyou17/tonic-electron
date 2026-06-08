@@ -1,33 +1,33 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
-  background: ${(props) => props.theme.gradients.navy};
-  color: #fff;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
+  background: var(--gr-primary-inverse);
+  color: var(--cl-white);
+  padding: var(--space-lg) var(--space-md);
+  margin-top: var(--space-xl);
 
   .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
+    gap: var(--space-xl);
+    max-width: clamp(25rem, 11.268rem + 58.592vw, 64rem);
+    margin: 0 auto; 
   }
 
   .footer-section {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    min-width: 180px;
+    gap: var(--space-sm);
+    min-width: 11rem;
   }
 
   .footer-section a {
-    color: ${(props) => props.theme.colors.neutral.gray.medium};
+    color: var(--cl-white);
     transition: 0.2s;
   }
 
   .footer-section a:hover {
-    color: #fff;
+    color: var(--cl-text-secondary);
   }
 `;

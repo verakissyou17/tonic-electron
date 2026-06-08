@@ -2,25 +2,25 @@ import styled from "styled-components";
 
 export const CartRowStyled = styled.div`
   display: flex;
-  gap: 1.5rem;
+  gap: var(--space-lg);
   flex-direction: column;
-  padding-block: 1rem;
-  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid ${props.theme.colors.neutral.gray.dark}`)};
+  padding-block: var(--space-md);
+  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid var(--cl-border)`)};
 
   @media (min-width: 48rem) {
     flex-direction: row;
-    gap: 2rem;
+    gap: var(--space-xl);
   }
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-sm);
   }
 
   .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: var(--space-md);
     flex: 1;
     width: 100%;
   }
@@ -28,12 +28,11 @@ export const CartRowStyled = styled.div`
   .product-details {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-md);
 
     .product-image {
-      width: 5rem;
-      min-width: 5rem;
-      height: 5rem;
+      width: var(--space-3xl);
+      height: var(--space-3xl);
 
       img {
         width: 100%;
@@ -43,14 +42,14 @@ export const CartRowStyled = styled.div`
     }
 
     h3 {
-      font-size: 1rem;
+      font-size: var(--fs-sm);
     }
   }
 
   .price-container {
     text-align: right;
     p {
-      margin-bottom: 0.2rem;
+      margin-bottom: var(--space-xs);
     }
   }
 
@@ -58,30 +57,30 @@ export const CartRowStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0.5rem;
-    border: 1px solid ${(props) => props.theme.colors.cyan.primary};
-    border-radius: 0.5rem;
-    min-width: 6.5rem;
-    height: 2.5rem;
+    padding: var(--space-sm);
+    border: 1px solid var(--cl-accent);
+    border-radius: var(--radius-md);
+    min-width: var(--space-3xl);
+    height: var(--space-xxl);
 
     .icon {
       cursor: pointer;
-      padding: 0.25rem;
+      padding: var(--space-xs);
     }
 
     input {
       text-align: center;
       background: inherit;
       color: inherit;
-      width: 2.5rem;
-      font-size: 1rem;
+      width: var(--space-xxl);
+      font-size: var(--space-md);
     }
   }
 
   .subtotal-container {
     text-align: center;
     p {
-      margin-bottom: 0.2rem;
+      margin-bottom: var(--space-xs);
     }
   }
 
@@ -89,6 +88,6 @@ export const CartRowStyled = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: var(--fs-md);
   }
 `;

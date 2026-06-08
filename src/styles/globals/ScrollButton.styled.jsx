@@ -7,18 +7,18 @@ import styled from "styled-components";
   width: 3rem;
   height: 3rem;
   border: none;
-  border-radius: 50%;
+  border-radius: var(--round);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  color: #1a242f; 
+  font-size: var(--fs-md);
+  color: var(--cl-text-primary); 
   z-index: 3;
-  background: linear-gradient(135deg, #e6faff 0%, #70e8fa 100%);
+  background: var(--gr-glow);
   box-shadow:
-    2px 2px 2px rgba(0, 0, 0, 0.3),
-    -2px -2px 2px rgba(112, 232, 250, 0.5);
+    var(--shadow-md),
+    var(--shadow-glow);
   opacity: ${props => (props.$isVisible ? "1" : "0")};
   visibility: ${props => (props.$isVisible ? "visible" : "hidden")};
   transform: ${props => (props.$isVisible ? "scale(1)" : "scale(0.8)")};
@@ -26,6 +26,6 @@ import styled from "styled-components";
 
   &:hover {
     transform: scale(1.1);
-    background: linear-gradient(135deg, #e6faff 0%, #9cebf7 100%);
+    background: var(--gr-glow-hover);
   }
 `;

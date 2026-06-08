@@ -5,29 +5,29 @@ export const FiltersStyled = styled.div`
   display: flex;
   flex-direction: column;
 
-  gap: 1rem;
-  padding: 1rem;
-  background: ${(props) => props.theme.gradients.navy};
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--gradient-primary);
 
   .input-container {
     input {
       width: 100%;
-      padding: 0.5rem;
-      border-radius: 1rem;
-      font-size: 1rem;
+      padding: var(--space-sm);
+      border-radius: var(--radius-lg);
+      font-size: var(--fs-sm);
     }
 
     input::placeholder {
-      font-size: 0.65rem;
+      font-size: var(--fs-xs);
       font-family: inherit;
-      font-weight: bold;
-      padding-left: 0.5rem;
+      font-weight: var(--fw-semibold);
+      padding-left: var(--space-sm);
     }
   }
 
   .select-element {
-    padding: 0.5rem;
-    border-radius: 1rem;
+    padding: var(--space-sm);
+    border-radius: var(--radius-lg);
   }
 
   @media screen and (min-width: 48rem) {

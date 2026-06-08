@@ -1,25 +1,23 @@
 import styled from "styled-components";
 
 export const SidebarStyled = styled.aside`
-  margin-bottom: 1rem;
-  padding: 1.5rem;
+  margin-bottom: var(--space-md);
+  padding: var(--space-lg);
   height: fit-content;
-  background-color: white;
+  background: var(--cl-white);
   border-radius: 0.5rem;
-  box-shadow:
-    2px 2px 5px rgba(59, 59, 59, 0.25),
-    -2px -2px 5px rgba(59, 59, 59, 0.25);
+  box-shadow: var(--shadow-xs), var(--sh-xs-rev);
 
   h3 {
-    margin-block: 1rem;
-    font-size: 1rem;
-    color: ${(props) => props.theme.colors.navy.medium};
+    margin-block: var(--space-md);
+    font-size: var(--fs-sm);
+    color: var(--cl-text-primary);
   }
 
   .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: var(--space-ms);
 
     @media screen and (min-width: 48rem) {
       flex-direction: column;
@@ -29,9 +27,9 @@ export const SidebarStyled = styled.aside`
   .checkbox-label {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
-    font-size: 1rem;
-    color: #2f425c;
+    gap: var(--space-xs);
+    font-size: var(--fs-sm);
+    color: var(--cl-checkbox);
     transition: color 0.3s ease;
 
     input {
@@ -40,7 +38,8 @@ export const SidebarStyled = styled.aside`
     }
 
     &:hover {
-      color: #000;
+      color: var(--cl-text-primary);
+      font-weight: var(--fw-medium);
     }
   }
 `;

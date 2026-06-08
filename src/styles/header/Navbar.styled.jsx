@@ -5,7 +5,7 @@ export const StyledNavbar = styled.div`
     display: block;
     border: none;
     outline: none;
-    font-size: 24px;
+    font-size: var(--fs-md);
     background-color: transparent;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
@@ -17,7 +17,7 @@ export const StyledNavbar = styled.div`
       visibility 0.3s;
 
     .fa-bars {
-      color: ${(props) => props.theme.colors.blackText};
+      color: var(--bd-dark);
     }
   }
 
@@ -26,41 +26,39 @@ export const StyledNavbar = styled.div`
     top: 0;
     left: 0;
     height: 100vh;
-    width: 60%;
-    padding: 2rem;
-    z-index: 2;
+    width: clamp(12.5rem, 10.299rem + 9.39vw, 18.75rem);
+    padding: var(--space-xl);
+    z-index: var(--z-navbar);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    background: linear-gradient(135deg, #0b1320, #1c2a3a);
+    gap: var(--space-md);
+    background: var(--gr-glow);
     transform: ${(props) =>
       props.$isVisible ? "translateX(0)" : "translateX(-100%)"};
     transition: transform 0.5s ease-in-out;
     pointer-events: ${(props) => (props.$isVisible ? "auto" : "none")};
 
-    @media (min-width: 48rem) {
-      width: 20%;
-    }
-
     .close-nav {
-      background-color: transparent;
-      color: white;
-      margin-bottom: 1rem;
+      background: transparent;
+      color: var(--cl-text-primary);
+      font-weight: var(--fw-bold);
+      margin-bottom: var(--space-md);
       align-self: flex-end;
-      font-size: 1rem;
+      font-size: var(--fs-sm);
     }
 
     ul li {
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--space-lg);
 
       a {
-        color: ${(props) => props.theme.colors.cyan.primary};
-        font-size: clamp(1rem, 0.648rem + 1.502vw, 2rem);
+        color: var(--cl-text-primary);
+        font-size: clamp(var(--fs-sm), 0.648rem + 1.502vw, var(--fs-md));
+        font-weight: var(--fw-bold);
 
         &:focus-visible {
-          outline: 2px solid ${(props) => props.theme.colors.cyan.primary};
+          outline: 2px solid var(--cl-accent);
           outline-offset: 4px;
-          border-radius: 4px;
+          border-radius: var(--radius-sm);
         }
       }
     }

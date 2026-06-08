@@ -3,36 +3,34 @@ import styled from "styled-components";
 export const OrdersStyled = styled.section`
   flex: 1;
   width: 100%;
-  max-width: 60rem;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: ${(props) => props.theme.colors.neutral.white};
-  border-radius: 0.75rem;
-  box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  max-width: var(--container-width);
+  margin: var(--space-xl) auto;
+  padding: var(--space-lg);
+  background-color: var(--cl-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs), var(--sh-xs-rev);
 
   .title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: ${(props) => props.theme.colors.navy.dark};
-    margin-bottom: 1.5rem;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    color: var(--cl-text-primary);
+    margin-bottom: var(--space-lg);
   }
 
   .order-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 0.75rem 1rem;
-    background: ${(props) => props.theme.gradients.navy};
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
 
     span {
       flex: 1;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: white;
+      font-size: var(--fs-xs);
+      font-weight: var(--fw-semibold);
+      color: var(--cl-white);
       text-transform: uppercase;
       letter-spacing: 0.05em;
 

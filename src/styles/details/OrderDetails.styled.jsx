@@ -3,43 +3,36 @@ import styled from "styled-components";
 export const OrderDetailsStyled = styled.section`
   flex: 1;
   width: 100%;
-  max-width: 64rem;
-  margin: 1rem auto;
-  padding: 1rem;
-  box-shadow:
-    2px 2px 2px rgba(0, 0, 0, 0.1),
-    -2px -2px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  max-width: var(--container-width);
+  margin: var(--space-md) auto;
+  padding: var(--space-md);
+  box-shadow: var(--shadow-container);
+  border-radius: var(--radius-md);
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
     span {
-      color: rgb(5, 180, 207);
+      color: var(--cl-accent);
     }
   }
 
   .details {
     display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    border-bottom: 1px dotted #999;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) 0;
+    margin-bottom: var(--space-sm);
 
-    @media (min-width: 38rem) {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: none;
+    p {
+      text-align: center;
+    }
 
-      p {
-        text-align: center;
-      }
-
-      .dots {
-        flex: 1;
-        border-bottom: 1px dotted #999;
-        height: 1px;
-        margin-inline: 0.5rem;
-      }
+    .dots {
+      flex: 1;
+      border-bottom: 1px dotted var(--cl-text-secondary);
+      height: 1px;
+      margin-inline: var(--space-sm);
     }
   }
 
@@ -47,12 +40,12 @@ export const OrderDetailsStyled = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-    border-radius: 0.5rem;
-    font-weight: bold;
+    padding: var(--space-md);
+    margin-top: var(--space-lg);
+    font-size: var(--fs-ms);
+    background: var(--gradient-primary);
+    color: var(--cl-white);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-bold);
   }
 `;

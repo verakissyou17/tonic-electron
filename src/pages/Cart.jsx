@@ -9,7 +9,7 @@ function Cart() {
 
   if (cart.length === 0) {
     return (
-      <p style={{ textAlign: "center", padding: "1rem" }}>Cosul este gol</p>
+      <p style={{ textAlign: "center", padding: "var(--space-md)" }}>Cosul este gol</p>
     );
   }
 

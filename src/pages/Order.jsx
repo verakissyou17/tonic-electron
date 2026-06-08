@@ -90,95 +90,102 @@ function Order() {
 
   return (
     <OrderStyled onSubmit={handleSubmit}>
-      <h3>Modalitati de livrare: </h3>
-      <fieldset>
-        <div className="delivery-container">
-          {DELIVERY_OPTIONS.map((option) => (
-            <label key={option.id} htmlFor={option.id}>
-              <input
-                type="radio"
-                name="delivery"
-                id={option.id}
-                value={option.value}
-                checked={formData.delivery === option.value}
-                onChange={handleOnChange}
-              />
-              {option.label}
-            </label>
-          ))}
-          {error.delivery && <p className="error">{error.delivery}</p>}
-        </div>
-      </fieldset>
-
-      <h3>Modalitati de plata: </h3>
-      <fieldset>
-        <div className="delivery-container">
-          {PAYMENT_OPTIONS.map((option) => (
-            <label key={option.id} htmlFor={option.id}>
-              <input
-                id={option.id}
-                type="radio"
-                name="payment"
-                value={option.value}
-                checked={formData.payment === option.value}
-                onChange={handleOnChange}
-              />
-              {option.label}
-            </label>
-          ))}
-          {error.payment && <p className="error">{error.payment}</p>}
-        </div>
-      </fieldset>
-
-      <h3>Detalii client:</h3>
-      <fieldset>
+      <div className="payment-delivery">
         <div>
-          <label htmlFor="name">
-            Nume:
-            <input
-              id="name"
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleOnChange}
-            />
-            {error.name && <p className="error">{error.name}</p>}
-          </label>
-          <label htmlFor="phone">
-            Telefon:
-            <input
-              id="phone"
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleOnChange}
-            />
-            {error.phone && <p className="error">{error.phone}</p>}
-          </label>
-          <label htmlFor="address">
-            Adresa:
-            <input
-              id="address"
-              type="text"
-              name="address"
-              value={formData.address}
-              onChange={handleOnChange}
-            />
-            {error.address && <p className="error">{error.address}</p>}
-          </label>
-          <label htmlFor="email">
-            Email:
-            <input
-              id="email"
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleOnChange}
-            />
-            {error.email && <p className="error">{error.email}</p>}
-          </label>
+          <h3>Modalitati de livrare: </h3>
+          <fieldset>
+            <div className="delivery-container">
+              {DELIVERY_OPTIONS.map((option) => (
+                <label key={option.id} htmlFor={option.id}>
+                  <input
+                    type="radio"
+                    name="delivery"
+                    id={option.id}
+                    value={option.value}
+                    checked={formData.delivery === option.value}
+                    onChange={handleOnChange}
+                  />
+                  {option.label}
+                </label>
+              ))}
+              {error.delivery && <p className="error">{error.delivery}</p>}
+            </div>
+          </fieldset>
         </div>
-      </fieldset>
+        <div>
+          <h3>Modalitati de plata: </h3>
+          <fieldset>
+            <div className="delivery-container">
+              {PAYMENT_OPTIONS.map((option) => (
+                <label key={option.id} htmlFor={option.id}>
+                  <input
+                    id={option.id}
+                    type="radio"
+                    name="payment"
+                    value={option.value}
+                    checked={formData.payment === option.value}
+                    onChange={handleOnChange}
+                  />
+                  {option.label}
+                </label>
+              ))}
+              {error.payment && <p className="error">{error.payment}</p>}
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div>
+        <h3>Detalii client:</h3>
+        <fieldset>
+          <div>
+            <label htmlFor="name">
+              Nume:
+              <input
+                id="name"
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleOnChange}
+              />
+              {error.name && <p className="error">{error.name}</p>}
+            </label>
+            <label htmlFor="phone">
+              Telefon:
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleOnChange}
+              />
+              {error.phone && <p className="error">{error.phone}</p>}
+            </label>
+            <label htmlFor="address">
+              Adresa:
+              <input
+                id="address"
+                type="text"
+                name="address"
+                value={formData.address}
+                onChange={handleOnChange}
+              />
+              {error.address && <p className="error">{error.address}</p>}
+            </label>
+            <label htmlFor="email">
+              Email:
+              <input
+                id="email"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleOnChange}
+              />
+              {error.email && <p className="error">{error.email}</p>}
+            </label>
+          </div>
+        </fieldset>
+      </div>
 
       <button className="add-order-btn" type="submit">
         Finalizare comanda

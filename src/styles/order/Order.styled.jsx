@@ -5,56 +5,66 @@ export const OrderStyled = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem;
-  background: ${(props) => props.theme.colors.neutral.white};
-  max-width: 40rem;
-  margin: 1rem auto;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--cl-white);
+  width: var(--container-width);
+  margin: var(--space-md) auto;
   box-shadow:
-    2px 2px 2px rgba(0, 0, 0, 0.1),
-    -2px -2px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+    var(--shadow-xs),
+    var(--sh-xs-rev);
+  border-radius: var(--radius-md);
+
+  .payment-delivery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-ms);
+
+    div {
+      flex: 1;
+    }
+  }
 
   fieldset {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    gap: var(--space-lg);
+    border-bottom: 1px solid var(--cl-border);
 
     label {
       display: block;
-      margin-bottom: 0.75rem;
+      margin-bottom: var(--space-ms);
 
       input[type="radio"] {
-        margin-right: 0.5rem;
-        accent-color: ${(props) => props.theme.colors.cyan.primary};
+        margin-right: var(--space-sm);
+        accent-color: var(--cl-accent);
       }
 
       input[type="text"],
       input[type="tel"],
       input[type="email"] {
-        margin-left: 0.5rem;
-        margin-top: 0.5rem;
-        padding: 0.5rem;
+        margin-left: var(--space-sm);
+        margin-top: var(--space-sm);
+        padding: var(--space-sm);
         width: 100%;
-        border-radius: 0.5rem;
+        border-radius: var(--radius-md);
         box-shadow:
-          2px 2px 2px rgba(0, 0, 0, 0.1),
-          -2px -2px 2px rgba(0, 0, 0, 0.1);
+          var(--shadow-xs),
+          var(--sh-xs-rev);
       }
     }
   }
 
   .add-order-btn {
-    padding: 1rem;
+    padding: var(--space-md);
     max-width: 70%;
-    margin: 0.5rem auto;
-    border-radius: 0.5rem;
+    margin: var(--space-sm) auto;
+    border-radius: var(--radius-md);
     font-family: inherit;
-    background: ${(props) => props.theme.gradients.navy};
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
+    background: var(--gradient-primary);
+    color: var(--cl-white);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-sm);
   }
 
   .add-order-btn:hover {
@@ -62,8 +72,8 @@ export const OrderStyled = styled.form`
   }
 
   .error {
-    color: ${(props) => props.theme.colors.special.error};
-    font-size: 0.75rem;
-    margin-block: 0.5rem;
+    color: var(--cl-error);
+    font-size: var(--fs-xs);
+    margin-block: var(--space-sm);
   }
 `;

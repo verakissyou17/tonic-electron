@@ -25,7 +25,7 @@ function DropdownRow({ item, isLast, deleteFromCart }) {
             className="delete-btn"
             onClick={() => deleteFromCart(item.product.id)}
           >
-            <FontAwesomeIcon aria-hidden="true" icon={faTrash} />
+            <FontAwesomeIcon aria-hidden="true" icon={faTrash} style={{color: "darkred"}} />
           </button>
         </div>
       </div>

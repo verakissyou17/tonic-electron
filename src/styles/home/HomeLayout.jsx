@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HomeLayout = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem;
+  gap: var(--space-lg);
+  padding: var(--space-md);
 
   .sidebar-panel {
       flex-grow: 0;

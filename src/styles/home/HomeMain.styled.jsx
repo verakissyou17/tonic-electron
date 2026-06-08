@@ -4,20 +4,19 @@ export const HomeMainStyled = styled.div`
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: var(--space-xl);
 
   .product-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
-    border-radius: 0.5rem;
-    padding: 1em;
-    background: white;
-    box-shadow:
-      2px 2px 5px rgba(59, 59, 59, 0.25),
-      -2px -2px 5px rgba(59, 59, 59, 0.25);
+    gap: var(--space-sm);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    background: var(--cl-white);
+    box-shadow: var(--shadow-container)
+      
   }
 
   .image-container img:hover {
@@ -27,23 +26,23 @@ export const HomeMainStyled = styled.div`
 
   .product-name {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
   }
 
   .brand {
     font-style: italic;
-    margin-top: 1rem;
+    margin-top: var(--space-md);
   }
 
   .price {
-    font-weight: bold;
+    font-weight: var(--fw-bold);
   }
 
   .product-description {
     text-align: center;
-    margin-block: 0.5em;
+    margin-block: var(--space-sm);
   }
 
   .product-add-to-cart-container {
@@ -57,21 +56,21 @@ export const HomeMainStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 0.5rem;
-    border-radius: 0.25rem;
+    gap: var(--space-sm);
+    border-radius: var(--radius-sm);
   }
 
   .product-quantities button {
     display: grid;
     place-content: center;
-    font-size: 1.2rem;
-    padding: 0.5em 1em;
-    background-color: white;
-    border: 1px solid rgba(7, 207, 238, 0.3);
+    font-size: var(--fs-sm);
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--cl-white);
+    border: 1px solid var(--border-accent);
   }
 
   .product-quantities input {
-    width: 2rem;
+    width: var(--space-xl);
     border: none;
     outline: none;
     text-align: center;
@@ -79,38 +78,38 @@ export const HomeMainStyled = styled.div`
 
   .increment-quantity,
   .decrement-quantity {
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-md);
+    border-radius: var(--radius-md);
     transition: box-shadow 0.3s ease, cursor 0.3s ease;
   }
 
   .increment-quantity:hover,
   .decrement-quantity:hover {
     box-shadow:
-      2px 2px 2px rgba(0, 0, 0, 0.3),
-      -2px -2px 2px rgba(112, 232, 250, 0.5);
+      var(--shadow-md),
+      var(--shadow-glow);
     cursor: pointer;
   }
 
   .add-cart-btn {
-    padding: 0.25em 0.75em;
-    background: ${(props) => props.theme.gradients.navy};
-    border-radius: 0.25rem;
+    padding: var(--space-sm);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-sm);
     display: grid;
     place-content: center;
     transition: scale 0.3s ease, box-shadow 0.3s ease;
   }
 
   .cart-icon {
-    font-size: 2rem;
-    color: white;
+    font-size: var(--fs-lg);
+    color: var(--cl-white);
   }
 
   .add-cart-btn:hover {
     scale: 1.1;
     box-shadow:
-      -2px -2px 2px rgba(0, 0, 0, 0.3),
-      2px 2px 2px rgba(0, 0, 0, 0.3);
+      var(--sh-md-rev),
+      var(--shadow-md);
   }
 `;

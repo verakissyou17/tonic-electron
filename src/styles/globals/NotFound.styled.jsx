@@ -6,17 +6,17 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${(props) => props.theme.gradients.navy};
-  color: white;
+   background: var(--gradient-primary);
+  color: var(--cl-white);
   text-align: center;
 `;
 
 export const Content = styled.div`
-  padding: 2rem;
+  padding: var(--space-xl);
 `;
 
 export const ErrorCode = styled.h1`
-  font-size: 8rem;
+  font-size: var(--fs-bg-hero);
   animation: float 2s ease-in-out infinite;
 
   @keyframes float {
@@ -33,31 +33,31 @@ export const ErrorCode = styled.h1`
 `;
 
 export const Title = styled.h2`
-  font-size: 2rem;
-  margin: 1rem 0;
+  font-size: var(--fs-lg);
+  margin: var(--space-md) 0;
 `;
 
 export const Text = styled.p`
-  color: ${(props) => props.theme.colors.neutral.gray.medium};
-  margin-bottom: 2rem;
+  color: var(--cl-text-secondary);
+  margin-bottom: var(--space-xl);
 `;
 
 export const StyledLink = styled(Link)`
-  background: ${(props) => props.theme.colors.cyan.primary};
-  color: ${(props) => props.theme.colors.navy.dark};
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  background: var(--cl-accent);
+  color: var(--cl-text-primary);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--fw-semibold);
   transition: 0.3s;
 
   &:hover {
-    background: ${(props) => props.theme.colors.cyan.light};
+    background: var(--cl-accent-hover);
   }
 
   :focus-visible {
-    outline: 2px solid ${(props) => props.theme.colors.cyan.primary};
+    outline: 2px solid cyan;
     offset: 4px;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
   }
 `;

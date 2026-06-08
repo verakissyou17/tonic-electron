@@ -2,18 +2,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
-  padding: clamp(1rem, 0.648rem + 1.502vw, 2rem);
+  padding: clamp(var(--space-md), 0.648rem + 1.502vw, var(--space-xl));
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  text-shadow: 0 0 10px rgba(7, 207, 238, 0.4);
+  gap: var(--space-sm);
+  text-shadow: var(--text-shadow);
 
   .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    background: var(--overlay);
+    z-index: var(--z-overlay);
     cursor: pointer;
   }
 
@@ -22,32 +22,30 @@ export const HeaderStyled = styled.header`
     transform: translateY(1rem);
 
     .cart-icon {
-      font-size: 1.5rem;
-      color: black;
+      font-size: var(--fs-md);
+      color: var(--bg-dark);
     }
 
     .cart-quantity {
       position: absolute;
       top: 0;
       left: 10%;
-      width: 1.5rem;
-      height: 1.5rem;
-      transform: translateY(-95%);
+      width: var(--space-lg);
+      height: var(--space-lg);
+      transform: translateY(-100%);
       display: grid;
       place-content: center;
-      color: #fff;
-      background: ${(props) => props.theme.gradients.navy};
-      border-radius: 50%;
-      border: 2px solid ${(props) => props.theme.colors.cyan.primary};
-      transition: scale 0.3s ease, background 0.3s ease, color 0.3s ease, border 0.3s ease;
+      color: var( --cl-text-primary);
+      font-weight: var(--fw-semibold);
+      background: var( --gr-glow);
+      border-radius: var(--round);
+      border: 2px solid var(--cl-accent);
+      transition: scale 0.3s ease, background 0.3s ease;
     }
 
     .cart-quantity:hover {
-      scale: 1.2;
-      background: ${(props) => props.theme.colors.cyan.primary};
-      color: ${(props) => props.theme.colors.navy.dark};
-      font-weight: 500;
-      border: 1px solid;
+      scale: 1.1;
+      background: var(--gr-glow-hover);
     }
   }
 `;
@@ -55,10 +53,10 @@ export const HeaderStyled = styled.header`
 export const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-xs);
 
   .logo {
-    height: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
+    height: clamp(var(--space-lg), 0.972rem + 2.254vw, var(--space-hero));
     animation: logo-spin infinite 10s linear;
   }
 
@@ -77,8 +75,8 @@ export const StyledLink = styled(Link)`
 
   h1 {
     text-transform: uppercase;
-    color: ${(props) => props.theme.colors.navy.dark};
-    font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
+    color: var(--cl-text-primary);
+    font-size: clamp(var(--space-lg), 0.972rem + 2.254vw, var(--space-hero));
     line-height: 1;
   }
 `;

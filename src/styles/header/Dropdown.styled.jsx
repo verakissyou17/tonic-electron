@@ -3,21 +3,17 @@ import styled from "styled-components";
 export const DropdownStyled = styled.section`
   display: ${(props) => (props.$isDropDownShown ? "block" : "none")};
   position: absolute;
-  top: clamp(1rem, 0.12rem + 3.756vw, 3.5rem);
+  top: clamp(var(--space-md), 0.12rem + 3.756vw, var(--space-3xl));
   right: 0;
   left: 0;
-  transform: translateY(3rem);
-  background: linear-gradient(
-    180deg,
-    ${(props) => props.theme.colors.shadow.whiteTransparent},
-    ${(props) => props.theme.colors.shadow.greenTransparent}
-  );
+  transform: translateY(var(--space-xxxl));
+  background: var(--cl-white);
   backdrop-filter: blur(6px);
-  border: 1px solid ${(props) => props.theme.colors.neutral.gray.light};
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  z-index: 2;
-  height: calc(100vh - clamp(1.5rem, 0.12rem + 3.756vw, 3.5rem) - 3.5rem);
+  border: 1px solid var(--cl-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  z-index: var(--z-dropdown);
+  height: calc(100vh - clamp(var(--space-lg), 0.12rem + 3.756vw, var(--space-3xl)) - var(--space-3xl));
   overflow-y: auto;
 
   @media screen and (min-width: 48rem) {
@@ -25,32 +21,32 @@ export const DropdownStyled = styled.section`
   }
 
   &::-webkit-scrollbar {
-    width: 0.5rem;
+    width: var(--space-sm);
   }
 
   &::-webkit-scrollbar-track {
-    background: ${(props) => props.theme.gradients.navy};
+     background: var(--gradient-primary);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.cyan.bright};
-    border-radius: 0.5rem;
-    border: 1px solid ${(props) => props.theme.colors.blackText};
+    background: var(--gr-glow);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--cl-secondary);
   }
 
   .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    gap: 1rem;
+    padding: var(--space-md);
+    gap: var(--space-md);
   }
 
   .head {
-    font-weight: bold;
-    background: ${(props) => props.theme.gradients.navy};
-    border-radius: 0.5rem;
-    color: white;
+    font-weight: var(--fw-bold);
+     background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    color: var(--cl-white);
   }
 `;
 
@@ -58,17 +54,17 @@ export const DropdownRowStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  gap: 1rem;
+  padding: var(--space-md);
+  gap: var(--space-md);
   max-height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth;
-  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid ${props.theme.colors.neutral.gray.light}`)};
+  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid var(--cl-border)`)};
 
   .img-container {
     width: 4rem;
     height: 100%;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
 
     img {
@@ -81,39 +77,39 @@ export const DropdownRowStyled = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: var(--space-sm);
   }
 `;
 
 export const DropdownFooterStyled = styled.div`
-  margin-top: 1rem;
+  margin-top: var(--space-md);
 
   .cart-total {
-    font-weight: bold;
-    background: ${(props) => props.theme.gradients.navy};
-    border-radius: 0.5rem;
-    color: white;
+    font-weight: var(--fw-bold);
+     background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    color: var(--cl-white);
   }
 
   .total-container {
     flex-basis: 4rem;
-    font-weight: bold;
+    font-weight: var(--fw-bold);
   }
 
   .cart-link-container {
-    margin-top: 1rem;
+    margin-top: var(--space-md);
 
     .cart-link {
-      font-weight: bold;
-      background: ${(props) => props.theme.gradients.navy};
-      border-radius: 0.5rem;
-      color: white;
-      padding: 0.5rem 1rem;
+      font-weight: var(--fw-bold);
+      background: var(--gradient-primary);
+      border-radius: var(--radius-md);
+      color: var(--cl-white);
+      padding: var(--space-sm) var(--space-md);
 
       &:focus-visible {
-        outline: 2px solid ${(props) => props.theme.colors.navy.dark};
+        outline: 2px solid black;
         outline-offset: 4px;
-        border-radius: 4px;
+        border-radius: var(--radius-sm);
       }
     }
 

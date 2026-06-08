@@ -2,31 +2,29 @@ import styled from "styled-components";
 
 export const StyledOrderSuccess = styled.section`
   flex: 1;
-  max-width: 64rem;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 0.5rem;
-  box-shadow:
-    2px 2px 2px rgba(0, 0, 0, 0.1),
-    -2px -2px 2px rgba(0, 0, 0, 0.1);
+  max-width: var(--container-width);
+  margin: var(--space-xl) auto;
+  padding: var(--space-xl);
+  background: var(--cl-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs), var(--sh-xs-rev);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: var(--space-lg);
 
   h2 {
     text-align: center;
   }
 
   a {
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    border-radius: 0.5rem;
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
     opacity: 0.9;
-    color: white;
-    font-weight: bold;
+    color: var(--cl-white);
+    font-weight: var(--fw-bold);
     transition: opacity 0.3s ease;
   }
 
