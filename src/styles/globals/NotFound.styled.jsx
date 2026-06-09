@@ -57,7 +57,7 @@ export const StyledLink = styled(Link)`
 
   :focus-visible {
     outline: 2px solid cyan;
-    offset: 4px;
+    offset: var(--radius-sm);
     border-radius: var(--radius-sm);
   }
 `;

@@ -62,7 +62,7 @@ export const DropdownRowStyled = styled.div`
   border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid var(--cl-border)`)};
 
   .img-container {
-    width: 4rem;
+    width: var( --space-4xl);
     height: 100%;
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -92,7 +92,7 @@ export const DropdownFooterStyled = styled.div`
   }
 
   .total-container {
-    flex-basis: 4rem;
+    flex-basis: var( --space-4xl);
     font-weight: var(--fw-bold);
   }
 
@@ -108,7 +108,7 @@ export const DropdownFooterStyled = styled.div`
 
       &:focus-visible {
         outline: 2px solid black;
-        outline-offset: 4px;
+        outline-offset: var(--space-xs);
         border-radius: var(--radius-sm);
       }
     }

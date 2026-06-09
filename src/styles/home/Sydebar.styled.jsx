@@ -5,7 +5,7 @@ export const SidebarStyled = styled.aside`
   padding: var(--space-lg);
   height: fit-content;
   background: var(--cl-white);
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-xs), var(--sh-xs-rev);
 
   h3 {
@@ -33,8 +33,8 @@ export const SidebarStyled = styled.aside`
     transition: color 0.3s ease;
 
     input {
-      width: 1rem;
-      height: 1rem;
+      width: var(--space-md);
+      height: var(--space-md);
     }
 
     &:hover {

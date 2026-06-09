@@ -29,9 +29,9 @@ export const CartFooterStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: var(--space-md);
-   background: var(--gradient-primary);
+  background: var(--gradient-primary);
   color: var(--cl-white);
   border-radius: var(--radius-md);
-  margin-top: 1rem;
+  margin-top: var(--space-md);
   font-weight: var(--fw-bold);
 `;

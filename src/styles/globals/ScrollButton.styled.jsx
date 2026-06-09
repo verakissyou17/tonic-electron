@@ -2,10 +2,10 @@ import styled from "styled-components";
 
  export const ScrollButtonStyled = styled.button`
   position: fixed;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  width: 3rem;
-  height: 3rem;
+  bottom: var(--space-xxl);
+  right: var(--space-xxl);
+  width: var(--space-xxxl);
+  height: var(--space-xxxl);
   border: none;
   border-radius: var(--round);
   cursor: pointer;
@@ -14,7 +14,7 @@ import styled from "styled-components";
   justify-content: center;
   font-size: var(--fs-md);
   color: var(--cl-text-primary); 
-  z-index: 3;
+  z-index: var(--z-floating);
   background: var(--gr-glow);
   box-shadow:
     var(--shadow-md),
