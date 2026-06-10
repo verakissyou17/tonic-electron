@@ -6,7 +6,7 @@ import Sidebar from "../components/home/Sidebar";
 import CategoryCheckboxes from "../components/home/CategorySelectForm";
 import Footer from "../components/footer/Footer";
 import { HomeLayout } from "../styles/home/HomeLayout";
-import { useProducts } from "../context/useProducts";
+import { useProducts } from "../hooks/useProducts";
 
 function Home() {
   const { products, categories } = useProducts();

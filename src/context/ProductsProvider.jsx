@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { ProductsContext } from "./ProductsContext";
+import { fetchProducts } from "../services/fetchtProducts";
 
 export function ProductsProvider({ children }) {
   const [products, setProducts] = useState([]);
@@ -9,11 +10,9 @@ export function ProductsProvider({ children }) {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`${import.meta.env.BASE_URL}products.json`);
-      const data = await res.json();
+      const data = await fetchProducts();
       setProducts(data);
     }
-
     fetchData();
   }, []);
 

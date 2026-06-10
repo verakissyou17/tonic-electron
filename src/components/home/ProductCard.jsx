@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import { useCart } from "../../context/useCart.js";
+import { useCart } from "../../hooks/useCart.js";
 import { formatMoney } from "../../utils/formatMoney.js";
 
 function ProductCard({ product }) {

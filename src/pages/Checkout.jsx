@@ -1,11 +1,11 @@
-import { useCart } from "../context/useCart.js";
+import { useCart } from "../hooks/useCart.js";
 import { useState } from "react";
-import { OrderStyled } from "../styles/order/Order.styled.jsx";
+import { CheckoutStyled } from "../styles/checkout/Checkout.styled.jsx";
 import { DELIVERY_OPTIONS, PAYMENT_OPTIONS } from "../utils/orderOptions.js";
-import { useOrders } from "../context/useOrders.js";
+import { useOrders } from "../hooks/useOrders.js";
 import OrderSuccess from "../components/orders/OrderSuccess.jsx";
 
-function Order() {
+function Checkout() {
   const { cart, setCart, totalCart } = useCart();
   const [formData, setFormData] = useState({
     delivery: "Ridicare personala",
@@ -85,13 +85,13 @@ function Order() {
   }
 
   if (cart.length === 0) {
-    return <p>Cosul este gol.</p>;
+    return <p style={{flex: 1, textAlign: "center", marginTop: "var(--space-3xl)"}}>Cosul este gol.</p>;
   }
 
   return (
-    <OrderStyled onSubmit={handleSubmit}>
+    <CheckoutStyled onSubmit={handleSubmit}>
       <div className="payment-delivery">
-        <div>
+        <div className="radio-group">
           <h3>Modalitati de livrare: </h3>
           <fieldset>
             <div className="delivery-container">
@@ -112,7 +112,7 @@ function Order() {
             </div>
           </fieldset>
         </div>
-        <div>
+        <div className="radio-group">
           <h3>Modalitati de plata: </h3>
           <fieldset>
             <div className="delivery-container">
@@ -135,7 +135,7 @@ function Order() {
         </div>
       </div>
 
-      <div>
+      <div className="client-details">
         <h3>Detalii client:</h3>
         <fieldset>
           <div>
@@ -190,8 +190,8 @@ function Order() {
       <button className="add-order-btn" type="submit">
         Finalizare comanda
       </button>
-    </OrderStyled>
+    </CheckoutStyled>
   );
 }
 
-export default Order;
+export default Checkout;

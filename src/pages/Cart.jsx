@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../context/useCart.js";
+import { useCart } from "../hooks/useCart.js";
 import { CartStyled } from "../styles/cart/Cart.styled.jsx";
 import CartRow from "../components/cart/CartRow.jsx";
 import CartFooter from "../components/cart/CartFooter.jsx";
@@ -18,7 +18,7 @@ function Cart() {
       <div className="cart-products">
         <div className="head">
           <h2 className="cart-title">Cos: </h2>
-          <Link to={"/order"} className="order-link" >Procesare Comanda</Link>
+          <Link to={"/checkout"} className="order-link" >Procesare Comanda</Link>
         </div>
         {matchingItems.map((item, index) => (
           <CartRow

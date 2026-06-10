@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { useCart } from "../../context/useCart.js";
+import { useCart } from "../../hooks/useCart.js";
 
 
 function CartIcon({ showDropdown }) {

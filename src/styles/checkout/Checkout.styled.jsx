@@ -1,39 +1,50 @@
 import styled from "styled-components";
 
-export const OrderStyled = styled.form`
+export const CheckoutStyled = styled.form`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: var(--space-md);
   padding: var(--space-md);
   background: var(--cl-white);
-  width: var(--container-width);
+  width: 100%;
+  max-width: var(--container-width);
   margin: var(--space-md) auto;
-  box-shadow:
-    var(--shadow-xs),
-    var(--sh-xs-rev);
+  box-shadow: var(--shadow-xs), var(--sh-xs-rev);
   border-radius: var(--radius-md);
 
   .payment-delivery {
     display: flex;
-    flex-wrap: wrap;
+    gap: var(--space-md);
     margin-bottom: var(--space-ms);
 
-    div {
-      flex: 1;
+    h3 {
+      margin-bottom: var(--space-sm);
     }
+
+    .radio-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
   }
 
   fieldset {
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
-    border-bottom: 1px solid var(--cl-border);
 
     label {
       display: block;
       margin-bottom: var(--space-ms);
+
+      .error {
+        color: var(--cl-error);
+        font-size: var(--fs-xs);
+        margin-block: var(--space-sm);
+      }
 
       input[type="radio"] {
         margin-right: var(--space-sm);
@@ -43,14 +54,11 @@ export const OrderStyled = styled.form`
       input[type="text"],
       input[type="tel"],
       input[type="email"] {
-        margin-left: var(--space-sm);
         margin-top: var(--space-sm);
         padding: var(--space-sm);
         width: 100%;
         border-radius: var(--radius-md);
-        box-shadow:
-          var(--shadow-xs),
-          var(--sh-xs-rev);
+        box-shadow: var(--shadow-xs), var(--sh-xs-rev);
       }
     }
   }
@@ -69,11 +77,5 @@ export const OrderStyled = styled.form`
 
   .add-order-btn:hover {
     opacity: 0.8;
-  }
-
-  .error {
-    color: var(--cl-error);
-    font-size: var(--fs-xs);
-    margin-block: var(--space-sm);
   }
 `;

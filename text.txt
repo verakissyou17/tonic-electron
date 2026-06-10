@@ -1,0 +1,13 @@
+services/
+  api.js → fetchProducts
+
+hooks/
+  useProducts → products + filter logic
+  useCart → cart logic
+
+context/
+  CartContext → doar share cart state
+
+components/
+  Products.jsx → UI only
+  Navbar.jsx → UI only

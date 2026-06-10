@@ -1,4 +1,4 @@
-import { useCart } from "../../context/useCart.js";
+import { useCart } from "../../hooks/useCart.js";
 import DropdownRow from "./DropdownRow.jsx";
 import DropdownFooter from "./DropdownFooter.jsx";
 
