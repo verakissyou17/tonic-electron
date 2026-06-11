@@ -5,30 +5,38 @@ export const CheckoutStyled = styled.form`
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
-  padding: var(--space-md);
+  padding: var(--space-xl);
   background: var(--cl-white);
   width: 100%;
-  max-width: var(--container-width);
+  max-width: 50rem;
   margin: var(--space-md) auto;
   box-shadow: var(--shadow-xs), var(--sh-xs-rev);
   border-radius: var(--radius-md);
 
   .payment-delivery {
     display: flex;
+    flex-direction: column;
     gap: var(--space-md);
     margin-bottom: var(--space-ms);
 
     h3 {
-      margin-bottom: var(--space-sm);
+      margin-bottom: var(--space-md);
     }
 
     .radio-group {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      /* justify-content: space-between; */
     }
 
+    @media (min-width: 36rem) {
+      flex-direction: row;
+
+      .radio-group {
+        align-items: center;
+      }
+    }
   }
 
   fieldset {
