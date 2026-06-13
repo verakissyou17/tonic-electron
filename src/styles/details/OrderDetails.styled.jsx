@@ -9,30 +9,62 @@ export const OrderDetailsStyled = styled.section`
   box-shadow: var(--shadow-container);
   border-radius: var(--radius-md);
 
-  h2 {
-    margin-bottom: var(--space-md);
-    span {
-      color: var(--cl-accent);
+  .order-details--header {
+    margin-bottom: var(--space-lg);
+
+    h2 {
+      margin-bottom: var(--space-md);
+      span {
+        color: var(--cl-accent);
+      }
+    }
+
+    .client {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+
+      span {
+        font-weight: var(--fw-semibold);
+      }
     }
   }
 
   .details {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--space-md) 0;
-    margin-bottom: var(--space-sm);
+    flex-direction: column;
+    padding: var(--space-lg) 0 var(--space-ms);
+    gap: var(--space-xs);
 
-    p {
-      text-align: center;
+    p:first-child {
+      font-weight: var(--fw-bold);
     }
 
-    .dots {
-      flex: 1;
-      border-bottom: 1px dotted var(--cl-text-secondary);
-      height: 1px;
-      margin-inline: var(--space-sm);
+    p:last-child {
+      color: var(--cl-accent);
+      font-weight: var(--fw-semibold);
+    }
+
+    @media screen and (min-width: 48rem) {
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+
+      p {
+        flex: 1;
+      }
+
+      p:nth-child(3),
+      p:last-child {
+        text-align: center;
+      }
+
+      .dots {
+        flex: 1;
+        border-bottom: 1px dotted var(--cl-text-secondary);
+        height: 1px;
+        margin-inline: var(--space-sm);
+      }
     }
   }
 

@@ -3,7 +3,7 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 function IntroDropdown({ showDropdown }) {
   return (
-    <div className="row">
+    <div className="intro row">
       <h3>Cos</h3>
       <FontAwesomeIcon icon={faClose} onClick={showDropdown} />
     </div>

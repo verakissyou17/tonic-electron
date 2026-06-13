@@ -11,33 +11,76 @@ function OrderDetails() {
   const { id } = useParams();
 
   const order = orders.find((order) => order.id === id);
-  const { items, total } = order;
 
   const matchingOrders = useMemo(() => {
     if (!order) return [];
 
-    return items.map((item) => {
+    return order.items.map((item) => {
       const product = products.find((product) => product.id === item.productId);
       return {
         ...product,
         quantity: item.quantity,
       };
     });
-  }, [products, order, items]);
+  }, [products, order]);
 
+  if (orders.length === 0) {
+    return (
+      <h1
+        style={{
+          flex: 1,
+          textAlign: "center",
+          marginTop: "var(--space-3xl)",
+        }}
+      >
+        No orders
+      </h1>
+    );
+  }
+
+  if (!order) {
+    return (
+      <h1
+        style={{
+          flex: 1,
+          textAlign: "center",
+          marginTop: "var(--space-3xl)",
+        }}
+      >
+        Order not found
+      </h1>
+    );
+  }
+
+  const { total, customer, createdAt } = order;
 
   return (
     <OrderDetailsStyled>
-      <h2>
-        Comanda <span>#{id}</span>
-      </h2>
+      <div className="order-details--header row">
+        <h2>
+          Comanda <span>#{id}</span>
+        </h2>
+        <div className="client">
+          <p>
+            Data:{" "}
+            <span>{new Date(createdAt).toLocaleDateString("ro-RO")}</span>{" "}
+          </p>
+          <p>
+            Client:{" "}
+            <span>
+              {customer.fullName.surname} {customer.fullName.name}
+            </span>
+          </p>
+        </div>
+      </div>
+
       {matchingOrders.map((item, index) => (
         <div key={index} className="details">
           <p>{item.name}</p>
           <span className="dots"></span>
           <p>Cantitate: {item.quantity}</p>
           <span className="dots"></span>
-          <p>Pret: {formatMoney(item.price * item.quantity)} lei</p>
+          <p>Subtotal: {formatMoney(item.price * item.quantity)} lei</p>
         </div>
       ))}
       <div className="total">

@@ -5,7 +5,7 @@ export const DropdownStyled = styled.section`
   position: absolute;
   top: clamp(var(--space-md), 0.12rem + 3.756vw, var(--space-3xl));
   right: 0;
-  left: 0;
+  left: clamp(0rem, -16.901rem + 72.113vw, 48rem);
   transform: translateY(var(--space-xxxl));
   background: var(--cl-white);
   backdrop-filter: blur(6px);
@@ -13,19 +13,23 @@ export const DropdownStyled = styled.section`
   border-radius: var(--radius-md);
   padding: var(--space-sm);
   z-index: var(--z-dropdown);
-  height: calc(100vh - clamp(var(--space-lg), 0.12rem + 3.756vw, var(--space-3xl)) - var(--space-3xl));
+  height: calc(
+    100vh - clamp(var(--space-lg), 0.12rem + 3.756vw, var(--space-3xl)) - var(
+        --space-3xl
+      )
+  );
   overflow-y: auto;
 
-  @media screen and (min-width: 48rem) {
-    left: 70%;
-  }
+  /* @media screen and (min-width: 48rem) {
+    left: 50%;
+  } */
 
   &::-webkit-scrollbar {
     width: var(--space-sm);
   }
 
   &::-webkit-scrollbar-track {
-     background: var(--gradient-primary);
+    background: var(--gradient-primary);
   }
 
   &::-webkit-scrollbar-thumb {
@@ -34,19 +38,16 @@ export const DropdownStyled = styled.section`
     border: 1px solid var(--cl-secondary);
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .intro {
     padding: var(--space-md);
-    gap: var(--space-md);
   }
 
   .head {
     font-weight: var(--fw-bold);
-     background: var(--gradient-primary);
+    background: var(--gradient-primary);
     border-radius: var(--radius-md);
     color: var(--cl-white);
+    padding: var(--space-md);
   }
 `;
 
@@ -59,10 +60,11 @@ export const DropdownRowStyled = styled.div`
   max-height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth;
-  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid var(--cl-border)`)};
+  border-bottom: ${(props) =>
+    props.$isLast ? "none" : `1px solid var(--cl-border)`};
 
   .img-container {
-    width: var( --space-4xl);
+    width: var(--space-4xl);
     height: 100%;
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -86,25 +88,30 @@ export const DropdownFooterStyled = styled.div`
 
   .cart-total {
     font-weight: var(--fw-bold);
-     background: var(--gradient-primary);
+    background: var(--gradient-primary);
     border-radius: var(--radius-md);
     color: var(--cl-white);
+    padding: var(--space-md);
+    justify-content: space-between;
   }
 
   .total-container {
-    flex-basis: var( --space-4xl);
+    flex-basis: var(--space-4xl);
     font-weight: var(--fw-bold);
   }
 
   .cart-link-container {
     margin-top: var(--space-md);
+    padding: var(--space-md);
+    flex-wrap: wrap;
 
     .cart-link {
       font-weight: var(--fw-bold);
       background: var(--gradient-primary);
       border-radius: var(--radius-md);
       color: var(--cl-white);
-      padding: var(--space-sm) var(--space-md);
+      padding: var(--space-sm);
+      text-align: center;
 
       &:focus-visible {
         outline: 2px solid black;

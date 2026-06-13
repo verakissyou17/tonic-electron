@@ -34,7 +34,7 @@ function CartRow({ item, deleteFromCart, isLast, setCart }) {
 
   return (
     <CartRowStyled $isLast={isLast}>
-      <div className="row">
+      <div className="box row">
         <section className="product-details">
           <div className="product-image">
             <img src={item.product.image} alt={item.product.name} />
@@ -48,7 +48,7 @@ function CartRow({ item, deleteFromCart, isLast, setCart }) {
         </div>
       </div>
 
-      <div className="row">
+      <div className="box row">
         <div className="input-container">
           <FontAwesomeIcon
             className="icon"

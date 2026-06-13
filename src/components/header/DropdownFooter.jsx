@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { DropdownFooterStyled } from "../../styles/header/Dropdown.styled";
 
-function DropdownFooter({showDropdown, totalCart, totalQuantity }) {
+function DropdownFooter({ showDropdown, totalCart, totalQuantity }) {
   return (
     <DropdownFooterStyled>
       <div className="cart-total row">
@@ -12,7 +12,12 @@ function DropdownFooter({showDropdown, totalCart, totalQuantity }) {
         <Link className="cart-link" to={"/cart"} onClick={showDropdown}>
           Vezi cart
         </Link>
-        <p>Total: {totalQuantity} {totalQuantity > 1 ? "produse" : "produs"}</p>
+        <Link className="cart-link" to={"/checkout"} onClick={showDropdown}>
+          Finalizare comanda
+        </Link>
+        <p>
+          Total: {totalQuantity} {totalQuantity > 1 ? "produse" : "produs"}
+        </p>
       </div>
     </DropdownFooterStyled>
   );

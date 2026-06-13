@@ -7,7 +7,7 @@ function OrderItem({ order }) {
     <OrderItemStyled>
       <span>#{id}</span>
       <span>{new Date(createdAt).toLocaleDateString("ro-RO")}</span>
-      <span>{customer.name}</span>
+      <span>{customer.fullName.surname} {customer.fullName.name}</span>
       <span>{total.toFixed(2)} lei</span>
       <Link className="details-link" to={`/details/${id}`} >Detalii</Link>
     </OrderItemStyled>

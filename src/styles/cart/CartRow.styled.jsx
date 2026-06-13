@@ -5,7 +5,8 @@ export const CartRowStyled = styled.div`
   gap: var(--space-lg);
   flex-direction: column;
   padding-block: var(--space-md);
-  border-bottom: ${(props) => (props.$isLast ? "none" : `1px solid var(--cl-border)`)};
+  border-bottom: ${(props) =>
+    props.$isLast ? "none" : `1px solid var(--cl-border)`};
 
   @media (min-width: 48rem) {
     flex-direction: row;
@@ -16,11 +17,7 @@ export const CartRowStyled = styled.div`
     margin-bottom: var(--space-sm);
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-md);
+  .box {
     flex: 1;
     width: 100%;
   }
