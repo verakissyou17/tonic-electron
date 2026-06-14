@@ -1,8 +1,7 @@
 function SelectForm({ selectedValue, setSelectedValue }) {
   return (
-    <label htmlFor="select" className="sr-only">Select Element
       <select
-        id="select"
+        id="sorting"
         className="select-element"
         value={selectedValue}
         onChange={(e) => setSelectedValue(e.target.value)}
@@ -12,7 +11,6 @@ function SelectForm({ selectedValue, setSelectedValue }) {
         <option value="price-desc">Pret descrescator</option>
         <option value="name-asc">Nume: A - Z</option>
       </select>
-    </label>
   );
 }
 

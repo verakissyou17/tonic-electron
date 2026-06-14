@@ -11,6 +11,7 @@ function Filters ({
   return (
     <FiltersStyled>
       <SearchBar inputValue={inputValue} setInputValue={setInputValue} />
+      <label htmlFor="sorting" className="sr-only">Sortare produse</label>
       <SelectForm
         selectedValue={selectedValue}
         setSelectedValue={setSelectedValue}
