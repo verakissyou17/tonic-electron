@@ -5,7 +5,6 @@ export const HomeLayout = styled.main`
   flex-direction: column;
   gap: var(--space-lg);
   padding: var(--space-md);
-  border: 2px solid red;
 
   .sidebar-panel {
       flex-grow: 0;

@@ -8,7 +8,7 @@ export const SidebarStyled = styled.aside`
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-xs), var(--sh-xs-rev);
 
-  h3 {
+  h2 {
     margin-block: var(--space-sm);
     font-size: var(--fs-sm);
     color: var(--cl-text-primary);

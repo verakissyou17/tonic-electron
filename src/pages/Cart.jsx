@@ -9,29 +9,33 @@ function Cart() {
 
   if (cart.length === 0) {
     return (
-      <p style={{ textAlign: "center", padding: "var(--space-md)" }}>Cosul este gol</p>
+      <h2 style={{ flex: 1,  textAlign: "center", padding: "var(--space-md)" }}>Cosul este gol</h2>
     );
   }
 
   return (
     <CartStyled>
-      <div className="cart-products">
-        <div className="head">
-          <h2 className="cart-title">Cos: </h2>
-          <Link to={"/checkout"} className="order-link" >Procesare Comanda</Link>
+      {cart.length > 0 && (
+        <div className="cart-products">
+          <div className="head">
+            <h2 className="cart-title">Cos: </h2>
+            <Link to={"/checkout"} className="order-link">
+              Procesare Comanda
+            </Link>
+          </div>
+          {matchingItems.map((item, index) => (
+            <CartRow
+              key={item.productId}
+              item={item}
+              isLast={index === matchingItems.length - 1}
+              deleteFromCart={deleteFromCart}
+              setCart={setCart}
+              cart={cart}
+            />
+          ))}
+          <CartFooter totalCart={totalCart} />
         </div>
-        {matchingItems.map((item, index) => (
-          <CartRow
-            key={item.productId}
-            item={item}
-            isLast={index === matchingItems.length - 1}
-            deleteFromCart={deleteFromCart}
-            setCart={setCart}
-            cart={cart}
-          />
-        ))}
-        <CartFooter totalCart={totalCart} />
-      </div>
+      )}
     </CartStyled>
   );
 }
