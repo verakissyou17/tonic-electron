@@ -17,7 +17,7 @@ function Sidebar({
 
   return (
       <SidebarStyled>
-        <h3>Brand</h3>
+        <h2>Brand</h2>
         <div className="checkbox-group">
           {brands.map((brand) => (
             <label key={brand} className="checkbox-label">

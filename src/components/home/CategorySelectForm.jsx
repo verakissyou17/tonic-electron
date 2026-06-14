@@ -17,7 +17,7 @@ function CategoryCheckboxes({
 
   return (
     <SidebarStyled>
-      <h3>Categorii:</h3>
+      <h2>Categorii:</h2>
       <div className="checkbox-group">
         {categories.map((cat) => (
           <label key={cat} className="checkbox-label">

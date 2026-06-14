@@ -6,19 +6,19 @@ function Footer() {
     <FooterStyled>
       <div className="footer-container">
         <section className="footer-section">
-          <h3>Tonic Electron</h3>
+          <h2>Tonic Electron</h2>
           <p>Produse de calitate la prețuri accesibile.</p>
         </section>
 
         <section className="footer-section">
-          <h4>Link-uri utile</h4>
+          <h2>Link-uri utile</h2>
           <Link to="/">Acasă</Link>
           <Link to="/orders">Comenzi</Link>
           <Link to="/cart">Coș</Link>
         </section>
 
         <section className="footer-section">
-          <h4>Contact</h4>
+          <h2>Contact</h2>
           <p>Email: tonicelectron@gmail.com</p>
           <p>Tel: 0700 000 000</p>
         </section>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const OrderDetailsStyled = styled.section`
+export const OrderDetailsStyled = styled.main`
   flex: 1;
   width: 100%;
   max-width: var(--container-width);
