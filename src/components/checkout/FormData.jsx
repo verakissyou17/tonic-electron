@@ -23,7 +23,7 @@ function FormData() {
   const [error, setError] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { cart, setCart, totalCart } = useCart();
-  const { orders, addOrder } = useOrders();
+  const { orders, placeOrder } = useOrders();
 
   function handleOnChange(e) {
     const { name, value } = e.target;
@@ -93,7 +93,7 @@ function FormData() {
       createdAt: new Date().toISOString(),
     };
 
-    addOrder(order);
+    placeOrder(order);
     setCart([]);
     setIsSubmitted(true);
   }

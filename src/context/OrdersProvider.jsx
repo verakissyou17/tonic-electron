@@ -1,29 +1,25 @@
-import { useState, useEffect, useMemo } from "react";
+import { useMemo, useCallback } from "react";
 import { OrdersContext } from "./OrdersContext";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export function OrdersProvider({ children }) {
-  const [orders, setOrders] = useState(() => {
-    const savedOrders = localStorage.getItem("orders");
-    return savedOrders ? JSON.parse(savedOrders) : [];
-  });
+  const [orders, setOrders] = useLocalStorage("orders", []);
 
-  useEffect(() => {
-    localStorage.setItem("orders", JSON.stringify(orders));
-  }, [orders]);
-
-  function addOrder(newOrder) {
-    setOrders((prevOrders) => [newOrder, ...prevOrders]);
-  }
+const placeOrder = useCallback((newOrder) => {
+  setOrders((prevOrders) => [newOrder, ...prevOrders]);
+}, [setOrders]);
 
   const value = useMemo(
     () => ({
       orders,
-      addOrder,
+      placeOrder,
     }),
-    [orders],
+    [orders, placeOrder]
   );
 
   return (
-    <OrdersContext.Provider value={value}>{children}</OrdersContext.Provider>
+    <OrdersContext.Provider value={value}>
+      {children}
+    </OrdersContext.Provider>
   );
 }
