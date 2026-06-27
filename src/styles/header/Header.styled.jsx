@@ -2,50 +2,52 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
-  padding: clamp(var(--space-md), 0.648rem + 1.502vw, var(--space-xl));
+  padding: clamp(1rem, 0.148rem + 1.502vw, 1.5rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-sm);
-  text-shadow: var(--text-shadow);
+  gap: ${({ theme }) => theme.spacing.xs};
+  background: ${({ theme }) => theme.gradients.primary};
+  text-shadow: ${({ theme }) => theme.shadows.text};
 
   .overlay {
     position: fixed;
     inset: 0;
-    background: var(--overlay);
-    z-index: var(--z-overlay);
+    background: ${({ theme }) => theme.backgrounds.overlay};
+    z-index: ${({ theme }) => theme.zIndex.overlay};
     cursor: pointer;
   }
 
   .cart-container {
     position: relative;
-    transform: translateY(1rem);
+    align-self: flex-end;
 
     .cart-icon {
-      font-size: var(--fs-md);
-      color: var(--bg-dark);
+      font-size: clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
+      color: ${({ theme }) => theme.colors.text.primary};
     }
 
     .cart-quantity {
       position: absolute;
-      top: 0;
-      left: 10%;
-      width: var(--space-lg);
-      height: var(--space-lg);
+      top: 50%;
+      left: 50%;
+      width: ${({ theme }) => theme.spacing.lg};
+      height: ${({ theme }) => theme.spacing.lg};
       transform: translateY(-100%);
       display: grid;
       place-content: center;
-      color: var( --cl-text-primary);
-      font-weight: var(--fw-semibold);
-      background: var( --gr-glow);
-      border-radius: var(--round);
-      border: 2px solid var(--cl-accent);
-      transition: scale 0.3s ease, background 0.3s ease;
+      color:  ${({ theme }) => theme.colors.text.primary};
+      font-weight: ${({ theme }) => theme.fontWeights.semibold};
+      background: ${({ theme }) => theme.gradients.primary};
+      border-radius: ${({ theme }) => theme.radius.round};
+      border: 2px solid ${({ theme }) => theme.colors.border.accent};
+      transition:
+        scale 0.3s ease,
+        background 0.3s ease;
     }
 
     .cart-quantity:hover {
-      scale: 1.1;
-      background: var(--gr-glow-hover);
+      background: ${({ theme }) => theme.gradients.primary};
     }
   }
 `;
@@ -53,10 +55,14 @@ export const HeaderStyled = styled.header`
 export const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
+  gap: ${({ theme }) => theme.spacing.sm};
 
   .logo {
-    height: clamp(var(--space-lg), 0.972rem + 2.254vw, var(--space-hero));
+    height: clamp(
+      ${({ theme }) => theme.spacing.lg},
+      0.972rem + 2.254vw,
+      ${({ theme }) => theme.spacing.heroBig}
+    );
     animation: logo-spin infinite 10s linear;
   }
 
@@ -75,8 +81,8 @@ export const StyledLink = styled(Link)`
 
   h1 {
     text-transform: uppercase;
-    color: var(--cl-text-primary);
-    font-size: clamp(var(--space-lg), 0.972rem + 2.254vw, var(--space-hero));
+    color: ${({ theme }) => theme.colors.text.primary};
+   font-size: clamp(1.2rem, 0.39rem + 3.455vw, 3.5rem);
     line-height: 1;
   }
 `;

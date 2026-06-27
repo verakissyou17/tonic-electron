@@ -2,25 +2,34 @@ import styled from "styled-components";
 
 export const CartStyled = styled.main`
   flex: 1;
-  padding: clamp(var(--space-md), 0.648rem + 1.502vw, var(--space-xl));
+  padding: clamp(
+    ${({ theme }) => theme.spacing.md},
+    0.648rem + 1.502vw,
+    ${({ theme }) => theme.spacing.xl}
+  );
   width: 100%;
-  max-width: var(--container-width);
+  max-width: ${({ theme }) => theme.container.width};
   margin: 0 auto;
 
   .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-block: var(--space-md);
+    margin-block: ${({ theme }) => theme.spacing.md};
   }
 
   h2,
   .order-link {
-    background: var(--gradient-primary);
-    color: var(--cl-white);
-    border-radius: var(--radius-md);
-    padding: var(--space-sm) var(--space-md);
-    font-size: var(--fs-ms);
+    background: ${({ theme }) => theme.gradients.primary};
+    color: ${({ theme }) => theme.colors.text.primary};
+    border-radius: ${({ theme }) => theme.radius.md};
+    padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.md};
+    font-size: ${({ theme }) => theme.tipography.md};
+  }
+
+  .order-link {
+    color: ${({ theme }) => theme.colors.accent.default};
+    font-weight: ${({ theme }) => theme.fontWeights.bold};
   }
 `;
 
@@ -28,10 +37,10 @@ export const CartFooterStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-md);
-  background: var(--gradient-primary);
-  color: var(--cl-white);
-  border-radius: var(--radius-md);
-  margin-top: var(--space-md);
-  font-weight: var(--fw-bold);
+  padding: ${({ theme }) => theme.spacing.md};
+  background: ${({ theme }) => theme.gradients.primary};
+  color: ${({ theme }) => theme.colors.text.primary};
+  border-radius: ${({ theme }) => theme.radius.md};
+  margin-top: ${({ theme }) => theme.spacing.md};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
 `;

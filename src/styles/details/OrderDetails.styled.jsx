@@ -3,29 +3,30 @@ import styled from "styled-components";
 export const OrderDetailsStyled = styled.main`
   flex: 1;
   width: 100%;
-  max-width: var(--container-width);
-  margin: var(--space-md) auto;
-  padding: var(--space-md);
-  box-shadow: var(--shadow-container);
-  border-radius: var(--radius-md);
+  max-width: ${({theme}) => theme.container.width};
+  margin: ${({theme}) => theme.spacing.md} auto;
+  padding: ${({theme}) => theme.spacing.md};
+  box-shadow: ${({theme}) => theme.shadows.container};
+  border-radius: ${({theme}) => theme.radius.md};
+   color: ${({theme}) => theme.colors.text.primary};
 
   .order-details--header {
-    margin-bottom: var(--space-lg);
+    margin-bottom: ${({theme}) => theme.spacing.lg};
 
     h2 {
-      margin-bottom: var(--space-md);
+      margin-bottom: ${({theme}) => theme.spacing.md};
       span {
-        color: var(--cl-accent);
+        color: ${({theme}) => theme.colors.accent.default};
       }
     }
 
     .client {
       display: flex;
       flex-direction: column;
-      gap: var(--space-sm);
+      gap: ${({theme}) => theme.spacing.sm};
 
       span {
-        font-weight: var(--fw-semibold);
+        font-weight: ${({theme}) => theme.fontWeights.semibold};
       }
     }
   }
@@ -33,16 +34,16 @@ export const OrderDetailsStyled = styled.main`
   .details {
     display: flex;
     flex-direction: column;
-    padding: var(--space-lg) 0 var(--space-ms);
-    gap: var(--space-xs);
+    padding: ${({theme}) => theme.spacing.lg} 0 ${({theme}) => theme.spacing.ms};
+    gap: ${({theme}) => theme.spacing.xs};
 
     p:first-child {
-      font-weight: var(--fw-bold);
+      font-weight: ${({theme}) => theme.fontWeights.bold};
     }
 
     p:last-child {
-      color: var(--cl-accent);
-      font-weight: var(--fw-semibold);
+      color: ${({theme}) => theme.colors.accent.default};
+      font-weight: ${({theme}) => theme.fontWeights.semibold};
     }
 
     @media screen and (min-width: 48rem) {
@@ -61,9 +62,9 @@ export const OrderDetailsStyled = styled.main`
 
       .dots {
         flex: 1;
-        border-bottom: 1px dotted var(--cl-text-secondary);
+        border-bottom: 1px dotted ${({theme}) => theme.colors.border.default};
         height: 1px;
-        margin-inline: var(--space-sm);
+        margin-inline: ${({theme}) => theme.spacing.sm};
       }
     }
   }
@@ -72,12 +73,12 @@ export const OrderDetailsStyled = styled.main`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-md);
-    margin-top: var(--space-lg);
+    padding: ${({theme}) => theme.spacing.md};
+    margin-top: ${({theme}) => theme.spacing.lg};
     font-size: var(--fs-ms);
-    background: var(--gradient-primary);
-    color: var(--cl-white);
-    border-radius: var(--radius-md);
-    font-weight: var(--fw-bold);
+    background: ${({theme}) => theme.gradients.primary};
+    color: ${({theme}) => theme.colors.text.primary};
+    border-radius: ${({theme}) => theme.radius.md};
+    font-weight: ${({theme}) => theme.fontWeights.bold};
   }
 `;

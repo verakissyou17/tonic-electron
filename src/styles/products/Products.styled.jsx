@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const HomeLayout = styled.main`
+export const ProductsStyled = styled.main`
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
-  padding: var(--space-md);
+  gap: ${({theme}) => theme.spacing.lg};
+  padding: ${({theme}) => theme.spacing.md};
 
   .sidebar-panel {
       flex-grow: 0;

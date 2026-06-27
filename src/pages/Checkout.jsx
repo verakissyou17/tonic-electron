@@ -9,7 +9,7 @@ function Checkout() {
   if (cart.length === 0) {
     return (
       <p
-        style={{ flex: 1, textAlign: "center", marginTop: "var(--space-3xl)" }}
+        style={{ flex: 1, textAlign: "center", marginTop: "${({theme}) => theme.spacing.heroSmall}" }}
       >
         Cosul este gol.
       </p>

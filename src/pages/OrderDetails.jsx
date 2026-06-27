@@ -30,7 +30,7 @@ function OrderDetails() {
         style={{
           flex: 1,
           textAlign: "center",
-          marginTop: "var(--space-3xl)",
+          marginTop: "${({theme}) => theme.spacing.heroSmall}",
         }}
       >
         No orders
@@ -44,7 +44,7 @@ function OrderDetails() {
         style={{
           flex: 1,
           textAlign: "center",
-          marginTop: "var(--space-3xl)",
+          marginTop: "${({theme}) => theme.spacing.heroSmall}",
         }}
       >
         Order not found

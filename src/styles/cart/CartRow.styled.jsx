@@ -2,19 +2,20 @@ import styled from "styled-components";
 
 export const CartRowStyled = styled.div`
   display: flex;
-  gap: var(--space-lg);
+  gap: ${({ theme }) => theme.spacing.lg};
   flex-direction: column;
-  padding-block: var(--space-md);
-  border-bottom: ${(props) =>
-    props.$isLast ? "none" : `1px solid var(--cl-border)`};
+  padding-block: ${({ theme }) => theme.spacing.md};
+  border-bottom: ${({ theme, $isLast }) =>
+    $isLast ? "none" : `1px solid ${theme.colors.border.default}`};
+  color: ${({ theme }) => theme.colors.text.primary};
 
   @media (min-width: 48rem) {
     flex-direction: row;
-    gap: var(--space-xl);
+    gap: ${({ theme }) => theme.spacing.xl};
   }
 
   p {
-    margin-bottom: var(--space-sm);
+    margin-bottom: ${({ theme }) => theme.spacing.sm};
   }
 
   .box {
@@ -25,11 +26,11 @@ export const CartRowStyled = styled.div`
   .product-details {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
+    gap: ${({ theme }) => theme.spacing.md};
 
     .product-image {
-      width: var(--space-3xl);
-      height: var(--space-3xl);
+      width: ${({ theme }) => theme.spacing.heroSmall};
+      height: ${({ theme }) => theme.spacing.heroSmall};
 
       img {
         width: 100%;
@@ -39,14 +40,14 @@ export const CartRowStyled = styled.div`
     }
 
     h3 {
-      font-size: var(--fs-sm);
+      font-size: ${({ theme }) => theme.tipography.sm};
     }
   }
 
   .price-container {
     text-align: right;
     p {
-      margin-bottom: var(--space-xs);
+      margin-bottom: ${({ theme }) => theme.spacing.xs};
     }
   }
 
@@ -54,30 +55,30 @@ export const CartRowStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: var(--space-sm);
-    border: 1px solid var(--cl-accent);
-    border-radius: var(--radius-md);
-    min-width: var(--space-3xl);
-    height: var(--space-xxl);
+    padding: ${({ theme }) => theme.spacing.sm};
+    border: 1px solid ${({ theme }) => theme.colors.accent.default};
+    border-radius: ${({ theme }) => theme.radius.md};
+    min-width: ${({ theme }) => theme.spacing.heroSmall};
+    height: ${({ theme }) => theme.spacing.xxl};
 
     .icon {
       cursor: pointer;
-      padding: var(--space-xs);
+      padding: ${({ theme }) => theme.spacing.xs};
     }
 
     input {
       text-align: center;
       background: inherit;
       color: inherit;
-      width: var(--space-xxl);
-      font-size: var(--space-md);
+      width: ${({ theme }) => theme.spacing.xxl};
+      font-size: ${({ theme }) => theme.spacing.md};
     }
   }
 
   .subtotal-container {
     text-align: center;
     p {
-      margin-bottom: var(--space-xs);
+      margin-bottom: ${({ theme }) => theme.spacing.xs};
     }
   }
 
@@ -85,6 +86,6 @@ export const CartRowStyled = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: var(--fs-md);
+    font-size: ${({ theme }) => theme.tipography.md};
   }
 `;

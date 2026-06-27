@@ -4,30 +4,32 @@ export const CheckoutStyled = styled.main`
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
-  padding: var(--space-xl);
-  background: var(--cl-white);
+  gap: ${({theme}) => theme.spacing.md};
+  padding: ${({theme}) => theme.spacing.xl};
+  background: ${({theme}) => theme.gradients.primary};
   width: 100%;
   max-width: 50rem;
-  margin: var(--space-md) auto;
-  box-shadow: var(--shadow-xs), var(--sh-xs-rev);
-  border-radius: var(--radius-md);
+  margin: ${({theme}) => theme.spacing.md} auto;
+  box-shadow: ${({theme}) => theme.shadows.xs}, ${({theme}) => theme.shadows.container};
+  border-radius: ${({theme}) => theme.radius.md};
+  color: ${({theme}) => theme.colors.text.primary};
 
   .checkout-details {
     display: flex;
     align-items: center;
-    gap: var(--space-lg);
-    padding: var(--space-ms);
-    margin-top: var(--space-ms);
-    border: 1px solid var(--cl-border);
-    border-radius: var(--radius-md);
-    background: var(--gr-glow);
+    gap: ${({theme}) => theme.spacing.lg};
+    padding: ${({theme}) => theme.spacing.ms};
+    margin-top: ${({theme}) => theme.spacing.ms};
+    border: 1px solid ${({theme}) => theme.colors.border.default};
+    border-radius: ${({theme}) => theme.radius.md};
+    background: ${({theme}) => theme.gradients.glow};
+    color: ${({theme}) => theme.colors.text.dark};
 
     p {
-      font-weight: var(--fw-medium);
+      font-weight: ${({theme}) => theme.fontWeights.medium};
 
       span {
-        font-weight: var(--fw-bold);
+        font-weight: ${({theme}) => theme.fontWeights.bold};
       }
     }
   }

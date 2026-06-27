@@ -5,8 +5,8 @@ export const StyledNavbar = styled.div`
     display: block;
     border: none;
     outline: none;
-    font-size: var(--fs-md);
-    background-color: transparent;
+    font-size: clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
+    background: transparent;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
     opacity: ${(props) => (props.$isVisible ? 0 : 1)};
@@ -17,7 +17,7 @@ export const StyledNavbar = styled.div`
       visibility 0.3s;
 
     .fa-bars {
-      color: var(--bd-dark);
+      color: ${({ theme }) => theme.colors.text.primary};
     }
   }
 
@@ -27,12 +27,12 @@ export const StyledNavbar = styled.div`
     left: 0;
     height: 100vh;
     width: clamp(12.5rem, 10.299rem + 9.39vw, 18.75rem);
-    padding: var(--space-xl);
-    z-index: var(--z-navbar);
+    padding: ${({ theme }) => theme.spacing.xl};
+    z-index: ${({ theme }) => theme.zIndex.navbar};
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
-    background: var(--gradient-primary);
+    gap: ${({ theme }) => theme.spacing.md};
+    background: ${({ theme }) => theme.gradients.primary};
     transform: ${(props) =>
       props.$isVisible ? "translateX(0)" : "translateX(-100%)"};
     transition: transform 0.5s ease-in-out;
@@ -40,33 +40,33 @@ export const StyledNavbar = styled.div`
 
     .close-nav {
       background: transparent;
-      color: var(--cl-white);
-      font-weight: var(--fw-bold);
-      margin-bottom: var(--space-md);
+      color: ${({ theme }) => theme.colors.text.primary};
+      font-weight: ${({ theme }) => theme.fontWeights.bold};
+      margin-bottom: ${({ theme }) => theme.spacing.md};
       align-self: flex-end;
-      font-size: var(--fs-sm);
+      font-size: ${({ theme }) => theme.tipography.sm};
 
       &:hover {
-        color: var(--cl-accent);
+        color: ${({ theme }) => theme.colors.accent.default};
       }
     }
 
     ul li {
-      margin-bottom: var(--space-lg);
+      margin-bottom: ${({ theme }) => theme.spacing.lg};
 
       a {
-        color: var(--cl-white);
-        font-size: clamp(var(--fs-sm), 0.648rem + 1.502vw, var(--fs-md));
-        font-weight: var(--fw-bold);
+        color: ${({ theme }) => theme.colors.text.primary};
+        font-size: clamp(1rem, 0.824rem + 0.751vw, 1.5rem);
+        font-weight: ${({ theme }) => theme.fontWeights.bold};
 
         &:focus-visible {
-          outline: 2px solid var(--cl-accent);
+          outline: 2px solid ${({ theme }) => theme.colors.accent.default};
           outline-offset: 4px;
-          border-radius: var(--radius-sm);
+          border-radius: ${({ theme }) => theme.radius.sm};
         }
 
         &:hover {
-          color: var(--cl-accent);
+          color: ${({ theme }) => theme.colors.accent.default};
         }
       }
     }

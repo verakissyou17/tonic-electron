@@ -9,7 +9,9 @@ export function useLocalStorage(key, initialValue) {
   });
 
   useEffect(() => {
-    saveLocalStorage(key, value);
+    if (value !== undefined) {
+      saveLocalStorage(key, value);
+    }
   }, [key, value]);
 
   return [value, setValue];

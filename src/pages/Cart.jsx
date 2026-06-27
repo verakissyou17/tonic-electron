@@ -9,7 +9,7 @@ function Cart() {
 
   if (cart.length === 0) {
     return (
-      <h2 style={{ flex: 1,  textAlign: "center", padding: "var(--space-md)" }}>Cosul este gol</h2>
+      <h2 style={{ flex: 1,  textAlign: "center", padding: "${({theme}) => theme.spacing.md}" }}>Cosul este gol</h2>
     );
   }
 

@@ -1,17 +1,18 @@
 import { useNavigate } from "react-router-dom";
+import { SearchBarStyled } from "../../styles/globals/SearchBar.styled";
 
 function SearchBar({inputValue, setInputValue }) {
   const navigate = useNavigate();
 
   const handleSearch = () => {
     if (inputValue.trim()) {
-      navigate(`/?search=${encodeURIComponent(inputValue.trim())}`);
+      navigate(`/products/?search=${encodeURIComponent(inputValue.trim())}`);
       setInputValue("");                    
     }
   };
 
   return (
-    <div className="input-container">
+    <SearchBarStyled>
       <label htmlFor="search" className="sr-only"></label>
       <input
         placeholder="Search..."
@@ -28,7 +29,7 @@ function SearchBar({inputValue, setInputValue }) {
           }
         }}
       />
-    </div>
+    </SearchBarStyled>
   );
 }
 

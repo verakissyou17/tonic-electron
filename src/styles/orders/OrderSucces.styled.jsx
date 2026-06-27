@@ -2,29 +2,29 @@ import styled from "styled-components";
 
 export const StyledOrderSuccess = styled.section`
   flex: 1;
-  max-width: var(--container-width);
-  margin: var(--space-xl) auto;
-  padding: var(--space-xl);
-  background: var(--cl-white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-xs), var(--sh-xs-rev);
+  max-width: ${({theme}) => theme.container.width};
+  margin: ${({theme}) => theme.spacing.xl} auto;
+  padding: ${({theme}) => theme.spacing.xl};
+  background: ${({theme}) => theme.colors.text.primary};
+  border-radius: ${({theme}) => theme.radius.md};
+  box-shadow: ${({theme}) => theme.shadows.xs}, ${({theme}) => theme.shadows.container};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-lg);
+  gap: ${({theme}) => theme.spacing.lg};
 
   h2 {
     text-align: center;
   }
 
   a {
-    padding: var(--space-sm) var(--space-lg);
-    background: var(--gradient-primary);
-    border-radius: var(--radius-md);
+    padding: ${({theme}) => theme.spacing.sm} ${({theme}) => theme.spacing.lg};
+    background: ${({theme}) => theme.gradients.primary};
+    border-radius: ${({theme}) => theme.radius.md};
     opacity: 0.9;
-    color: var(--cl-white);
-    font-weight: var(--fw-bold);
+    color: ${({theme}) => theme.colors.text.primary};
+    font-weight: ${({theme}) => theme.fontWeights.bold};
     transition: opacity 0.3s ease;
   }
 

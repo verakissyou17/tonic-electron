@@ -1,16 +1,12 @@
-import SearchBar from "./SearchBar";
 import SelectForm from "./SelectForm";
-import { FiltersStyled } from "../../styles/home/Filters.styled";
+import { FiltersStyled } from "../../styles/products/Filters.styled";
 
 function Filters ({
-  inputValue,
-  setInputValue,
   selectedValue,
   setSelectedValue,
 }) {
   return (
     <FiltersStyled>
-      <SearchBar inputValue={inputValue} setInputValue={setInputValue} />
       <label htmlFor="sorting" className="sr-only">Sortare produse</label>
       <SelectForm
         selectedValue={selectedValue}

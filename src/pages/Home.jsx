@@ -1,104 +1,160 @@
-import { useState } from "react";
-import { useParams, Navigate, useSearchParams } from "react-router-dom";
-import Filters from "../components/home/Filters";
-import HomeMain from "../components/home/HomeMain";
-import Sidebar from "../components/home/Sidebar";
-import CategoryCheckboxes from "../components/home/CategorySelectForm";
-import Footer from "../components/footer/Footer";
-import { HomeLayout } from "../styles/home/HomeLayout";
+import { useEffect, useRef, useMemo } from "react";
 import { useProducts } from "../hooks/useProducts";
+import { formatMoney } from "../utils/formatMoney";
+import { promotions } from "../data/promotions";
+import { playCarousel } from "../utils/playCarusel";
+import { slideCards } from "../utils/slideCards";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCircleChevronLeft,
+  faCircleChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import { HomeStyled } from "../styles/home/Home.styled";
+import Footer from "../components/footer/Footer";
 
 function Home() {
-  const { products, categories } = useProducts();
-  const { category } = useParams();
-  const [searchParams] = useSearchParams();
-  const searchTerm = searchParams.get("search") || "";
+  const { products } = useProducts();
+  const promoRef = useRef(null);
+  const appleRef = useRef(null);
+  const samsungRef = useRef(null);
+  const positionRef = useRef(0);
+  const isPaused = useRef(false);
 
-  const [inputValue, setInputValue] = useState("");
-  const [selectedValue, setSelectedValue] = useState("default");
-  const [selectedBrands, setSelectedBrands] = useState([]);
-  const [selectedCategories, setSelectedCategories] = useState([]);
+  const promotionsCarusel = [
+    ...promotions,
+    ...promotions,
+    ...promotions,
+  ].reverse();
 
-  if (category && !categories.includes(category)) {
-    return <Navigate to="*" />;
-  }
+  const appleProducts = products.filter((product) =>
+    product.brand.toLowerCase().split(/\s+/).includes("apple".toLowerCase()),
+  );
 
-  const availableBrands = [
-    ...new Set(products.map((p) => p.brand).filter(Boolean)),
-  ];
+  const samsungProducts = products.filter((product) =>
+    product.brand.toLowerCase().split(/\s+/).includes("samsung".toLowerCase()),
+  );
 
-  const filteredProducts = products.filter((p) => {
-    if (searchTerm.trim()) {
-      return p.name.toLowerCase().includes(searchTerm.toLowerCase());
-    }
+  const appleCarusel = useMemo(() => {
+    return [...appleProducts, ...appleProducts];
+  }, [appleProducts]);
 
-    if (category && p.category !== category) {
-      return false;
-    }
+  const samsungCarusel = useMemo(() => {
+    return [...samsungProducts, ...samsungProducts];
+  }, [samsungProducts]);
 
-    if (
-      selectedCategories.length > 0 &&
-      !selectedCategories.includes(p.category)
-    ) {
-      return false;
-    }
+  useEffect(() => {
+    const stopPromotions = playCarousel(isPaused, promoRef.current, -1);
 
-    if (selectedBrands.length > 0 && !selectedBrands.includes(p.brand)) {
-      return false;
-    }
-    return true;
-  });
-
-  const getSortedProducts = (productsToSort) => {
-    const productsCopy = [...productsToSort];
-
-    if (selectedValue === "price-asc") {
-      return productsCopy.sort((a, b) => a.price - b.price);
-    }
-    if (selectedValue === "price-desc") {
-      return productsCopy.sort((a, b) => b.price - a.price);
-    }
-    if (selectedValue === "name-asc") {
-      return productsCopy.sort((a, b) => a.name.localeCompare(b.name));
-    }
-    return productsCopy;
-  };
-
-  const displayedProducts = getSortedProducts(filteredProducts);
-  const hasResults = displayedProducts.length > 0;
+    return () => {
+      stopPromotions?.();
+    };
+  }, []);
 
   return (
     <>
-      <Filters
-        inputValue={inputValue}
-        setInputValue={setInputValue}
-        selectedValue={selectedValue}
-        setSelectedValue={setSelectedValue}
-      />
+      <HomeStyled>
+        <h2>Despre noi</h2>
+        <div className="main-promo">
+          <div
+            className="main-row row"
+            ref={promoRef}
+            onMouseEnter={() => {
+              isPaused.current = true;
+            }}
+            onMouseLeave={() => {
+              isPaused.current = false;
+            }}
+            onTouchStart={() => {
+              isPaused.current = true;
+            }}
+            onTouchEnd={() => {
+              isPaused.current = false;
+            }}
+          >
+            {promotionsCarusel.map((promotion, index) => {
+              return (
+                <div className="main-row-container" key={index}>
+                  <h3>{promotion.title}</h3>
+                  <div className="image-container">
+                    <img src={promotion.image} alt={promotion.title} />
+                  </div>
+                  <div>
+                    <p className="main-row-subtitle">{promotion.subtitle}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
 
-      <HomeLayout>
-        <div className="sidebar-panel">
-          <Sidebar
-            brands={availableBrands}
-            selectedBrands={selectedBrands}
-            setSelectedBrands={setSelectedBrands}
-            categories={categories}
-            selectedCategories={selectedCategories}
-            setSelectedCategories={setSelectedCategories}
+        <h2>Produse Apple</h2>
+        <div className="arrows">
+          <FontAwesomeIcon
+            className="arrow"
+            icon={faCircleChevronLeft}
+            onClick={() => slideCards(appleRef.current, -1, positionRef)}
           />
-          <CategoryCheckboxes
-            categories={categories}
-            selectedCategories={selectedCategories}
-            setSelectedCategories={setSelectedCategories}
+          <FontAwesomeIcon
+            className="arrow"
+            icon={faCircleChevronRight}
+            onClick={() => slideCards(appleRef.current, 1, positionRef)}
           />
         </div>
 
-        {hasResults ? (
-          <HomeMain products={displayedProducts} />
-        ) : (
-          <h1 style={{ textAlign: "center" }}>Not found</h1>
-        )}
-      </HomeLayout>
+        <div ref={appleRef} className="main-row row">
+          {appleCarusel.map((product, index) => {
+            return (
+              <div
+                className="main-row-container card"
+                key={`${product.id}-${index}`}
+              >
+                <h3>{product.name}</h3>
+                <div className="image-container">
+                  <img src={product.image} alt={product.name} />
+                </div>
+                <div>
+                  <span className="brand">{product.brand}</span>
+                  <p className="price">{formatMoney(product.price)} lei</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <h2>Produse Samsung</h2>
+        <div className="arrows">
+          <FontAwesomeIcon
+            className="arrow"
+            icon={faCircleChevronLeft}
+            onClick={() => slideCards(samsungRef.current, -1, positionRef)}
+          />
+          <FontAwesomeIcon
+            className="arrow"
+            icon={faCircleChevronRight}
+            onClick={() => slideCards(samsungRef.current, 1, positionRef)}
+          />
+        </div>
+
+        <div ref={samsungRef} className="main-row row">
+          {samsungCarusel.map((product, index) => {
+            return (
+              <div
+                className="main-row-container card"
+                key={`${product.id}-${index}`}
+              >
+                <h3>{product.name}</h3>
+                <div className="image-container">
+                  <img src={product.image} alt={product.name} />
+                </div>
+                <div>
+                  <span className="brand">{product.brand}</span>
+                  <p className="price">{formatMoney(product.price)} lei</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </HomeStyled>
       <Footer />
     </>
   );

@@ -1,4 +1,4 @@
-import { SidebarStyled } from "../../styles/home/Sydebar.styled";
+import { SidebarStyled } from "../../styles/products/Sydebar.styled";
 
 function CategoryCheckboxes({
   categories,

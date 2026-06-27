@@ -3,47 +3,47 @@ import styled from "styled-components";
 export const FormDataStyled = styled.form`
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: ${({theme}) => theme.spacing.md};
 
   h3,
   h4 {
-    margin-bottom: var(--space-sm);
+    margin-bottom: ${({theme}) => theme.spacing.sm};
   }
 
   label {
     display: block;
-    margin-bottom: var(--space-ms);
+    margin-bottom: ${({theme}) => theme.spacing.ms};
 
     .error {
-      color: var(--cl-error);
+      color: ${({theme}) => theme.colors.text.error};
       font-size: var(--fs-xs);
-      margin-block: var(--space-sm);
+      margin-block: ${({theme}) => theme.spacing.sm};
     }
 
     input[type="radio"] {
-      margin-right: var(--space-sm);
-      accent-color: var(--cl-accent);
+      margin-right: ${({theme}) => theme.spacing.sm};
+      accent-color: ${({theme}) => theme.colors.accent.default};
     }
 
     input[type="text"],
     input[type="tel"],
     input[type="email"] {
-      margin-top: var(--space-sm);
-      padding: var(--space-sm);
+      margin-top: ${({theme}) => theme.spacing.sm};
+      padding: ${({theme}) => theme.spacing.sm};
       width: 100%;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-xs), var(--sh-xs-rev);
+      border-radius: ${({theme}) => theme.radius.md};
+      box-shadow: ${({theme}) => theme.shadows.xs}, ${({theme}) => theme.shadows.container};
     }
   }
 
   .payment-delivery {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
-    margin-bottom: var(--space-lg);
+    gap: ${({theme}) => theme.spacing.md};
+    margin-bottom: ${({theme}) => theme.spacing.lg};
 
     h3 {
-      margin-bottom: var(--space-md);
+      margin-bottom: ${({theme}) => theme.spacing.md};
     }
 
     .radio-group {
@@ -62,10 +62,11 @@ export const FormDataStyled = styled.form`
   }
 
   .client-details {
-    background: var(--gr-glow);
-    padding: var(--space-md);
-    border-radius: var(--radius-md);
-    margin-bottom: var(--space-md);
+    background: ${({theme}) => theme.gradients.glow};
+    color: ${({theme}) => theme.colors.text.dark};
+    padding: ${({theme}) => theme.spacing.md};
+    border-radius: ${({theme}) => theme.radius.md};
+    margin-bottom: ${({theme}) => theme.spacing.md};
 
     .client-data .row label:first-child {
       flex-basis: 30%;
@@ -91,16 +92,16 @@ export const FormDataStyled = styled.form`
   }
 
   .add-order-btn {
-    padding: var(--space-md);
+    padding: ${({theme}) => theme.spacing.md};
     width: 100%;
     max-width: 70%;
-    margin: var(--space-md) auto;
-    border-radius: var(--radius-md);
+    margin: ${({theme}) => theme.spacing.md} auto;
+    border-radius: ${({theme}) => theme.radius.md};
     font-family: inherit;
-    background: var(--gradient-primary);
-    color: var(--cl-white);
-    font-weight: var(--fw-semibold);
-    font-size: var(--fs-sm);
+    background: ${({theme}) => theme.gradients.primary};
+    color: ${({theme}) => theme.colors.text.primary};
+    font-weight: ${({theme}) => theme.fontWeights.semibold};
+    font-size: ${({theme}) => theme.tipography.sm};
 
     &:hover {
       opacity: 0.8;

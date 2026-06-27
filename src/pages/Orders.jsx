@@ -6,7 +6,7 @@ function Orders() {
   const { orders } = useOrders();
 
   if (!orders || orders.length === 0) {
-    return <h1 style={{ textAlign: "center", flex: 1, marginTop: "var(--space-3xl)" }}>Nu ai nicio comanda.</h1>;
+    return <h1 style={{ textAlign: "center", flex: 1, marginTop: "${({theme}) => theme.spacing.heroSmall}" }}>Nu ai nicio comanda.</h1>;
   }
 
   return (

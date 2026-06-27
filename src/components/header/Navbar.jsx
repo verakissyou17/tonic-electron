@@ -37,8 +37,18 @@ function Navbar() {
           </button>
           <ul>
             <li>
+              <Link to="/products" className="header-link" onClick={toggleNav}>
+                Produse
+              </Link>
+            </li>
+            <li>
+              <Link to="/orders" className="header-link" onClick={toggleNav}>
+                Comenzi
+              </Link>
+            </li>
+            <li>
               <Link
-                to="/category/glass"
+                to="/products/category/glass"
                 className="header-link"
                 onClick={toggleNav}
               >
@@ -47,7 +57,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/category/adapter"
+                to="/products/category/adapter"
                 className="header-link"
                 onClick={toggleNav}
               >
@@ -56,7 +66,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/category/cable"
+                to="/products/category/cable"
                 className="header-link"
                 onClick={toggleNav}
               >
@@ -65,16 +75,11 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/category/case"
+                to="/products/category/case"
                 className="header-link"
                 onClick={toggleNav}
               >
                 Huse
-              </Link>
-            </li>
-            <li>
-              <Link to="/orders" className="header-link" onClick={toggleNav}>
-                Comenzi
               </Link>
             </li>
           </ul>

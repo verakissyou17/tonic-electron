@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
-  background: var(--gr-primary-inverse);
-  color: var(--cl-white);
-  padding: var(--space-lg) var(--space-md);
-  margin-top: var(--space-xl);
+  background: ${({theme}) => theme.gradients.primaryInverse};
+  color: ${({theme}) => theme.colors.text.primary};
+  padding: ${({theme}) => theme.spacing.lg} ${({theme}) => theme.spacing.md};
+  margin-top: ${({theme}) => theme.spacing.xl};
 
   .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: var(--space-xl);
+    gap: ${({theme}) => theme.spacing.xl};
     max-width: clamp(25rem, 11.268rem + 58.592vw, 64rem);
     margin: 0 auto; 
   }
@@ -18,16 +18,16 @@ export const FooterStyled = styled.footer`
   .footer-section {
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: ${({theme}) => theme.spacing.sm};
     min-width: 11rem;
   }
 
   .footer-section a {
-    color: var(--cl-white);
+    color: ${({theme}) => theme.colors.text.primary};
     transition: 0.2s;
   }
 
   .footer-section a:hover {
-    color: var(--cl-text-secondary);
+    color: ${({theme}) => theme.colors.text.secondary};
   }
 `;

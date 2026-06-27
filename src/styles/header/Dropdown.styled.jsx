@@ -3,51 +3,43 @@ import styled from "styled-components";
 export const DropdownStyled = styled.section`
   display: ${(props) => (props.$isDropDownShown ? "block" : "none")};
   position: absolute;
-  top: clamp(var(--space-md), 0.12rem + 3.756vw, var(--space-3xl));
+  top: calc(clamp(1rem, 0.12rem + 3.756vw, 3.5rem) + 3rem);
   right: 0;
   left: clamp(0rem, -16.901rem + 72.113vw, 48rem);
-  transform: translateY(var(--space-xxxl));
-  background: var(--cl-white);
+  background: ${({ theme }) => theme.backgrounds.base};
   backdrop-filter: blur(6px);
-  border: 1px solid var(--cl-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-sm);
-  z-index: var(--z-dropdown);
-  height: calc(
-    100vh - clamp(var(--space-lg), 0.12rem + 3.756vw, var(--space-3xl)) - var(
-        --space-3xl
-      )
-  );
+  border: 1px solid ${({ theme }) => theme.colors.border.accent};
+  border-radius: ${({ theme }) => theme.radius.md};
+  padding: ${({ theme }) => theme.spacing.sm};
+  z-index: ${({ theme }) => theme.zIndex.dropdown};
+  height: calc(100dvh - (clamp(1rem, 0.12rem + 3.756vw, 3.5rem) + 3rem));
   overflow-y: auto;
 
-  /* @media screen and (min-width: 48rem) {
-    left: 50%;
-  } */
-
   &::-webkit-scrollbar {
-    width: var(--space-sm);
+    width: ${({ theme }) => theme.spacing.sm};
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--gradient-primary);
+    color: ${({ theme }) => theme.colors.text.secondary};
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--gr-glow);
-    border-radius: var(--radius-sm);
+    background: ${({ theme }) => theme.gradients.glow};
+    border-radius: ${({ theme }) => theme.radius.sm};
     border: 1px solid var(--cl-secondary);
   }
 
   .intro {
-    padding: var(--space-md);
+    padding: ${({ theme }) => theme.spacing.md};
+    color: ${({ theme }) => theme.colors.text.primary};
   }
 
   .head {
-    font-weight: var(--fw-bold);
-    background: var(--gradient-primary);
-    border-radius: var(--radius-md);
-    color: var(--cl-white);
-    padding: var(--space-md);
+    font-weight: ${({ theme }) => theme.fontWeights.bold};
+    background: ${({ theme }) => theme.gradients.primary};
+    border-radius: ${({ theme }) => theme.radius.md};
+    color: ${({ theme }) => theme.colors.text.primary};
+    padding: ${({ theme }) => theme.spacing.md};
   }
 `;
 
@@ -55,18 +47,18 @@ export const DropdownRowStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-md);
-  gap: var(--space-md);
+  padding: ${({ theme }) => theme.spacing.md};
+  gap: ${({ theme }) => theme.spacing.md};
   max-height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth;
-  border-bottom: ${(props) =>
-    props.$isLast ? "none" : `1px solid var(--cl-border)`};
+  border-bottom: ${({ theme, $isLast }) =>
+    $isLast ? "none" : `1px solid ${theme.colors.border.soft}`};
 
   .img-container {
-    width: var(--space-4xl);
+    width: ${({ theme }) => theme.spacing.heroMedium};
     height: 100%;
-    border-radius: var(--radius-md);
+    border-radius: ${({ theme }) => theme.radius.md};
     overflow: hidden;
 
     img {
@@ -79,49 +71,60 @@ export const DropdownRowStyled = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--space-sm);
+    gap: ${({ theme }) => theme.spacing.sm};
+    color: ${({ theme }) => theme.colors.text.primary};
+  }
+
+  .delete-btn {
+    background: transparent;
+    margin-left: ${({ theme }) => theme.spacing.sm};
+  }
+
+  .total-container {
+    color: ${({ theme }) => theme.colors.text.primary};
   }
 `;
 
 export const DropdownFooterStyled = styled.div`
-  margin-top: var(--space-md);
+  margin-top: ${({ theme }) => theme.spacing.md};
 
   .cart-total {
-    font-weight: var(--fw-bold);
-    background: var(--gradient-primary);
-    border-radius: var(--radius-md);
-    color: var(--cl-white);
-    padding: var(--space-md);
+    font-weight: ${({ theme }) => theme.fontWeights.bold};
+    background: ${({ theme }) => theme.gradients.primary};
+    border-radius: ${({ theme }) => theme.radius.md};
+    color: ${({ theme }) => theme.colors.text.primary};
+    padding: ${({ theme }) => theme.spacing.md};
     justify-content: space-between;
   }
 
   .total-container {
-    flex-basis: var(--space-4xl);
-    font-weight: var(--fw-bold);
+    flex-basis: ${({ theme }) => theme.spacing.heroMedium};
+    font-weight: ${({ theme }) => theme.fontWeights.bold};
   }
 
   .cart-link-container {
-    margin-top: var(--space-md);
-    padding: var(--space-md);
+    margin-top: ${({ theme }) => theme.spacing.md};
+    padding: ${({ theme }) => theme.spacing.md};
     flex-wrap: wrap;
 
     .cart-link {
-      font-weight: var(--fw-bold);
-      background: var(--gradient-primary);
-      border-radius: var(--radius-md);
-      color: var(--cl-white);
-      padding: var(--space-sm);
+      font-weight: ${({ theme }) => theme.fontWeights.bold};
+      background: ${({ theme }) => theme.gradients.primary};
+      border-radius: ${({ theme }) => theme.radius.md};
+      color: ${({ theme }) => theme.colors.text.primary};
+      padding: ${({ theme }) => theme.spacing.sm};
       text-align: center;
 
       &:focus-visible {
         outline: 2px solid black;
-        outline-offset: var(--space-xs);
-        border-radius: var(--radius-sm);
+        outline-offset: ${({ theme }) => theme.spacing.xs};
+        border-radius: ${({ theme }) => theme.radius.sm};
       }
     }
 
     p {
       text-decoration: underline;
+      color: ${({ theme }) => theme.colors.text.primary};
     }
   }
 `;

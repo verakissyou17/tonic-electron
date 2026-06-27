@@ -13,6 +13,7 @@ function Footer() {
         <section className="footer-section">
           <h2>Link-uri utile</h2>
           <Link to="/">Acasă</Link>
+           <Link to="/products">Produse</Link>
           <Link to="/orders">Comenzi</Link>
           <Link to="/cart">Coș</Link>
         </section>
