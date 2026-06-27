@@ -1,5 +1,6 @@
 import { useEffect, useRef, useMemo } from "react";
 import { useProducts } from "../hooks/useProducts";
+import { Link } from "react-router-dom";
 import { formatMoney } from "../utils/formatMoney";
 import { promotions } from "../data/promotions";
 import { playCarousel } from "../utils/playCarusel";
@@ -104,7 +105,11 @@ function Home() {
           <div ref={appleRef} className="main_row">
             {appleCarusel.map((product, index) => {
               return (
-                <div className="main_row-card card" key={`${product.id}-${index}`}>
+                <Link
+                  to={`/product/${product.id}`}
+                  className="main_row-card card"
+                  key={`${product.id}-${index}`}
+                >
                   <h3>{product.name}</h3>
                   <div className="image-container">
                     <img src={product.image} alt={product.name} />
@@ -113,7 +118,7 @@ function Home() {
                     <span className="brand">{product.brand}</span>
                     <p className="price">{formatMoney(product.price)} lei</p>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
@@ -136,7 +141,11 @@ function Home() {
           <div ref={samsungRef} className="main_row">
             {samsungCarusel.map((product, index) => {
               return (
-                <div className="main_row-card card" key={`${product.id}-${index}`}>
+                <Link
+                  to={`/product/${product.id}`}
+                  className="main_row-card card"
+                  key={`${product.id}-${index}`}
+                >
                   <h3>{product.name}</h3>
                   <div className="image-container">
                     <img src={product.image} alt={product.name} />
@@ -145,7 +154,7 @@ function Home() {
                     <span className="brand">{product.brand}</span>
                     <p className="price">{formatMoney(product.price)} lei</p>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>

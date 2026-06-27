@@ -43,6 +43,7 @@ export const HomeStyled = styled.main`
     box-shadow: ${({ theme }) => theme.shadows.glow};
     border-radius: ${({ theme }) => theme.radius.lg};
     background: ${({ theme }) => theme.gradients.primary};
+    color: ${({ theme }) => theme.colors.text.primary};
 
     h3 {
       font-size: ${({ theme }) => theme.tipography.sm};
@@ -52,7 +53,6 @@ export const HomeStyled = styled.main`
 
     p {
       -webkit-text-wrap: pretty;
-      color: ${({ theme }) => theme.colors.text.primary};
     }
 
     .image-container {

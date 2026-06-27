@@ -4,6 +4,7 @@ import Header from "./components/header/Header.jsx";
 import SearchBar from "./components/global/SearchBar.jsx";
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
+import Product from "./pages/Product.jsx";
 import FooterBottom from "./components/footer/FooterBottom.jsx";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="/products/category/:category" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
