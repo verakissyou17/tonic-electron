@@ -53,10 +53,10 @@ function Home() {
   return (
     <>
       <HomeStyled>
-        <h2>Despre noi</h2>
-        <div className="main-promo">
+        <section className="main_promo">
+          <h2>Despre noi</h2>
           <div
-            className="main-row row"
+            className="main_row"
             ref={promoRef}
             onMouseEnter={() => {
               isPaused.current = true;
@@ -73,7 +73,7 @@ function Home() {
           >
             {promotionsCarusel.map((promotion, index) => {
               return (
-                <div className="main-row-container" key={index}>
+                <div className="main_row-card" key={index}>
                   <h3>{promotion.title}</h3>
                   <div className="image-container">
                     <img src={promotion.image} alt={promotion.title} />
@@ -85,75 +85,71 @@ function Home() {
               );
             })}
           </div>
-        </div>
+        </section>
 
-        <h2>Produse Apple</h2>
-        <div className="arrows">
-          <FontAwesomeIcon
-            className="arrow"
-            icon={faCircleChevronLeft}
-            onClick={() => slideCards(appleRef.current, -1, positionRef)}
-          />
-          <FontAwesomeIcon
-            className="arrow"
-            icon={faCircleChevronRight}
-            onClick={() => slideCards(appleRef.current, 1, positionRef)}
-          />
-        </div>
+        <section className="main_apple">
+          <h2>Produse Apple</h2>
+          <div className="row">
+            <FontAwesomeIcon
+              className="arrow"
+              icon={faCircleChevronLeft}
+              onClick={() => slideCards(appleRef.current, -1, positionRef)}
+            />
+            <FontAwesomeIcon
+              className="arrow"
+              icon={faCircleChevronRight}
+              onClick={() => slideCards(appleRef.current, 1, positionRef)}
+            />
+          </div>
+          <div ref={appleRef} className="main_row">
+            {appleCarusel.map((product, index) => {
+              return (
+                <div className="main_row-card card" key={`${product.id}-${index}`}>
+                  <h3>{product.name}</h3>
+                  <div className="image-container">
+                    <img src={product.image} alt={product.name} />
+                  </div>
+                  <div>
+                    <span className="brand">{product.brand}</span>
+                    <p className="price">{formatMoney(product.price)} lei</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
 
-        <div ref={appleRef} className="main-row row">
-          {appleCarusel.map((product, index) => {
-            return (
-              <div
-                className="main-row-container card"
-                key={`${product.id}-${index}`}
-              >
-                <h3>{product.name}</h3>
-                <div className="image-container">
-                  <img src={product.image} alt={product.name} />
+        <section className="main_samsung">
+          <h2>Produse Samsung</h2>
+          <div className="row">
+            <FontAwesomeIcon
+              className="arrow"
+              icon={faCircleChevronLeft}
+              onClick={() => slideCards(samsungRef.current, -1, positionRef)}
+            />
+            <FontAwesomeIcon
+              className="arrow"
+              icon={faCircleChevronRight}
+              onClick={() => slideCards(samsungRef.current, 1, positionRef)}
+            />
+          </div>
+          <div ref={samsungRef} className="main_row">
+            {samsungCarusel.map((product, index) => {
+              return (
+                <div className="main_row-card card" key={`${product.id}-${index}`}>
+                  <h3>{product.name}</h3>
+                  <div className="image-container">
+                    <img src={product.image} alt={product.name} />
+                  </div>
+                  <div>
+                    <span className="brand">{product.brand}</span>
+                    <p className="price">{formatMoney(product.price)} lei</p>
+                  </div>
                 </div>
-                <div>
-                  <span className="brand">{product.brand}</span>
-                  <p className="price">{formatMoney(product.price)} lei</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <h2>Produse Samsung</h2>
-        <div className="arrows">
-          <FontAwesomeIcon
-            className="arrow"
-            icon={faCircleChevronLeft}
-            onClick={() => slideCards(samsungRef.current, -1, positionRef)}
-          />
-          <FontAwesomeIcon
-            className="arrow"
-            icon={faCircleChevronRight}
-            onClick={() => slideCards(samsungRef.current, 1, positionRef)}
-          />
-        </div>
-
-        <div ref={samsungRef} className="main-row row">
-          {samsungCarusel.map((product, index) => {
-            return (
-              <div
-                className="main-row-container card"
-                key={`${product.id}-${index}`}
-              >
-                <h3>{product.name}</h3>
-                <div className="image-container">
-                  <img src={product.image} alt={product.name} />
-                </div>
-                <div>
-                  <span className="brand">{product.brand}</span>
-                  <p className="price">{formatMoney(product.price)} lei</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </section>
       </HomeStyled>
       <Footer />
     </>
