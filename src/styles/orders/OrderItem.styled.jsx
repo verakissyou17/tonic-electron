@@ -28,7 +28,7 @@ export const OrderItemStyled = styled.div`
 
   span {
     flex: 1;
-    font-size: var(--fs-xs);
+    font-size: ${({theme}) => theme.tipography.xs};
     color: ${({theme}) => theme.colors.text.secondary};
     white-space: nowrap;
     overflow: hidden;
@@ -59,6 +59,6 @@ export const OrderItemStyled = styled.div`
     color: ${({theme}) => theme.colors.text.secondary};
     text-decoration: underline;
     font-style: italic;
-    font-size: var(--fs-xs);
+    font-size: ${({theme}) => theme.tipography.xs};
   }
 `;

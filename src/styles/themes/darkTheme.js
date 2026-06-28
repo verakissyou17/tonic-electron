@@ -30,7 +30,6 @@ export const darkTheme = {
   backgrounds: {
     base: "rgb(10, 16, 28)",
     panel: "rgb(15, 22, 35)",
-    panelStrong: "rgb(24, 34, 50)",
     overlay: "rgba(0, 0, 0, .6)",
     row: {
       even: "rgb(18, 28, 42)",

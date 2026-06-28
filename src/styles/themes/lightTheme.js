@@ -27,7 +27,6 @@ export const lightTheme = {
   backgrounds: {
     base: "rgb(240, 244, 250)",
     panel: "rgb(232, 238, 246)",
-    panelStrong: "rgb(220, 230, 242)",
     overlay: "rgba(0,0,0,.45)",
     row: {
       even: "rgb(232, 238, 246)",
@@ -107,6 +106,6 @@ export const lightTheme = {
 
   container: {
     width: "64rem",
-    card: "12.5rem",
+    card: "12rem",
   },
 };

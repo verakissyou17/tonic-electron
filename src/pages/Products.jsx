@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useParams, Navigate, useSearchParams } from "react-router-dom";
+import { useProducts } from "../hooks/useProducts";
+import { getAvailableBrands } from "../utils/getAvailableBrands";
 import ProductsMain from "../components/products/ProductsMain";
 import Sidebar from "../components/products/Sidebar";
 import CategoryCheckboxes from "../components/products/CategorySelectForm";
 import Footer from "../components/footer/Footer";
 import { ProductsStyled } from "../styles/products/Products.styled";
-import { useProducts } from "../hooks/useProducts";
 
 function Products() {
   const { products, categories } = useProducts();
@@ -21,9 +22,7 @@ function Products() {
     return <Navigate to="*" />;
   }
 
-  const availableBrands = [
-    ...new Set(products.map((p) => p.brand).filter(Boolean)),
-  ];
+  const availableBrands = getAvailableBrands(products);
 
   const filteredProducts = products.filter((p) => {
     if (searchTerm.trim()) {

@@ -16,7 +16,7 @@ export const FormDataStyled = styled.form`
 
     .error {
       color: ${({theme}) => theme.colors.text.error};
-      font-size: var(--fs-xs);
+      font-size:  ${({theme}) => theme.spacing.xs};
       margin-block: ${({theme}) => theme.spacing.sm};
     }
 

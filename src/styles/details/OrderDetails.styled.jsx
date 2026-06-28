@@ -75,7 +75,7 @@ export const OrderDetailsStyled = styled.main`
     justify-content: space-between;
     padding: ${({theme}) => theme.spacing.md};
     margin-top: ${({theme}) => theme.spacing.lg};
-    font-size: var(--fs-ms);
+    font-size: ${({theme}) => theme.tipography.ms};
     background: ${({theme}) => theme.gradients.primary};
     color: ${({theme}) => theme.colors.text.primary};
     border-radius: ${({theme}) => theme.radius.md};

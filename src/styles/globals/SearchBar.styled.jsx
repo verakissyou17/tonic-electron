@@ -15,7 +15,7 @@ margin: 0 auto;
     }
 
     input::placeholder {
-      font-size: var(--fs-xs);
+      font-size: ${({theme}) => theme.tipography.xs};
       font-family: inherit;
       font-weight: ${({theme}) => theme.fontWeights.semibold};
       padding-left: ${({theme}) => theme.spacing.sm};

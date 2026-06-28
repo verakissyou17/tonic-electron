@@ -8,9 +8,7 @@ export const HomeStyled = styled.main`
   padding: ${({ theme }) => theme.spacing.md};
   color: ${({ theme }) => theme.colors.text.primary};
 
-  .main_promo,
-  .main_apple,
-  .main_samsung {
+  .carousel {
     width: min(100%, 95vw);
     margin-inline: auto;
     overflow: hidden;
@@ -25,9 +23,9 @@ export const HomeStyled = styled.main`
     grid-auto-flow: column;
     grid-auto-columns: ${({ theme }) => theme.container.card};
     align-items: stretch;
-    gap: ${({ theme }) => theme.spacing.xl};
+    gap: ${({ theme }) => theme.spacing.xxl};
     width: max-content;
-    padding: ${({ theme }) => theme.spacing.md};
+    padding-block: ${({ theme }) => theme.spacing.md};
     will-change: transform;
   }
 
@@ -42,7 +40,7 @@ export const HomeStyled = styled.main`
     height: 100%;
     box-shadow: ${({ theme }) => theme.shadows.glow};
     border-radius: ${({ theme }) => theme.radius.lg};
-    background: ${({ theme }) => theme.gradients.primary};
+    background: ${({ theme }) => theme.backgrounds.base};
     color: ${({ theme }) => theme.colors.text.primary};
 
     h3 {
@@ -68,7 +66,7 @@ export const HomeStyled = styled.main`
   }
 
   .arrow {
-    color: ${({ theme }) => theme.colors.text.light};
+    color: ${({ theme }) => theme.colors.text.primary};
     background: ${({ theme }) => theme.gradients.glow};
     font-size: ${({ theme }) => theme.tipography.lg};
     border-radius: ${({ theme }) => theme.radius.round};

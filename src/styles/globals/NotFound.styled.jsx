@@ -33,7 +33,7 @@ export const ErrorCode = styled.h1`
 `;
 
 export const Title = styled.h2`
-  font-size: var(--fs-lg);
+  font-size: ${({theme}) => theme.tipography.lg};
   margin: ${({theme}) => theme.spacing.md} 0;
 `;
 

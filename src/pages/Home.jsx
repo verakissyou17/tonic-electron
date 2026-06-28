@@ -1,164 +1,42 @@
-import { useEffect, useRef, useMemo } from "react";
+import { useRef, useMemo } from "react";
 import { useProducts } from "../hooks/useProducts";
-import { Link } from "react-router-dom";
-import { formatMoney } from "../utils/formatMoney";
-import { promotions } from "../data/promotions";
-import { playCarousel } from "../utils/playCarusel";
-import { slideCards } from "../utils/slideCards";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleChevronLeft,
-  faCircleChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { filterByBrand } from "../utils/filterByBrand";
 import { HomeStyled } from "../styles/home/Home.styled";
+import PromoCarusel from "../components/home/PromoCarusel";
+import BrandsCarousel from "../components/home/BrandsCarousel";
 import Footer from "../components/footer/Footer";
 
 function Home() {
   const { products } = useProducts();
-  const promoRef = useRef(null);
   const appleRef = useRef(null);
   const samsungRef = useRef(null);
-  const positionRef = useRef(0);
-  const isPaused = useRef(false);
-
-  const promotionsCarusel = [
-    ...promotions,
-    ...promotions,
-    ...promotions,
-  ].reverse();
-
-  const appleProducts = products.filter((product) =>
-    product.brand.toLowerCase().split(/\s+/).includes("apple".toLowerCase()),
-  );
-
-  const samsungProducts = products.filter((product) =>
-    product.brand.toLowerCase().split(/\s+/).includes("samsung".toLowerCase()),
-  );
 
   const appleCarusel = useMemo(() => {
+    const appleProducts = filterByBrand(products, "apple");
     return [...appleProducts, ...appleProducts];
-  }, [appleProducts]);
+  }, [products]);
 
   const samsungCarusel = useMemo(() => {
+    const samsungProducts = filterByBrand(products, "samsung");
     return [...samsungProducts, ...samsungProducts];
-  }, [samsungProducts]);
-
-  useEffect(() => {
-    const stopPromotions = playCarousel(isPaused, promoRef.current, -1);
-
-    return () => {
-      stopPromotions?.();
-    };
-  }, []);
+  }, [products]);
 
   return (
     <>
       <HomeStyled>
-        <section className="main_promo">
-          <h2>Despre noi</h2>
-          <div
-            className="main_row"
-            ref={promoRef}
-            onMouseEnter={() => {
-              isPaused.current = true;
-            }}
-            onMouseLeave={() => {
-              isPaused.current = false;
-            }}
-            onTouchStart={() => {
-              isPaused.current = true;
-            }}
-            onTouchEnd={() => {
-              isPaused.current = false;
-            }}
-          >
-            {promotionsCarusel.map((promotion, index) => {
-              return (
-                <div className="main_row-card" key={index}>
-                  <h3>{promotion.title}</h3>
-                  <div className="image-container">
-                    <img src={promotion.image} alt={promotion.title} />
-                  </div>
-                  <div>
-                    <p className="main-row-subtitle">{promotion.subtitle}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+        <PromoCarusel />
 
-        <section className="main_apple">
-          <h2>Produse Apple</h2>
-          <div className="row">
-            <FontAwesomeIcon
-              className="arrow"
-              icon={faCircleChevronLeft}
-              onClick={() => slideCards(appleRef.current, -1, positionRef)}
-            />
-            <FontAwesomeIcon
-              className="arrow"
-              icon={faCircleChevronRight}
-              onClick={() => slideCards(appleRef.current, 1, positionRef)}
-            />
-          </div>
-          <div ref={appleRef} className="main_row">
-            {appleCarusel.map((product, index) => {
-              return (
-                <Link
-                  to={`/product/${product.id}`}
-                  className="main_row-card card"
-                  key={`${product.id}-${index}`}
-                >
-                  <h3>{product.name}</h3>
-                  <div className="image-container">
-                    <img src={product.image} alt={product.name} />
-                  </div>
-                  <div>
-                    <span className="brand">{product.brand}</span>
-                    <p className="price">{formatMoney(product.price)} lei</p>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
+        <BrandsCarousel
+          title={"Produse Apple"}
+          products={appleCarusel}
+          brandRef={appleRef}
+        />
 
-        <section className="main_samsung">
-          <h2>Produse Samsung</h2>
-          <div className="row">
-            <FontAwesomeIcon
-              className="arrow"
-              icon={faCircleChevronLeft}
-              onClick={() => slideCards(samsungRef.current, -1, positionRef)}
-            />
-            <FontAwesomeIcon
-              className="arrow"
-              icon={faCircleChevronRight}
-              onClick={() => slideCards(samsungRef.current, 1, positionRef)}
-            />
-          </div>
-          <div ref={samsungRef} className="main_row">
-            {samsungCarusel.map((product, index) => {
-              return (
-                <Link
-                  to={`/product/${product.id}`}
-                  className="main_row-card card"
-                  key={`${product.id}-${index}`}
-                >
-                  <h3>{product.name}</h3>
-                  <div className="image-container">
-                    <img src={product.image} alt={product.name} />
-                  </div>
-                  <div>
-                    <span className="brand">{product.brand}</span>
-                    <p className="price">{formatMoney(product.price)} lei</p>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
+        <BrandsCarousel
+          title={"Produse Samsung"}
+          products={samsungCarusel}
+          brandRef={samsungRef}
+        />
       </HomeStyled>
       <Footer />
     </>
