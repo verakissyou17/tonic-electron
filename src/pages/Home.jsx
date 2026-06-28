@@ -2,6 +2,7 @@ import { useRef, useMemo } from "react";
 import { useProducts } from "../hooks/useProducts";
 import { filterByBrand } from "../utils/filterByBrand";
 import { HomeStyled } from "../styles/home/Home.styled";
+import HomeHero from "../components/home/HomeHero";
 import PromoCarusel from "../components/home/PromoCarusel";
 import BrandsCarousel from "../components/home/BrandsCarousel";
 import Footer from "../components/footer/Footer";
@@ -24,6 +25,7 @@ function Home() {
   return (
     <>
       <HomeStyled>
+        <HomeHero />
         <PromoCarusel />
 
         <BrandsCarousel
